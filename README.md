@@ -45,6 +45,85 @@ The extension will use a proxy to dereference IRIs, rather than attempt to deref
 ### Proxy URL prefix
 Specifies the URL prefix to use when the proxy is enabled. This value will simply be prepended to any IRI when trying to dereference.
 
+## Web Application (Playground & Viewer)
+
+In addition to the VSCode extension, the repository includes a standalone web application that works entirely in a browser — no VSCode required. It provides:
+
+- An interactive **Playground** — author or paste HTML and JSON-LD side by side and see the CP/LD viewer render live.
+- A **Viewer** — point it at any local or remote CP/LD document and get the full triple-overlay experience.
+- A **Graph view** — visualises the RDF graph from the JSON-LD, with datatype properties shown on click.
+- A **Linked-data proxy** (`/browse?uri=`) — lets the viewer dereference IRIs that would otherwise be blocked by CORS.
+
+### Prerequisites
+
+- Python 3.9 or later
+- pip
+
+### Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/elsevierlabs-os/cpld-viewer.git
+cd cpld-viewer
+
+# 2. Install Python dependencies
+pip install -r requirements.txt
+```
+
+### Running locally
+
+```bash
+python server.py
+```
+
+The server starts on **http://localhost:5000** by default. If port 5000 is taken (e.g. by macOS AirPlay Receiver), pick any free port:
+
+```bash
+python server.py --port 8080
+```
+
+Then open **http://localhost:8080** in your browser.
+
+| Route | Description |
+|---|---|
+| `http://localhost:8080/` | Interactive playground |
+| `http://localhost:8080/view?file=path/to/doc.html` | Render a local CP/LD file |
+| `http://localhost:8080/view?url=https://example.org/doc.html` | Render a remote CP/LD document |
+| `http://localhost:8080/browse?uri=https://example.org/entity` | Dereference a Linked Data IRI |
+
+### Command-line options
+
+| Option | Default | Description |
+|---|---|---|
+| `--port PORT` | `5000` | Port to listen on |
+| `--host HOST` | `127.0.0.1` | Bind address (`0.0.0.0` to expose on the network) |
+| `--doc-root DIR` | current directory | Root directory for `?file=` requests; paths outside it are rejected |
+| `--debug` | off | Enable Flask debug mode (auto-reload on code changes) |
+
+### Example documents
+
+Three built-in examples are included in `playground/examples/`:
+
+| File pair | Description |
+|---|---|
+| `scholarly-article.html` / `.jsonld` | Academic article with authors, affiliations, and named sections |
+| `news-article.html` / `.jsonld` | News report with byline, dateline, and event entities |
+| `text-annotations.html` / `.jsonld` | Article with `oa:Annotation` text-range highlights using `oa:XPathSelector` and `oa:TextPositionSelector` |
+
+Edit the `.html` and `.jsonld` files directly — they are loaded fresh on each click in the Load dialog.
+
+### Deploying online
+
+Use a production WSGI server and add `gunicorn>=21.0` to `requirements.txt`:
+
+```bash
+gunicorn --bind 0.0.0.0:$PORT server:app
+```
+
+Suitable platforms include **Render**, **Fly.io**, and **Railway**. See [DEPLOYING.md](DEPLOYING.md) for details (or ask the maintainers).
+
+---
+
 ## Building from Source
 
 * Clone this repository, and cd into the directory
