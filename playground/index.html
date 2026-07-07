@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CPLD Playground</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <!-- CodeMirror -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/eclipse.min.css">
+
+  <style>
+    html, body { height: 100%; margin: 0; overflow: hidden; }
+
+    #app { display: flex; flex-direction: column; height: 100%; }
+
+    /* ---- Toolbar ---- */
+    #toolbar {
+      flex: 0 0 auto;
+      background: #1a1a2e;
+      padding: 7px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,.4);
+      z-index: 10;
+    }
+    #toolbar .brand {
+      color: #FA6900;
+      font-weight: 700;
+      font-size: 1.05rem;
+      white-space: nowrap;
+      letter-spacing: .02em;
+    }
+    #toolbar .iri-label { color: #999; font-size: .8rem; white-space: nowrap; }
+    #document-iri {
+      flex: 1; max-width: 380px;
+      font-size: .8rem;
+      background: #2a2a3e;
+      border-color: #444;
+      color: #ddd;
+    }
+    #document-iri:focus { background: #2a2a3e; color: #fff; border-color: #FA6900; box-shadow: 0 0 0 2px rgba(250,105,0,.3); }
+
+    /* ---- Main split ---- */
+    #main-split { flex: 1; display: flex; overflow: hidden; }
+
+    #editor-panel {
+      display: flex; flex-direction: column;
+      width: 45%; min-width: 180px;
+      border-right: 1px solid #dee2e6;
+      overflow: hidden;
+    }
+
+    #divider {
+      flex: 0 0 5px;
+      background: #dee2e6;
+      cursor: col-resize;
+      transition: background .15s;
+    }
+    #divider:hover, #divider.dragging { background: #FA6900; }
+
+    #preview-panel { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+    /* ---- Panel chrome ---- */
+    .panel-header {
+      flex: 0 0 auto;
+      background: #f6f8fa;
+      border-bottom: 1px solid #dee2e6;
+      padding: 4px 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 36px;
+    }
+    .panel-header .nav-tabs { border: none; flex-shrink: 0; }
+    .panel-header .nav-link {
+      padding: 3px 14px;
+      font-size: .8rem;
+      color: #666;
+      border-radius: 4px 4px 0 0;
+    }
+    .panel-header .nav-link.active { color: #FA6900; background: #fff; border: 1px solid #dee2e6; border-bottom-color: #f6f8fa; }
+    .panel-header .nav-link:hover:not(.active) { color: #333; background: #eee; }
+
+    /* ---- Editors ---- */
+    #editor-container { flex: 1; position: relative; overflow: hidden; }
+    .editor-wrapper { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+    .editor-wrapper .CodeMirror {
+      height: 100%;
+      font-size: 12.5px;
+      font-family: 'JetBrains Mono', 'Cascadia Code', 'Consolas', 'Monaco', monospace;
+      line-height: 1.55;
+    }
+
+    /* ---- Status bar ---- */
+    #status-bar {
+      flex: 0 0 auto;
+      padding: 3px 10px;
+      font-size: .72rem;
+      background: #f6f8fa;
+      border-top: 1px solid #dee2e6;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #666;
+    }
+    .status-ok   { color: #198754; font-weight: 600; }
+    .status-error{ color: #dc3545; font-weight: 600; }
+    .status-busy { color: #0d6efd; font-weight: 600; }
+
+    /* ---- Error banner ---- */
+    #error-banner {
+      display: none;
+      padding: 5px 10px;
+      background: #fff3cd;
+      border-bottom: 1px solid #ffc107;
+      font-size: .78rem;
+      color: #664d03;
+    }
+
+    /* ---- Preview ---- */
+    #preview-iframe  { flex: 1; border: none; width: 100%; background: #fff; }
+    #graph-container { flex: 1; display: none; background: #fafafa; position: relative; }
+    #graph-empty     { padding: 24px; color: #999; font-size: .83rem; }
+
+    /* ---- Node info panel ---- */
+    #node-info {
+      position: absolute;
+      top: 12px; right: 12px;
+      width: 260px;
+      max-height: calc(100% - 24px);
+      overflow-y: auto;
+      background: #fff;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.15);
+      font-size: .78rem;
+      font-family: system-ui, sans-serif;
+      z-index: 10;
+      display: none;
+    }
+    .ni-header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 8px 10px;
+      border-radius: 7px 7px 0 0;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+    .ni-title  { font-weight: 700; color: #FA6900; flex: 1; word-break: break-all; }
+    .ni-close  { background: none; border: none; color: #aaa; font-size: 1.1rem;
+                 cursor: pointer; line-height: 1; padding: 0 2px; flex-shrink: 0; }
+    .ni-close:hover { color: #fff; }
+    .ni-iri    { padding: 5px 10px 4px; color: #888; font-size: .7rem;
+                 word-break: break-all; border-bottom: 1px solid #f0f0f0; }
+    .ni-types  { padding: 4px 10px; color: #555; font-style: italic;
+                 border-bottom: 1px solid #f0f0f0; }
+    .ni-body   { padding: 6px 0; }
+    .ni-row    { display: flex; gap: 6px; padding: 3px 10px; }
+    .ni-row:hover { background: #fdf3ec; }
+    .ni-prop   { color: #888; flex: 0 0 90px; word-break: break-word; }
+    .ni-val    { color: #222; word-break: break-word; }
+    .ni-empty  { padding: 8px 10px; color: #aaa; font-style: italic; }
+
+    /* ---- Toolbar buttons ---- */
+    .btn-render {
+      background: #FA6900; border-color: #FA6900; color: #fff;
+      font-weight: 700; font-size: .8rem; padding: 4px 14px;
+    }
+    .btn-render:hover { background: #e05a00; border-color: #e05a00; color: #fff; }
+    .btn-tool {
+      font-size: .78rem; padding: 4px 11px;
+      border-color: #555; color: #ccc;
+    }
+    .btn-tool:hover { border-color: #FA6900; color: #FA6900; background: transparent; }
+
+    .form-check-label { font-size: .78rem; color: #bbb; cursor: pointer; }
+    .form-check-input:checked { background-color: #FA6900; border-color: #FA6900; }
+
+    /* ================================================================
+       Load dialog
+       ================================================================ */
+    #load-dialog {
+      border: none;
+      border-radius: 10px;
+      padding: 0;
+      width: min(700px, 92vw);
+      max-height: 88vh;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,.35);
+    }
+    #load-dialog[open] {
+      display: flex;
+      flex-direction: column;
+    }
+    #load-dialog::backdrop {
+      background: rgba(0, 0, 0, .55);
+      backdrop-filter: blur(2px);
+    }
+
+    .dialog-header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 14px 20px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .dialog-header h5 {
+      margin: 0;
+      font-size: .95rem;
+      font-weight: 700;
+      color: #FA6900;
+      letter-spacing: .03em;
+    }
+    .dialog-close {
+      background: none;
+      border: none;
+      color: #aaa;
+      font-size: 1.4rem;
+      line-height: 1;
+      cursor: pointer;
+      padding: 0 4px;
+    }
+    .dialog-close:hover { color: #fff; }
+
+    /* Dialog tabs */
+    .dialog-tabs {
+      display: flex;
+      background: #f6f8fa;
+      border-bottom: 2px solid #dee2e6;
+      flex-shrink: 0;
+    }
+    .dialog-tab {
+      padding: 10px 22px;
+      font-size: .82rem;
+      font-weight: 600;
+      color: #666;
+      cursor: pointer;
+      border: none;
+      background: none;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+      transition: color .15s;
+    }
+    .dialog-tab:hover { color: #333; }
+    .dialog-tab.active { color: #FA6900; border-bottom-color: #FA6900; }
+
+    /* Dialog body */
+    .dialog-body {
+      overflow-y: auto;
+      flex: 1;
+      padding: 20px;
+    }
+    .dialog-pane { display: none; }
+    .dialog-pane.active { display: block; }
+
+    /* ---- Example cards ---- */
+    .example-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      cursor: pointer;
+      transition: border-color .15s, box-shadow .15s, background .15s;
+    }
+    .example-card:hover {
+      border-color: #FA6900;
+      box-shadow: 0 2px 10px rgba(250,105,0,.12);
+      background: #fffaf7;
+    }
+    .example-card:last-child { margin-bottom: 0; }
+    .example-icon {
+      font-size: 1.6rem;
+      line-height: 1;
+      flex-shrink: 0;
+      width: 36px;
+      text-align: center;
+    }
+    .example-info { flex: 1; }
+    .example-title {
+      font-weight: 700;
+      font-size: .88rem;
+      color: #1a1a2e;
+      margin-bottom: 3px;
+    }
+    .example-desc {
+      font-size: .78rem;
+      color: #666;
+      line-height: 1.4;
+    }
+    .example-tags { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 5px; }
+    .example-tag {
+      font-size: .68rem;
+      padding: 2px 7px;
+      border-radius: 10px;
+      background: #eee;
+      color: #555;
+    }
+    .example-arrow {
+      color: #FA6900;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      align-self: center;
+    }
+
+    /* ---- File tab ---- */
+    .file-section {
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin-bottom: 14px;
+    }
+    .file-section:last-child { margin-bottom: 0; }
+    .file-section-title {
+      font-weight: 700;
+      font-size: .88rem;
+      color: #1a1a2e;
+      margin-bottom: 4px;
+    }
+    .file-section-desc {
+      font-size: .78rem;
+      color: #666;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .file-drop-zone {
+      border: 2px dashed #ccc;
+      border-radius: 6px;
+      padding: 20px;
+      text-align: center;
+      color: #888;
+      font-size: .82rem;
+      cursor: pointer;
+      transition: border-color .15s, background .15s;
+    }
+    .file-drop-zone:hover, .file-drop-zone.drag-over {
+      border-color: #FA6900;
+      background: #fffaf7;
+      color: #FA6900;
+    }
+    .file-drop-zone input[type=file] {
+      display: none;
+    }
+    .file-drop-icon { font-size: 1.6rem; display: block; margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+<div id="app">
+
+  <!-- ===== Toolbar ===== -->
+  <div id="toolbar">
+    <span class="brand">&#9674; CPLD Playground</span>
+    <span class="iri-label">Document IRI:</span>
+    <input id="document-iri" type="text" class="form-control form-control-sm"
+           value="https://example.org/document" spellcheck="false">
+    <button id="render-btn" class="btn btn-sm btn-render">Render</button>
+    <div class="form-check form-switch mb-0">
+      <input class="form-check-input" type="checkbox" id="auto-render" checked>
+      <label class="form-check-label" for="auto-render">Auto</label>
+    </div>
+    <div class="ms-auto d-flex gap-2">
+      <button id="open-load-dialog-btn" class="btn btn-sm btn-outline-secondary btn-tool">Load&#8202;&#9660;</button>
+      <button id="copy-btn"             class="btn btn-sm btn-outline-secondary btn-tool">Copy HTML</button>
+    </div>
+  </div>
+
+  <!-- ===== Main split ===== -->
+  <div id="main-split">
+
+    <!-- Editor panel -->
+    <div id="editor-panel">
+      <div class="panel-header">
+        <ul class="nav nav-tabs mb-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" id="tab-html">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="tab-jsonld">JSON-LD</a>
+          </li>
+        </ul>
+        <span id="jsonld-indicator" class="badge rounded-pill ms-1" style="display:none;font-size:.65rem;background:#FA6900">!</span>
+      </div>
+      <div id="error-banner"></div>
+      <div id="editor-container">
+        <div id="html-wrapper" class="editor-wrapper"></div>
+        <div id="jsonld-wrapper" class="editor-wrapper" style="display:none"></div>
+      </div>
+      <div id="status-bar">
+        <span id="status-text" class="status-ok">Ready</span>
+        <span class="ms-auto">Click or hover highlighted elements in preview to explore triples</span>
+      </div>
+    </div>
+
+    <!-- Drag divider -->
+    <div id="divider" title="Drag to resize"></div>
+
+    <!-- Preview panel -->
+    <div id="preview-panel">
+      <div class="panel-header">
+        <ul class="nav nav-tabs mb-0">
+          <li class="nav-item"><a class="nav-link active" href="#" id="tab-preview">Preview</a></li>
+          <li class="nav-item"><a class="nav-link"        href="#" id="tab-graph">Graph</a></li>
+        </ul>
+      </div>
+      <iframe id="preview-iframe" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+      <div id="graph-container"></div>
+    </div>
+
+  </div><!-- /#main-split -->
+</div><!-- /#app -->
+
+<!-- ================================================================
+     Load dialog
+     ================================================================ -->
+<dialog id="load-dialog">
+  <div class="dialog-header">
+    <h5>&#9674; Load Document</h5>
+    <button class="dialog-close" id="close-load-dialog" title="Close">&times;</button>
+  </div>
+
+  <div class="dialog-tabs">
+    <button class="dialog-tab active" data-pane="examples">Examples</button>
+    <button class="dialog-tab"        data-pane="file">From File</button>
+  </div>
+
+  <div class="dialog-body">
+
+    <!-- ── Examples pane ── -->
+    <div class="dialog-pane active" id="pane-examples">
+
+      <div class="example-card" data-example="scholarly-article">
+        <div class="example-icon">&#128196;</div>
+        <div class="example-info">
+          <div class="example-title">Scholarly Article</div>
+          <div class="example-desc">An academic article with author, affiliation, and named sections. Each element is decorated with schema.org metadata accessible via hover.</div>
+          <div class="example-tags">
+            <span class="example-tag">schema:ScholarlyArticle</span>
+            <span class="example-tag">schema:Person</span>
+            <span class="example-tag">element IDs</span>
+          </div>
+        </div>
+        <div class="example-arrow">&#8250;</div>
+      </div>
+
+      <div class="example-card" data-example="news-article">
+        <div class="example-icon">&#128240;</div>
+        <div class="example-info">
+          <div class="example-title">News Article</div>
+          <div class="example-desc">A news report linking headline, dateline, journalist, and named entities. Demonstrates schema:NewsArticle and geo-tagged locations.</div>
+          <div class="example-tags">
+            <span class="example-tag">schema:NewsArticle</span>
+            <span class="example-tag">schema:Place</span>
+            <span class="example-tag">schema:Organization</span>
+          </div>
+        </div>
+        <div class="example-arrow">&#8250;</div>
+      </div>
+
+      <div class="example-card" data-example="text-annotations">
+        <div class="example-icon">&#128203;</div>
+        <div class="example-info">
+          <div class="example-title">Text Annotations (Open Annotation)</div>
+          <div class="example-desc">A document with inline text-range annotations using W3C Open Annotation (oa:XPathSelector + oa:TextPositionSelector). Annotated spans are highlighted directly in the text.</div>
+          <div class="example-tags">
+            <span class="example-tag">oa:Annotation</span>
+            <span class="example-tag">oa:XPathSelector</span>
+            <span class="example-tag">oa:TextPositionSelector</span>
+          </div>
+        </div>
+        <div class="example-arrow">&#8250;</div>
+      </div>
+
+    </div><!-- /#pane-examples -->
+
+    <!-- ── From File pane ── -->
+    <div class="dialog-pane" id="pane-file">
+
+      <div class="file-section">
+        <div class="file-section-title">Load HTML Document</div>
+        <div class="file-section-desc">
+          Load an existing CP/LD document. The body content and any embedded
+          <code>&lt;script type="application/ld+json"&gt;</code> blocks are extracted
+          automatically. The <code>&lt;meta name="id"&gt;</code> value is used as the Document IRI.
+        </div>
+        <label class="file-drop-zone" id="html-drop-zone">
+          <span class="file-drop-icon">&#128196;</span>
+          Click to choose an HTML file, or drag &amp; drop here
+          <input type="file" id="html-file-input" accept=".html,.htm">
+        </label>
+      </div>
+
+      <div class="file-section">
+        <div class="file-section-title">Load JSON-LD Data</div>
+        <div class="file-section-desc">
+          Replace the JSON-LD editor with a <code>.json</code> or <code>.jsonld</code> file.
+          The Document IRI and HTML remain unchanged.
+        </div>
+        <label class="file-drop-zone" id="jsonld-drop-zone">
+          <span class="file-drop-icon">&#128209;</span>
+          Click to choose a JSON-LD file, or drag &amp; drop here
+          <input type="file" id="jsonld-file-input" accept=".json,.jsonld">
+        </label>
+      </div>
+
+    </div><!-- /#pane-file -->
+
+  </div><!-- /.dialog-body -->
+</dialog>
+
+<!-- ===== Cytoscape ===== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.29.2/cytoscape.min.js"></script>
+
+<!-- ===== CodeMirror ===== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/xml/xml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/javascript/javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/css/css.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/htmlmixed/htmlmixed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/matchbrackets.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/closebrackets.min.js"></script>
+
+<script>
+'use strict';
+
+// ================================================================
+// Built-in examples  (content lives in playground/examples/*.html / *.jsonld)
+// ================================================================
+
+const EXAMPLES = {
+  'scholarly-article': {
+    iri: 'https://example.org/article',
+  },
+  'news-article': {
+    iri: 'https://example.org/news/2024/linked-data-summit',
+  },
+  'text-annotations': {
+    iri: 'https://example.org/annotated-text',
+  },
+};
+
+// ================================================================
+// CodeMirror instances
+// ================================================================
+
+const CM_OPTS_COMMON = {
+  theme: 'eclipse',
+  lineNumbers: true,
+  matchBrackets: true,
+  autoCloseBrackets: true,
+  lineWrapping: true,
+  tabSize: 2,
+  indentWithTabs: false,
+};
+
+const htmlEditor = CodeMirror(document.getElementById('html-wrapper'), {
+  ...CM_OPTS_COMMON,
+  value: '',
+  mode: 'htmlmixed',
+});
+
+const jsonldEditor = CodeMirror(document.getElementById('jsonld-wrapper'), {
+  ...CM_OPTS_COMMON,
+  value: '',
+  mode: { name: 'javascript', json: true },
+});
+
+// ================================================================
+// Tab switching (editor panel)
+// ================================================================
+
+let currentTab = 'html';
+
+function switchTab(tab) {
+  currentTab = tab;
+  document.getElementById('tab-html').classList.toggle('active', tab === 'html');
+  document.getElementById('tab-jsonld').classList.toggle('active', tab === 'jsonld');
+  document.getElementById('html-wrapper').style.display   = tab === 'html'   ? '' : 'none';
+  document.getElementById('jsonld-wrapper').style.display = tab === 'jsonld' ? '' : 'none';
+  (tab === 'html' ? htmlEditor : jsonldEditor).refresh();
+}
+
+document.getElementById('tab-html').addEventListener('click',   (e) => { e.preventDefault(); switchTab('html'); });
+document.getElementById('tab-jsonld').addEventListener('click', (e) => { e.preventDefault(); switchTab('jsonld'); });
+
+// ================================================================
+// Render
+// ================================================================
+
+let renderTimer = null;
+
+function setStatus(msg, type) {
+  const el = document.getElementById('status-text');
+  el.textContent = msg;
+  el.className = 'status-' + (type || 'ok');
+}
+
+function showError(msg) {
+  const el = document.getElementById('error-banner');
+  el.textContent = msg;
+  el.style.display = 'block';
+  document.getElementById('jsonld-indicator').style.display = 'inline';
+  setStatus('Error in JSON-LD', 'error');
+}
+
+function hideError() {
+  document.getElementById('error-banner').style.display = 'none';
+  document.getElementById('jsonld-indicator').style.display = 'none';
+}
+
+function getMediaJsBaseUrl() {
+  return new URL('../media/js/', window.location.href).toString();
+}
+
+function buildDocument(fullHtml, jsonldText, documentIRI, baseUrl) {
+  const safeJsonld = jsonldText.replace(/<\/script>/gi, '<\\/script>');
+  const safeIRI    = (documentIRI || '').replace(/"/g, '&quot;');
+  const safeBase   = baseUrl.replace(/"/g, '&quot;');
+
+  const parser = new DOMParser();
+  const doc    = parser.parseFromString(fullHtml, 'text/html');
+  const lang   = doc.documentElement.getAttribute('lang') || 'en';
+
+  // Collect head children, skipping items we control
+  const headItems = [];
+  for (const el of doc.head.children) {
+    const tag  = el.tagName.toLowerCase();
+    const name = (el.getAttribute('name') || '').toLowerCase();
+    if (tag === 'meta' && el.hasAttribute('charset'))   continue;
+    if (tag === 'meta' && name === 'id')                continue;
+    if (tag === 'base')                                  continue;
+    if (tag === 'script' && (el.getAttribute('src') || '').includes('cpldviewer')) continue;
+    headItems.push(el.outerHTML);
+  }
+
+  return `<!DOCTYPE html>
+<html lang="${lang}">
+<head>
+<meta charset="UTF-8">
+<meta name="id" content="${safeIRI}">
+<base href="${safeBase}">
+${headItems.join('\n')}
+<script src="cpldviewer.js"><\/script>
+<script type="application/ld+json">
+${safeJsonld}
+<\/script>
+</head>
+<body>
+${doc.body.innerHTML}
+</body>
+</html>`;
+}
+
+function render() {
+  hideError();
+  const htmlBody    = htmlEditor.getValue();
+  const jsonldText  = jsonldEditor.getValue();
+  const documentIRI = document.getElementById('document-iri').value.trim();
+
+  if (!documentIRI) {
+    showError('Document IRI is required.');
+    return;
+  }
+  try {
+    JSON.parse(jsonldText);
+  } catch (e) {
+    showError('JSON-LD parse error: ' + e.message);
+    if (currentTab !== 'jsonld') switchTab('jsonld');
+    return;
+  }
+
+  setStatus('Rendering…', 'busy');
+  const iframe = document.getElementById('preview-iframe');
+  iframe.srcdoc = buildDocument(htmlBody, jsonldText, documentIRI, getMediaJsBaseUrl());
+  iframe.onload = () => setStatus('Ready', 'ok');
+}
+
+function scheduleRender() {
+  if (!document.getElementById('auto-render').checked) return;
+  clearTimeout(renderTimer);
+  renderTimer = setTimeout(render, 700);
+}
+
+htmlEditor.on('change', scheduleRender);
+jsonldEditor.on('change', scheduleRender);
+document.getElementById('document-iri').addEventListener('input', scheduleRender);
+document.getElementById('render-btn').addEventListener('click', render);
+
+// ================================================================
+// Load example into editors
+// ================================================================
+
+async function loadExample(key) {
+  const ex = EXAMPLES[key];
+  if (!ex) return;
+  const base = '/playground/examples/';
+  const [htmlText, jsonld] = await Promise.all([
+    fetch(base + key + '.html').then(r => r.text()),
+    fetch(base + key + '.jsonld').then(r => r.text()),
+  ]);
+  const { iri } = parseCPLDHtml(htmlText);
+  htmlEditor.setValue(htmlText.trimEnd());
+  jsonldEditor.setValue(jsonld.trimEnd());
+  document.getElementById('document-iri').value = iri || ex.iri;
+  closeLoadDialog();
+  render();
+}
+
+// ================================================================
+// Copy full document to clipboard
+// ================================================================
+
+document.getElementById('copy-btn').addEventListener('click', () => {
+  const doc = buildDocument(
+    htmlEditor.getValue(),
+    jsonldEditor.getValue(),
+    document.getElementById('document-iri').value.trim(),
+    getMediaJsBaseUrl()
+  );
+  navigator.clipboard.writeText(doc).then(() => {
+    const btn = document.getElementById('copy-btn');
+    const orig = btn.textContent;
+    btn.textContent = 'Copied!';
+    setTimeout(() => { btn.textContent = orig; }, 1800);
+  }).catch(() => alert('Clipboard write failed. Please copy manually.'));
+});
+
+// ================================================================
+// Load dialog — open / close
+// ================================================================
+
+const loadDialog = document.getElementById('load-dialog');
+
+function openLoadDialog() {
+  loadDialog.showModal();
+}
+
+function closeLoadDialog() {
+  loadDialog.close();
+}
+
+document.getElementById('open-load-dialog-btn').addEventListener('click', openLoadDialog);
+document.getElementById('close-load-dialog').addEventListener('click', closeLoadDialog);
+
+// Close on backdrop click
+loadDialog.addEventListener('click', (e) => {
+  const rect = loadDialog.getBoundingClientRect();
+  if (e.clientX < rect.left || e.clientX > rect.right ||
+      e.clientY < rect.top  || e.clientY > rect.bottom) {
+    closeLoadDialog();
+  }
+});
+
+// Close on Escape (browser default handles this for <dialog>, but we keep it explicit)
+loadDialog.addEventListener('cancel', (e) => { /* allow default close */ });
+
+// ================================================================
+// Load dialog — tab switching
+// ================================================================
+
+document.querySelectorAll('.dialog-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.dialog-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.dialog-pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('pane-' + btn.dataset.pane).classList.add('active');
+  });
+});
+
+// ================================================================
+// Load dialog — example cards
+// ================================================================
+
+document.querySelectorAll('.example-card').forEach(card => {
+  card.addEventListener('click', () => loadExample(card.dataset.example));
+});
+
+// ================================================================
+// Load dialog — file loading
+// ================================================================
+
+function readFileText(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = (e) => resolve(e.target.result);
+    reader.onerror = () => reject(new Error('Could not read file.'));
+    reader.readAsText(file);
+  });
+}
+
+/**
+ * Parse a CPLD HTML file: extract body, embedded JSON-LD, and document IRI.
+ */
+function parseCPLDHtml(text) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(text, 'text/html');
+
+  // Document IRI
+  const metaId = doc.querySelector('meta[name="id"]');
+  const iri = metaId ? metaId.getAttribute('content') : '';
+
+  // Body HTML (inner content, excluding script tags we injected)
+  const body = doc.body ? doc.body.innerHTML : text;
+
+  // Embedded JSON-LD blocks (pick the first meaningful one)
+  const jsonldBlocks = Array.from(doc.querySelectorAll('script[type="application/ld+json"]'));
+  let jsonld = '';
+  if (jsonldBlocks.length > 0) {
+    const combined = jsonldBlocks.map(s => s.textContent.trim()).filter(Boolean);
+    jsonld = combined.length === 1
+      ? combined[0]
+      : JSON.stringify(combined.map(s => JSON.parse(s)), null, 2);
+  }
+
+  return { iri, body, jsonld };
+}
+
+async function handleHtmlFile(file) {
+  try {
+    const text = await readFileText(file);
+    const { iri, jsonld } = parseCPLDHtml(text);
+
+    htmlEditor.setValue(text);
+    if (jsonld) jsonldEditor.setValue(jsonld);
+    if (iri)    document.getElementById('document-iri').value = iri;
+
+    setStatus(`Loaded: ${file.name}`, 'ok');
+    render();
+    closeLoadDialog();
+  } catch (e) {
+    setStatus('Failed to load file: ' + e.message, 'error');
+  }
+}
+
+async function handleJsonldFile(file) {
+  try {
+    const text = await readFileText(file);
+    JSON.parse(text); // validate
+    jsonldEditor.setValue(text);
+    setStatus(`Loaded: ${file.name}`, 'ok');
+    render();
+    closeLoadDialog();
+  } catch (e) {
+    setStatus('Invalid JSON-LD: ' + e.message, 'error');
+  }
+}
+
+// File input click
+document.getElementById('html-file-input').addEventListener('change', (e) => {
+  if (e.target.files[0]) handleHtmlFile(e.target.files[0]);
+});
+document.getElementById('jsonld-file-input').addEventListener('change', (e) => {
+  if (e.target.files[0]) handleJsonldFile(e.target.files[0]);
+});
+
+// Drag-and-drop
+function makeDragTarget(zoneId, handler) {
+  const zone = document.getElementById(zoneId);
+  zone.addEventListener('dragover', (e) => { e.preventDefault(); zone.classList.add('drag-over'); });
+  zone.addEventListener('dragleave', () => zone.classList.remove('drag-over'));
+  zone.addEventListener('drop', (e) => {
+    e.preventDefault();
+    zone.classList.remove('drag-over');
+    const file = e.dataTransfer.files[0];
+    if (file) handler(file);
+  });
+}
+makeDragTarget('html-drop-zone',   handleHtmlFile);
+makeDragTarget('jsonld-drop-zone', handleJsonldFile);
+
+// ================================================================
+// Draggable divider
+// ================================================================
+
+const divider     = document.getElementById('divider');
+const editorPanel = document.getElementById('editor-panel');
+const mainSplit   = document.getElementById('main-split');
+
+let dragging = false;
+
+divider.addEventListener('mousedown', (e) => {
+  dragging = true;
+  divider.classList.add('dragging');
+  document.body.style.cursor     = 'col-resize';
+  document.body.style.userSelect = 'none';
+  e.preventDefault();
+});
+
+document.addEventListener('mousemove', (e) => {
+  if (!dragging) return;
+  const rect     = mainSplit.getBoundingClientRect();
+  const newWidth = e.clientX - rect.left;
+  editorPanel.style.width = Math.max(180, Math.min(rect.width - 200, newWidth)) + 'px';
+  htmlEditor.refresh();
+  jsonldEditor.refresh();
+});
+
+document.addEventListener('mouseup', () => {
+  if (!dragging) return;
+  dragging = false;
+  divider.classList.remove('dragging');
+  document.body.style.cursor     = '';
+  document.body.style.userSelect = '';
+});
+
+// ================================================================
+// Preview / Graph tab switching
+// ================================================================
+
+let currentView = 'preview';
+let cy = null;
+
+document.getElementById('tab-preview').addEventListener('click', (e) => {
+  e.preventDefault();
+  if (currentView === 'preview') return;
+  currentView = 'preview';
+  document.getElementById('tab-preview').classList.add('active');
+  document.getElementById('tab-graph').classList.remove('active');
+  document.getElementById('graph-container').style.display = 'none';
+  document.getElementById('preview-iframe').style.display = 'block';
+  render(); // re-render so cpldviewer.js starts fresh
+});
+
+document.getElementById('tab-graph').addEventListener('click', (e) => {
+  e.preventDefault();
+  if (currentView === 'graph') return;
+  currentView = 'graph';
+  document.getElementById('tab-graph').classList.add('active');
+  document.getElementById('tab-preview').classList.remove('active');
+  document.getElementById('preview-iframe').style.display = 'none';
+  document.getElementById('graph-container').style.display = 'flex';
+  renderGraph();
+});
+
+// ================================================================
+// Graph visualisation — JSON-LD → Cytoscape.js
+// ================================================================
+
+function extractGraphElements(jsonldText) {
+  let data;
+  try { data = JSON.parse(jsonldText); } catch (e) { return []; }
+
+  // Build prefix map from @context (handles array contexts, skips URL strings)
+  const prefixes = {};
+  for (const ctx of [].concat(data['@context'] || [])) {
+    if (ctx && typeof ctx === 'object' && !Array.isArray(ctx)) {
+      for (const [k, v] of Object.entries(ctx)) {
+        if (!k.startsWith('@') && typeof v === 'string') prefixes[k] = v;
+      }
+    }
+  }
+
+  function expand(iri) {
+    if (!iri || iri.startsWith('http://') || iri.startsWith('https://')) return iri;
+    const c = iri.indexOf(':');
+    if (c > 0 && prefixes[iri.slice(0, c)]) return prefixes[iri.slice(0, c)] + iri.slice(c + 1);
+    return iri;
+  }
+
+  function localName(iri) {
+    if (!iri) return '';
+    const ex = expand(iri);
+    const i  = Math.max(ex.lastIndexOf('#'), ex.lastIndexOf('/'));
+    return i >= 0 ? ex.slice(i + 1) : ex;
+  }
+
+  const nodes   = new Map();   // id → { label, types[], props[] }
+  const edges   = [];
+  const edgeSet = new Set();
+
+  function ensureNode(id, types) {
+    if (!nodes.has(id)) nodes.set(id, { label: localName(id), types: [], props: [] });
+    if (types) nodes.get(id).types.push(...[].concat(types).map(localName));
+  }
+
+  function addDatatypeProp(id, prop, value) {
+    ensureNode(id, null);
+    nodes.get(id).props.push({ prop, value: String(value) });
+  }
+
+  function addEdge(src, prop, tgt) {
+    const key = `${src}||${prop}||${tgt}`;
+    if (edgeSet.has(key)) return;
+    edgeSet.add(key);
+    edges.push({ src, prop, tgt });
+  }
+
+  function walk(obj, parentId, via) {
+    if (!obj || typeof obj !== 'object' || Array.isArray(obj)) return;
+    const id    = obj['@id'];
+    const types = obj['@type'];
+
+    if (id) ensureNode(id, types);
+    if (id && parentId && via) addEdge(parentId, via, id);
+
+    for (const [prop, val] of Object.entries(obj)) {
+      if (prop.startsWith('@')) continue;
+      const propLabel = localName(expand(prop));
+      for (const v of [].concat(val)) {
+        if (v === null || v === undefined) continue;
+        if (typeof v !== 'object') {
+          // Plain literal — datatype property
+          if (id) addDatatypeProp(id, propLabel, v);
+        } else if (v['@value'] !== undefined) {
+          // Typed / language-tagged literal
+          if (id) addDatatypeProp(id, propLabel, v['@value']);
+        } else {
+          // Object value
+          const tid = v['@id'];
+          if (tid) {
+            ensureNode(tid, v['@type']);
+            if (id) addEdge(id, propLabel, tid);
+          } else if (id) {
+            walk(v, id, propLabel);
+          }
+          walk(v, id || parentId, tid ? null : propLabel);
+        }
+      }
+    }
+  }
+
+  for (const node of [].concat(data['@graph'] || (data['@id'] ? [data] : []))) {
+    walk(node, null, null);
+  }
+
+  const elements = [];
+  for (const [id, info] of nodes) {
+    const uniqueTypes = [...new Set(info.types)];
+    elements.push({ data: {
+      id,
+      label:    info.label,
+      sublabel: uniqueTypes.join(', '),
+      hasType:  uniqueTypes.length > 0,
+      props:    info.props,          // [{prop, value}, …]
+    }});
+  }
+  for (const e of edges) {
+    elements.push({ data: {
+      id:     `${e.src}||${e.prop}||${e.tgt}`,
+      source: e.src,
+      target: e.tgt,
+      label:  e.prop,
+    }});
+  }
+  return elements;
+}
+
+function renderGraph() {
+  const container = document.getElementById('graph-container');
+  const elements  = extractGraphElements(jsonldEditor.getValue());
+
+  if (cy) { cy.destroy(); cy = null; }
+
+  if (elements.filter(e => !e.data.source).length === 0) {
+    container.innerHTML = '<div id="graph-empty">No graph data — enter valid JSON-LD to visualise.</div>';
+    return;
+  }
+
+  container.innerHTML = '';
+
+  cy = cytoscape({
+    container,
+    elements,
+    style: [
+      {
+        selector: 'node',
+        style: {
+          'shape':            'roundrectangle',
+          'background-color': '#f4f4f4',
+          'border-width':     1.5,
+          'border-color':     '#bbb',
+          'label':            'data(label)',
+          'text-valign':      'center',
+          'text-halign':      'center',
+          'font-size':        '11px',
+          'font-family':      'system-ui, sans-serif',
+          'color':            '#333',
+          'width':            'label',
+          'height':           'label',
+          'padding':          '10px',
+          'text-wrap':        'wrap',
+          'text-max-width':   '140px',
+        }
+      },
+      {
+        selector: 'node[?hasType]',
+        style: {
+          'background-color': '#FFF0E6',
+          'border-color':     '#FA6900',
+          'border-width':     2,
+        }
+      },
+      {
+        selector: 'edge',
+        style: {
+          'width':                  1.5,
+          'line-color':             '#aaa',
+          'target-arrow-color':     '#aaa',
+          'target-arrow-shape':     'triangle',
+          'curve-style':            'bezier',
+          'label':                  'data(label)',
+          'font-size':              '9px',
+          'font-family':            'system-ui, sans-serif',
+          'color':                  '#666',
+          'text-background-color':  '#fafafa',
+          'text-background-opacity': 0.9,
+          'text-background-padding': '2px',
+          'text-rotation':          'autorotate',
+        }
+      },
+      {
+        selector: ':selected',
+        style: {
+          'background-color':   '#FA6900',
+          'border-color':       '#c05000',
+          'color':              '#fff',
+          'line-color':         '#FA6900',
+          'target-arrow-color': '#FA6900',
+        }
+      },
+    ],
+    layout: {
+      name:           'cose',
+      animate:        false,
+      padding:        40,
+      nodeRepulsion:  12000,
+      idealEdgeLength: 130,
+      nodeOverlap:    20,
+      gravity:        0.25,
+    },
+  });
+
+  // ── Info panel ──────────────────────────────────────────────────
+  const infoPanel = document.createElement('div');
+  infoPanel.id = 'node-info';
+  container.appendChild(infoPanel);
+
+  function escHtml(s) {
+    return String(s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function showNodeInfo(node) {
+    const label   = node.data('label');
+    const iri     = node.id();
+    const types   = node.data('sublabel') || '';
+    const props   = node.data('props') || [];
+
+    let html = `
+      <div class="ni-header">
+        <span class="ni-title">${escHtml(label)}</span>
+        <button class="ni-close" id="ni-close-btn">&times;</button>
+      </div>
+      <div class="ni-iri">${escHtml(iri)}</div>`;
+
+    if (types) html += `<div class="ni-types">${escHtml(types)}</div>`;
+
+    html += '<div class="ni-body">';
+    if (props.length > 0) {
+      for (const { prop, value } of props) {
+        html += `<div class="ni-row">
+          <span class="ni-prop">${escHtml(prop)}</span>
+          <span class="ni-val">${escHtml(value)}</span>
+        </div>`;
+      }
+    } else {
+      html += '<div class="ni-empty">No datatype properties</div>';
+    }
+    html += '</div>';
+
+    infoPanel.innerHTML  = html;
+    infoPanel.style.display = 'block';
+    document.getElementById('ni-close-btn')
+      .addEventListener('click', () => { infoPanel.style.display = 'none'; cy.elements().unselect(); });
+  }
+
+  cy.on('tap', 'node', (e) => showNodeInfo(e.target));
+  cy.on('tap', (e)      => { if (e.target === cy) { infoPanel.style.display = 'none'; } });
+}
+
+// ================================================================
+// Initial render — load the first example
+// ================================================================
+loadExample('scholarly-article');
+
+</script>
+</body>
+</html>

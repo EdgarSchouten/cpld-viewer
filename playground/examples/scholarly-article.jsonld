@@ -1,0 +1,70 @@
+{
+  "@context": [
+    {
+      "schema": "https://schema.org/",
+      "ex": "https://example.org/article#",
+      "doc": "https://example.org/article/doc#",
+      "oa": "http://www.w3.org/ns/oa#",
+      "nas": "https://data.elsevier.com/publishing/schema/nas/"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://example.org/article",
+      "@type": "schema:ScholarlyArticle",
+      "schema:name": "A Linked Document Example",
+      "schema:author": {
+        "@id": "ex:somebody-009"
+      },
+      "schema:hasPart": [
+        {
+          "@id": "doc:d71e5b2c"
+        },
+        {
+          "@id": "doc:b6e4280f"
+        },
+        {
+          "@id": "doc:c2f71e94"
+        },
+                {
+          "@id": "doc:b5e7f094"
+        }
+      ]
+    },
+    {
+      "@id": "doc:b5e7f094",
+      "@type": "nas:Title"
+    },
+    {
+      "@id": "doc:e0b2475f",
+      "@type": "nas:AuthorName",
+      "schema:mentions": {
+        "@id": "ex:somebody-009"
+      }
+    },
+    {
+      "@id": "ex:somebody-009",
+      "schema:name": "Jane Smith",
+      "schema:affiliation": {
+        "@id": "ex:something-011"
+      }
+    },
+    {
+      "@id": "ex:something-011",
+      "@type": "schema:CollegeOrUniversity",
+      "schema:name": "Example University"
+    },
+    {
+      "@id": "doc:d71e5b2c",
+      "@type": "nas:Abstract"
+    },
+    {
+      "@id": "doc:b6e4280f",
+      "@type": "nas:Introduction"
+    },
+    {
+      "@id": "doc:c2f71e94",
+      "@type": "nas:Conclusion"
+    }
+  ]
+}

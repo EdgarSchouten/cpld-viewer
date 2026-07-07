@@ -1,0 +1,96 @@
+{
+  "@context": [
+    {
+      "schema": "https://schema.org/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "doc": "https://example.org/annotated-text#",
+      "oa": "http://www.w3.org/ns/oa#",    
+      "nas": "https://data.elsevier.com/publishing/schema/nas/"
+
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://example.org/annotated-text",
+      "@type": "schema:Article",
+      "schema:name": "Semantic Web: A Brief Introduction",
+      "schema:hasPart": [
+        {
+          "@id": "doc:a4c2f7d3"
+        }
+      ]
+    },
+    {
+      "@id": "doc:a4c2f7d3",
+      "@type": "nas:Title"
+    },
+    {
+      "@id": "https://example.org/annotation/tbl",
+      "@type": "oa:Annotation",
+      "oa:hasBody": {
+        "@id": "ex:annotation-body-001",
+        "@type": "rdf:Statement",
+        "rdf:subject": {
+          "@id": "ex:annotation-target-001"
+        },
+        "rdf:predicate": {
+          "@id": "schema:mentions"
+        },
+        "rdf:object": {
+          "@id": "https://example.org/person/tim-berners-lee"
+        }
+      },
+      "oa:hasTarget": {
+        "@id": "ex:annotation-target-001",
+        "oa:hasSelector": {
+          "@type": "oa:XPathSelector",
+          "rdf:value": "//p[@id='d5a8e614']",
+          "oa:refinedBy": {
+            "@type": "oa:TextPositionSelector",
+            "oa:start": 33,
+            "oa:end": 48
+          }
+        }
+      }
+    },
+    {
+      "@id": "https://example.org/person/tim-berners-lee",
+      "@type": "schema:Person",
+      "schema:name": "Tim Berners-Lee"
+    },
+    {
+      "@id": "https://example.org/annotation/jsonld",
+      "@type": "oa:Annotation",
+      "oa:hasBody": {
+        "@id": "ex:annotation-body-002",
+        "@type": "rdf:Statement",
+        "rdf:subject": {
+          "@id": "ex:annotation-target-002"
+        },
+        "rdf:predicate": {
+          "@id": "schema:mentions"
+        },
+        "rdf:object": {
+          "@id": "https://example.org/concept/json-ld"
+        }
+      },
+      "oa:hasTarget": {
+        "@id": "ex:annotation-target-002",
+        "oa:hasSelector": {
+          "@type": "oa:XPathSelector",
+          "rdf:value": "//p[@id='e7b3c029']",
+          "oa:refinedBy": {
+            "@type": "oa:TextPositionSelector",
+            "oa:start": 0,
+            "oa:end": 7
+          }
+        }
+      }
+    },
+    {
+      "@id": "https://example.org/concept/json-ld",
+      "@type": "schema:DefinedTerm",
+      "schema:name": "JSON-LD"
+    }
+  ]
+}

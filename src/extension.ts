@@ -26,7 +26,7 @@ export function activate(context: vscode.ExtensionContext) {
 		})
 	);
 
-	
+
 
 	vscode.workspace.onDidSaveTextDocument(event => {
 		CPLDViewer.update(event, context);

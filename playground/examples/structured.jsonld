@@ -1,0 +1,2753 @@
+{
+    "@graph": [
+        {
+
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work6",
+            "edm:publishedDate": {
+                "@value": "2012",
+                "@type": "xsd:gYear"
+            },
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work6"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work6"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work6"
+                }
+            ],
+
+            "edm:hasRole": {
+                "@id": "_:b23"
+            },
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+            "edm:title": {
+                "@value": "Glass Technol. Eu. J. Glass Sci. Technol",
+                "@type": "rdf:HTML"
+            },
+
+            "@type": "edm:Work"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work17",
+            "edm:hasRole": {
+                "@id": "_:b1"
+            },
+            "edm:initials": "T.M.",
+            "edm:familyName": "Besmann",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b1",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work17"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b2",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work10"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work10",
+
+            "edm:publishedDate": {
+                "@value": "2011",
+                "@type": "xsd:gYear"
+            },
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work10"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work10"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work10"
+                }
+            ],
+            "edm:title": {
+                "@value": "J. Non-Cryst. Solids",
+                "@type": "rdf:HTML"
+            },
+            "edm:hasRole": {
+                "@id": "_:b57"
+            },
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+            "@type": "edm:Work",
+            "edm:link": "https://"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work9",
+            "edm:hasRole": {
+                "@id": "_:b3"
+            },
+            "edm:initials": "E.",
+            "edm:familyName": "Fadel",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b3",
+            "rv:index":  3,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work9"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work2",
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work2"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work2"
+                }
+            ],
+            "edm:hasRole": {
+                "@type": "rv:Reference",
+                "rv:bibliographicCitation": {
+                    "@value": "<span id=\"bibreflb2\">[2] </span><a id=\"e341\" href=\"https://doi.org/10.1557/mrs.2017.8\">J.S. McCloy, A. Goel, MRS Bull. 42 (2017) 233-240.</a>",
+                    "@type": "rdf:HTML"
+                },
+                "rv:index": 2,
+                "edm:hasContext": {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+                }
+            },
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+
+            "edm:title": {
+                "@value": "MRS Bull",
+                "@type": "rdf:HTML"
+            },
+            "edm:publishedDate": {
+                "@value": "2017",
+                "@type": "xsd:gYear"
+            },
+            "edm:link":[
+                {
+                    "@id": "https://doi.org/10.1557/mrs.2017.8"
+                }
+            ],
+            "edm:identifier": [
+                {
+                    "@type": "idtype:DOI",
+                    "@value": "10.1557/mrs.2017.8"
+                }
+            ],
+            "@type": "edm:Work"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work2",
+            "edm:hasRole": {
+                "@id": "_:b52"
+            },
+            "edm:initials": "A.",
+            "edm:familyName": "Goel",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work2",
+            "edm:hasRole": {
+                "@id": "_:b38"
+            },
+            "edm:initials": "J.S.",
+            "edm:familyName": "McCloy",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work12",
+            "edm:hasRole": {
+                "@id": "_:b5"
+            },
+            "edm:initials": "M.",
+            "edm:familyName": "Nagata",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b5",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work12"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work4",
+            "edm:hasRole": {
+                "@id": "_:b6"
+            },
+            "edm:initials": "S.",
+            "edm:familyName": "Gossé",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b6",
+            "rv:index":  3,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work4"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work6",
+            "edm:hasRole": {
+                "@id": "_:b7"
+            },
+            "edm:initials": "N.R.",
+            "edm:familyName": "Gribble",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b7",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work6"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b8",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e374\">[13] </span><a id=\"e375\" href=\"https://doi.org/10.15826/chimtech.2018.5.1.02\">S.A. Decterov, Chimica Techno Acta 5 (2018) 16-48.</a>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "13",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2",
+            "edm:hasPart": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#section3_1",
+                    "@type": "nas:Method"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#section3_2",
+                    "@type": "nas:Results"
+                },                
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#figure1_float",
+                    "@type": "nas:Figure"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#figure2_float",
+                    "@type": "nas:Figure"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#figure3_float",
+                    "@type": "nas:Figure"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#matheq1",
+                    "@type": "nas:MathematicalEquation"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#matheq2",
+                    "@type": "nas:MathematicalEquation"
+                },                
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#section5",
+                    "@type": "nas:Conclusion"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#table1",
+                    "@type": "nas:Table"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#e20",
+                    "@type": "nas:DeclarationOfCompetingInterest"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#keywords"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#section2",
+                    "@type": "nas:Introduction"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#section_ack",
+                    "@type": "nas:Acknowledgment"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#au1",
+                    "@type": "nas:AuthorName",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#au2",
+                    "@type": "nas:AuthorName",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#au3",
+                    "@type": "nas:AuthorName",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#au4",
+                    "@type": "nas:AuthorName",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person4"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#au5",
+                    "@type": "nas:AuthorName",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person5"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#fn1",
+                    "@type": "nas:Footnote"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#aff1",
+                    "@type": "nas:AffiliationItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#org1"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#aff2",
+                    "@type": "nas:AffiliationItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#org2"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref9",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work9"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref14",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work14"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref22",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work22"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#org2"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#title",
+                    "@type": "nas:Title"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#section_references"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref4",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work4"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref10",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work10"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref6",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work6"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref19",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work19"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref23",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work23"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref5",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work5"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref7",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work7"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref1",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work1"
+                    }
+
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref24",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work24"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref20",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work20"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#abstract",
+                    "@type": "nas:Abstract"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref2",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work2"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref15",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work15"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref17",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work17"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref21",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work21"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref11",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work11"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref3",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work3"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref16",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work16"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#keywords",
+                    "@type": "nas:Keywords"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#authors_affiliations",
+                    "@type": "nas:Byline"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#highlights",
+                    "@type": "nas:Highlights"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref18",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work18"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref12",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work12"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref8",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work8"
+                    }
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibref13",
+                    "@type": "nas:ReferenceItem",
+                    "edm:mentions": {
+                        "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work13"
+                    }
+                }
+            ],
+            "rv:keyword": [
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "SBAZCNLM system"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "Thermodynamic database"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "CALPHAD analysis"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "Gibbs energy"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "CALPHAD"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "vitrification"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "Compositional relationships"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "MoO3 solubility"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "High purity reagents"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "Molybdate melts"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "Silicate melts"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "high-level waste"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "silicate melt"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "High-level radioactive waste"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "SiO2-B2O3-Al2O3-ZnO-CaO-Na2O-Li2O-MoO3"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "Dissolution behavior"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "Thermodynamic analysis"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "Electron-probe micro analyzer"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "Liquid-liquid phase separation"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "Phase equilibrium"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "Volatilization loss"}},
+                {"rdf:value": {"@type": "rdf:HTML", "@value": "molybdenum"}}
+            ],
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person4"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person5"
+                }
+            ],
+            "rv:hasCorrespondingAuthor": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1"
+            },
+            "@type": "edm:Article",
+            "edm:title": "CALPHAD optimization of SiO2-B2O3-Al2O3-ZnO-CaO-Na2O-Li2O-MoO3 system and their applications to high-level radioactive waste vitrification",
+            "edm:abstract": {
+                "@value": "Element partitioning behavior between immiscible silicate melt and molybdate melt was determined by phase equilibrium experiments in the SiO2-B2O3-Al2O3-ZnO-CaO-Na2O-Li2O-MoO3 system at 1200ºC and 1000ºC (Figure 3).&nbsp;&nbsp;By combining these results and thermodynamic data of silicate melts and molybdenum compounds, CALPHAD analysis was performed to construct a database for thermodynamic calculation of phase equilibria for MoO3-bearing alumino-borosilicate melts.&nbsp;&nbsp;The thermodynamic database will be useful for predicting the phase separation of molybdate melt and crystallization of Powellite (CaMoO4) in vitrification process of high-level radioactive waste.",
+                "@type": "rdf:HTML"
+            },
+            "edm:references": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work1"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work2"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work3"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work4"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work5"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work6"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work7"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work8"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work9"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work10"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work11"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work12"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work13"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work14"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work15"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work16"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work17"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work18"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work19"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work20"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work21"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work22"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work23"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work24"
+                }
+            ]
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work8",
+            "edm:hasRole": {
+                "@id": "_:b9"
+            },
+            "edm:initials": "O.",
+            "edm:familyName": "Pinet",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b9",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work8"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit5",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work5"
+            },
+            "@type": "nas:Citation"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work5",
+            "edm:title": {
+                "@value": "J. Therm. Anal. Calorim",
+                "@type": "rdf:HTML"
+            },
+            "@type": "edm:Work",
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work5"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work5"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work5"
+                }
+            ],
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+            "edm:publishedDate": {
+                "@value": "2024",
+                "@type": "xsd:gYear"
+            },
+            "edm:hasRole": {
+                "@id": "_:b45"
+            },
+
+            "edm:link": "https://10.1007/s10973-024-13659-7"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person4",
+            "edm:givenName": "Norio",
+            "edm:familyName": "Kanehira",
+            "@type": "edm:Person",
+            "edm:hasRole": {
+                "@type": "edm:Author",
+                "edm:hasContext": {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+                },
+                "rv:index": 4
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work20",
+            "edm:hasRole": {
+                "@id": "_:b10"
+            },
+            "edm:initials": "T.",
+            "edm:familyName": "Sugawara",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b10",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work20"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work15",
+            "edm:hasRole": {
+                "@id": "_:b11"
+            },
+            "edm:initials": "E.",
+            "edm:familyName": "Bélisle",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b11",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work15"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b12",
+            "rv:bibliographicCitation": {
+                "@value": "[19] The Phase Equilibria Diagrams PC Database, Version 4.0, American Ceramic Society and NIST (2016).",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "19",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#org1",
+            "edm:name": "Graduate School of Engineering Science",
+            "@type": "edm:Organization"
+        },
+
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work3",
+            "edm:hasRole": {
+                "@id": "_:b13"
+            },
+            "edm:initials": "M.",
+            "edm:familyName": "Stemprok",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b13",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work3"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work4",
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work4"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work4"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work4"
+                }
+            ],
+            "@type": "edm:Work",
+            "edm:title": {
+                "@value": "J. Non-Cryst. Solids",
+                "@type": "rdf:HTML"
+            },
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+
+
+            "edm:publishedDate": {
+                "@value": "2023",
+                "@type": "xsd:gYear"
+            },
+            "edm:hasRole": {
+                "@id": "_:b30"
+            }
+        },
+        {
+            "@id": "_:b14",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work7"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work7",
+            "edm:hasRole": {
+                "@id": "_:b43"
+            },
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work7"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work7"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work7"
+                }
+            ],
+
+            "edm:title": {
+                "@value": "J. Non-Cryst. Solids",
+                "@type": "rdf:HTML"
+            },
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+
+            "@type": "edm:Work",
+            "edm:publishedDate": {
+                "@value": "2004",
+                "@type": "xsd:gYear"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work10",
+            "edm:hasRole": {
+                "@id": "_:b15"
+            },
+            "edm:initials": "D.",
+            "edm:familyName": "Caurant",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b15",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work10"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work17",
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work17"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work17"
+                }
+            ],
+            "edm:hasRole": {
+                "@id": "_:b19"
+            },
+
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+
+            "edm:title": {
+                "@value": "J. Am. Ceram. Soc",
+                "@type": "rdf:HTML"
+            },
+            "edm:publishedDate": {
+                "@value": "2002",
+                "@type": "xsd:gYear"
+            },
+            "@type": "edm:Work"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit15",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work15"
+            },
+            "@type": "nas:Citation"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work15",
+            "edm:title": {
+                "@value": "Calphad",
+                "@type": "rdf:HTML"
+            },
+            "@type": "edm:Work",
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work15"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work15"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work15"
+                }
+            ],
+            "edm:hasRole": {
+                "@id": "_:b79"
+            },
+
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+
+            "edm:publishedDate": {
+                "@value": "2009",
+                "@type": "xsd:gYear"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work18",
+            "edm:hasRole": {
+                "@id": "_:b16"
+            },
+            "edm:initials": "M.",
+            "edm:familyName": "Müller",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b16",
+            "rv:index":  3,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work18"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work19",
+            "edm:hasRole": {
+                "@id": "_:b12"
+            },
+
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+
+            "edm:title": {
+                "@value": "The Phase Equilibria Diagrams PC Database",
+                "@type": "rdf:HTML"
+            },
+            "edm:publishedDate": {
+                "@value": "2016",
+                "@type": "xsd:gYear"
+            },
+            "@type": "edm:Work"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work23",
+            "edm:hasRole": {
+                "@id": "_:b17"
+            },
+            "edm:initials": "V.",
+            "edm:familyName": "Venugopal",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b17",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work23"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b19",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e384\">[17] </span><a id=\"e385\" href=\"https://doi.org/10.1111/j.1151-2916.2002.tb00552.x\">T.M. Besmann, K.E. Spear, J. Am. Ceram. Soc. 85 (2002) 2887-2894.</a>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "17",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit10",
+            "@type": "nas:Citation",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work10"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit10",
+            "@type": "nas:Citation",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work10"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit23",
+            "@type": "nas:Citation",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work23"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work23",
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work23"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work23"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work23"
+                }
+            ],
+            "edm:title": {
+                "@value": "J. Alloys Compd",
+                "@type": "rdf:HTML"
+            },
+
+            "@type": "edm:Work",
+
+            "edm:hasRole": {
+                "@id": "_:b50"
+            },
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+            "edm:publishedDate": {
+                "@value": "1994",
+                "@type": "xsd:gYear"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work14",
+            "edm:hasRole": {
+                "@id": "_:b20"
+            },
+
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+
+            "edm:title": {
+                "@value": "Thermo-Calc Software, TCS Metal Oxide Solutions Database (TCOX11) Technical Information",
+                "@type": "rdf:HTML"
+            },
+            "edm:publishedDate": {
+                "@value": "2021",
+                "@type": "xsd:gYear"
+            },
+            "@type": "edm:Work"
+        },
+        {
+            "@id": "_:b20",
+            "rv:bibliographicCitation": {
+                "@value": "[14] Thermo-Calc Software, TCS Metal Oxide Solutions Database (TCOX11) Technical Information, 2021, pp. 71.",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": 14,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work21",
+            "edm:hasRole": {
+                "@id": "_:b21"
+            },
+            "edm:initials": "M.A.",
+            "edm:familyName": "Bespyatov",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b21",
+            "rv:index":  3,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work21"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work22",
+            "edm:title": {
+                "@value": "J. Alloys Compd",
+                "@type": "rdf:HTML"
+            },
+
+            "edm:hasRole": {
+                "@id": "_:b22"
+            },
+            "@type": "edm:Work",
+
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work22"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work22"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work22"
+                }
+            ],
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+            "edm:publishedDate": {
+                "@value": "2015",
+                "@type": "xsd:gYear"
+            }
+        },
+        {
+            "@id": "_:b22",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e397\">[22] </span><a id=\"e399\" href=\"https://doi.org/10.1016/j.jallcom.2015.03.159\">A.E. Musikhin, V.N. Naumov, M.A. Bespyatov, et al., J. Alloys Compd. 639 (2015) 145-148.</a><span id=\"e398\"> </span>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "22",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work22",
+            "edm:hasRole": {
+                "@id": "_:b39"
+            },
+            "edm:initials": "V.N.",
+            "edm:familyName": "Naumov",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work22",
+            "edm:hasRole": {
+                "@id": "_:b80"
+            },
+            "edm:initials": "M.A.",
+            "edm:familyName": "Bespyatov",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work22",
+            "edm:hasRole": {
+                "@id": "_:b54"
+            },
+            "edm:initials": "A.E.",
+            "edm:familyName": "Musikhin",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work6",
+            "edm:hasRole": {
+                "@id": "_:b69"
+            },
+            "edm:initials": "R.",
+            "edm:familyName": "Short",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work6",
+            "@type": "edm:Person",
+            "edm:hasRole": {
+                "@type": "edm:Author",
+                "edm:hasContext": {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work6"
+                },  
+                "rv:index":  1
+            },
+            "edm:initials": "B.F.",
+            "edm:familyName": "Dunnett"
+        },
+        {
+            "@id": "_:b23",
+            "rv:bibliographicCitation": {
+                "@value": "[6] B.F. Dunnett, N.R. Gribble, R. Short, et al., Glass Technol. Eu. J. Glass Sci. Technol. 53 (2012) 166-171.",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "6",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "_:b24",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work12"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work12",
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work12"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work12"
+                }
+            ],
+            "edm:hasRole": {
+                "@id": "_:b66"
+            },
+
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+
+            "edm:title": {
+                "@value": "Inorganics",
+                "@type": "rdf:HTML"
+            },
+            "edm:publishedDate": {
+                "@value": "2023",
+                "@type": "xsd:gYear"
+            },
+            "@type": "edm:Work"
+        },
+        {
+            "@id": "_:b25",
+            "rv:index":  3,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work7"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b26",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work23"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work16",
+            "edm:hasRole": {
+                "@id": "_:b27"
+            },
+            "edm:initials": "S.",
+            "edm:familyName": "Gossé",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b27",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work16"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b28",
+            "rv:index":  3,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work5"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work8",
+            "edm:hasRole": {
+                "@id": "_:b29"
+            },
+            "edm:initials": "C.",
+            "edm:familyName": "David",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b29",
+            "rv:index":  3,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work8"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work1",
+            "edm:hasAuthor": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work1"
+            },
+            "edm:hasRole": {
+                "@type": "rv:Reference",
+                "edm:hasContext": {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+                },
+                "rv:bibliographicCitation": {
+                    "@value": "<span id=\"bibreflb1\">[1] </span>L. Lutze, Silicate Glasses, in: R.C.E. W. Lutze (Ed.), Radioactive Waste Forms for the Future, North Holland, Amsterdam, 1988, pp. 335-392.",
+                    "@type": "rdf:HTML"
+                },
+                "rv:index": 1
+            },
+            "edm:partOf": {
+                "@value": "Radioactive Waste Forms for the Future",
+                "@type": "rv:source"
+            },
+            "edm:title": {
+                "@value": "Silicate Glasses",
+                "@type": "rdf:HTML"
+            },
+            "edm:publishedDate": {
+                "@value": "1988",
+                "@type": "xsd:gYear"
+            },
+            "@type": "edm:Work"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work1",
+            "edm:hasRole": {
+                "@id": "_:b60"
+            },
+            "edm:initials": "L.",
+            "edm:familyName": "Lutze",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b30",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e344\">[4] </span><a id=\"e345\" href=\"https://doi.org/10.1016/j.jnoncrysol.2022.121997\">S. Schuller, P. Benigni, S. Gossé, J. Non-Cryst. Solids 60 (2023) 121997.</a>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "4",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "_:b31",
+            "rv:index":  3,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work11"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work11",
+
+            "edm:publishedDate": {
+                "@value": "2015",
+                "@type": "xsd:gYear"
+            },
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work11"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work11"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work11"
+                }
+            ],
+            "edm:title": {
+                "@value": "J. Mat. Sci",
+                "@type": "rdf:HTML"
+            },
+
+            "edm:hasRole": {
+                "@id": "_:b74"
+            },
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+            "@type": "edm:Work"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work9",
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work9"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work9"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work9"
+                }
+            ],
+            "@type": "edm:Work",
+            "edm:publishedDate": {
+                "@value": "2007",
+                "@type": "xsd:gYear"
+            },
+            "edm:title": {
+                "@value": "J. Am. Ceram. Soc",
+                "@type": "rdf:HTML"
+            },
+            "edm:hasRole": {
+                "@id": "_:b67"
+            },
+            "edm:subtitle": {
+                "@value": "",
+                "@type": "rdf:HTML"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work11",
+            "edm:hasRole": {
+                "@id": "_:b32"
+            },
+            "edm:initials": "N.",
+            "edm:familyName": "Chouard",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b32",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work11"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work24",
+            "edm:hasRole": {
+                "@id": "_:b33"
+            },
+            "edm:initials": "T.",
+            "edm:familyName": "Söhnel",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b33",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work24"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b34",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work13"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work13",
+            "edm:hasAuthor": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work13"
+            },
+            "edm:hasRole": {
+                "@id": "_:b8"
+            },
+
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+
+            "edm:title": {
+                "@value": "Chimica Techno Acta",
+                "@type": "rdf:HTML"
+            },
+            "edm:publishedDate": {
+                "@value": "2018",
+                "@type": "xsd:gYear"
+            },
+            "@type": "edm:Work"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work5",
+            "edm:hasRole": {
+                "@id": "_:b35"
+            },
+            "edm:initials": "T.",
+            "edm:familyName": "Ohira",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b35",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work5"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work7",
+            "edm:hasRole": {
+                "@id": "_:b36"
+            },
+            "edm:initials": "N.",
+            "edm:familyName": "Henry",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b36",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work7"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit4",
+            "@type": "nas:Citation",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work4"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3",
+            "edm:givenName": "Kohei",
+            "edm:familyName": "Owaku",
+            "@type": "edm:Person",
+            "edm:hasRole": {
+                "@type": "edm:Author",
+                "edm:hasContext": {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+                },
+                "rv:index": 3
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit19",
+            "@type": "nas:Citation",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work19"
+            }
+        },
+        {
+            "@id": "_:b37",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work4"
+            },
+            "@type": "edm:Author"
+        },
+
+        {
+            "@id": "_:b38",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work2"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b39",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work22"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit14",
+            "@type": "nas:Citation",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work14"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work18",
+            "edm:publishedDate": {
+                "@value": "2006",
+                "@type": "xsd:gYear"
+            },
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work18"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work18"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work18"
+                }
+            ],
+            "edm:title": {
+                "@value": "CALPHAD",
+                "@type": "rdf:HTML"
+            },
+
+
+            "edm:hasRole": {
+                "@id": "_:b40"
+            },
+            "@type": "edm:Work",
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work18",
+            "edm:hasRole": {
+                "@id": "_:b78"
+            },
+            "edm:initials": "E.",
+            "edm:familyName": "Yazhenskikh",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b40",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e387\">[18] </span><a id=\"e388\" href=\"https://doi.org/10.1016/j.calphad.2006.03.003\">E. Yazhenskikh, K. Hack, M. Müller, CALPHAD 30 (2006) 270-276.</a>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "18",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work18",
+            "edm:hasRole": {
+                "@id": "_:b55"
+            },
+            "edm:initials": "K.",
+            "edm:familyName": "Hack",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b41",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work9"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b42",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work16"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work16",
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work16"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work16"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work16"
+                }
+            ],
+            "edm:hasRole": {
+                "@id": "_:b73"
+            },
+            "@type": "edm:Work",
+
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+
+            "edm:title": {
+                "@value": "Procedia Mater. Sci",
+                "@type": "rdf:HTML"
+            },
+            "edm:publishedDate": {
+                "@value": "2014",
+                "@type": "xsd:gYear"
+            }
+        },
+
+        {
+            "@id": "_:b43",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e351\">[7] </span><a id=\"e353\" href=\"https://doi.org/10.1016/j.jnoncrysol.2003.09.055\">N. Henry, P. Deniard, S. Jobic, et al., J. Non-Cryst. Solids 333 (2004) 199-205.</a><span id=\"e352\"> </span>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "7",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "_:b44",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work4"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b45",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e347\">[5] </span><a id=\"e348\" href=\"https://doi.org/10.1007/s10973-024-13659-7\">T. Sugawara, T. Ohira, R. Kondo et al., J. Therm. Anal. Calorim. (2024) https://doi.org/10.1007/s10973-024-13659-7</a>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "5",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit22",
+            "@type": "nas:Citation",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work22"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work13",
+            "edm:hasRole": {
+                "@id": "_:b34"
+            },
+            "edm:initials": "S.A.",
+            "edm:familyName": "Decterov",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b47",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e391\">[20] </span><a id=\"e392\" href=\"https://doi.org/10.1016/j.tca.2018.09.011\">T. Sugawara, K. Jin, Thermochim. Acta 668 (2018) 185-193.</a>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "20",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work21",
+            "edm:hasRole": {
+                "@id": "_:b48"
+            },
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work21"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work21"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work21"
+                }
+            ],
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+            "edm:publishedDate": {
+                "@value": "2016",
+                "@type": "xsd:gYear"
+            },
+            "edm:title": {
+                "@value": "J. Alloys Compd",
+                "@type": "rdf:HTML"
+            },
+
+            "@type": "edm:Work",
+            "edm:subtitle": {
+                "@value": "",
+                "@type": "rdf:HTML"
+            }
+        },
+        {
+            "@id": "_:b48",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e394\">[21] </span><a id=\"e395\" href=\"https://doi.org/10.1016/j.jallcom.2015.09.171\">A.E. Musikhin, V.N. Naumov, M.A. Bespyatov, et al., J. Alloys Compd. 655 (2016) 165-171.</a>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "21",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work21",
+            "edm:hasRole": {
+                "@id": "_:b61"
+            },
+            "edm:initials": "A.E.",
+            "edm:familyName": "Musikhin",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work21",
+            "edm:hasRole": {
+                "@id": "_:b62"
+            },
+            "edm:initials": "V.N.",
+            "edm:familyName": "Naumov",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b49",
+            "rv:index":  3,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work15"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b50",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e401\">[23] </span><a id=\"e402\" href=\"https://doi.org/10.1016/0925-8388(94)90778-1\">R.P. Tangri, V. Venugopal, D.K. Bose, J. Alloys Compd. 205 (1994) 129-133.</a>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "23",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "_:b51",
+            "rv:index":  3,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work24"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work24",
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+            "@type": "edm:Work",
+            "edm:hasRole": {
+                "@id": "_:b75"
+            },
+
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work24"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work24"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work24"
+                }
+            ],
+
+            "edm:publishedDate": {
+                "@value": "1997",
+                "@type": "xsd:gYear"
+            },
+            "edm:title": {
+                "@value": "Z. anorg. allg. Chem",
+                "@type": "rdf:HTML"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work5",
+            "edm:hasRole": {
+                "@id": "_:b28"
+            },
+            "edm:initials": "R.",
+            "edm:familyName": "Kondo",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work5",
+            "edm:hasRole": {
+                "@id": "_:b70"
+            },
+            "edm:initials": "T.",
+            "edm:familyName": "Sugawara",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b52",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work2"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work15",
+            "edm:hasRole": {
+                "@id": "_:b53"
+            },
+            "edm:initials": "C.W.",
+            "edm:familyName": "Bale",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b53",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work15"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work7",
+            "edm:hasRole": {
+                "@id": "_:b25"
+            },
+            "edm:initials": "S.",
+            "edm:familyName": "Jobic",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b54",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work22"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work9",
+            "edm:hasRole": {
+                "@id": "_:b41"
+            },
+            "edm:initials": "O.",
+            "edm:familyName": "Majérus",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#references",
+            "@type": "nas:References"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit8",
+            "@type": "nas:Citation",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work8"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work8",
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work8"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work8"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work8"
+                }
+            ],
+            "edm:title": {
+                "@value": "J. Nucl. Mat",
+                "@type": "rdf:HTML"
+            },
+
+            "@type": "edm:Work",
+            "edm:publishedDate": {
+                "@value": "2008",
+                "@type": "xsd:gYear"
+            },
+            "edm:hasRole": {
+                "@id": "_:b77"
+            },
+            "edm:subtitle": {
+                "@value": "",
+                "@type": "rdf:HTML"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work10",
+            "edm:hasRole": {
+                "@id": "_:b2"
+            },
+            "edm:initials": "N.",
+            "edm:familyName": "Chouard",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work23",
+            "edm:hasRole": {
+                "@id": "_:b26"
+            },
+            "edm:initials": "R.P.",
+            "edm:familyName": "Tangri",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b55",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work18"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b56",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work8"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b57",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e363\">[10] </span><a id=\"e365\" href=\"https://doi.org/10.1016/j.jnoncrysol.2011.02.015\">N. Chouard, D. Caurant, O. Majérus, et al., J. Non-Cryst. Solids 357 (2011) 2752-2762.</a><span id=\"e364\"> </span>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "10",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "_:b58",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work11"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work4",
+            "edm:hasRole": {
+                "@id": "_:b44"
+            },
+            "edm:initials": "P.",
+            "edm:familyName": "Benigni",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b59",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work9"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit3",
+            "@type": "nas:Citation",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work3"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work3",
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work3"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work3"
+                }
+            ],
+            "edm:hasRole": {
+                "@type": "rv:Reference",
+                "edm:hasContext": {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+                },
+                "rv:bibliographicCitation": {
+                    "@value": "<span id=\"bibreflb3\">[3] </span>M. Stemprok, J. Voldan, Ceramics-Silikaty 18 (1974) 19-30.",
+                    "@type": "rdf:HTML"
+                },
+                "rv:index": 3
+            },
+
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+
+            "edm:title": {
+                "@value": "Ceramics-Silikaty",
+                "@type": "rdf:HTML"
+            },
+            "edm:publishedDate": {
+                "@value": "1974",
+                "@type": "xsd:gYear"
+            },
+            "@type": "edm:Work"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2",
+            "@type": "edm:Person",
+            "edm:givenName": "Toshiaki",
+            "edm:familyName": "Ohira",
+            "edm:hasRole": {
+                "@type": "edm:Author",
+                "edm:hasContext": {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+                },
+                "rv:index": 2
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit18",
+            "@type": "nas:Citation",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work18"
+            }
+        },
+        {
+            "@id": "_:b60",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work1"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b61",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work21"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b62",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work21"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work16",
+            "edm:hasRole": {
+                "@id": "_:b63"
+            },
+            "edm:initials": "S.",
+            "edm:familyName": "Bordier",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b63",
+            "rv:index":  3,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work16"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit13",
+            "@type": "nas:Citation",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work13"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work17",
+            "edm:hasRole": {
+                "@id": "_:b72"
+            },
+            "edm:initials": "K.E.",
+            "edm:familyName": "Spear",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b64",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work20"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work20",
+            "edm:hasAuthor": [
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work20"
+                },
+                {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work20"
+                }
+            ],
+            "edm:hasRole": {
+                "@id": "_:b47"
+            },
+
+            "edm:partOf": {
+                "@value": "",
+                "@type": "rv:source"
+            },
+
+            "edm:title": {
+                "@value": "Thermochim. Acta",
+                "@type": "rdf:HTML"
+            },
+            "edm:publishedDate": {
+                "@value": "2018",
+                "@type": "xsd:gYear"
+            },
+            "@type": "edm:Work"
+        },
+
+        {
+            "@id": "_:b65",
+            "rv:index":  3,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work10"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work11",
+            "edm:hasRole": {
+                "@id": "_:b31"
+            },
+            "edm:initials": "O.",
+            "edm:familyName": "Majérus",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit21",
+            "@type": "nas:Citation",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work21"
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work12",
+            "edm:hasRole": {
+                "@id": "_:b24"
+            },
+            "edm:initials": "T.",
+            "edm:familyName": "Sugawara",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b66",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e371\">[12] </span><a id=\"e372\" href=\"https://doi.org/10.3390/inorganics11070311\">M. Nagata, T. Sugawara, Inorganics 11 (2023) 311.</a>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "12",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work24",
+            "edm:hasRole": {
+                "@id": "_:b51"
+            },
+            "edm:initials": "H.",
+            "edm:familyName": "Oppermann",
+            "@type": "edm:Person"
+        },
+
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work9",
+            "edm:hasRole": {
+                "@id": "_:b59"
+            },
+            "edm:initials": "D.",
+            "edm:familyName": "Caurant",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b67",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e359\">[9] </span><a id=\"e361\" href=\"https://doi.org/10.1111/j.1551-2916.2006.01467.x\">D. Caurant, O. Majérus, E. Fadel, et al., J. Am. Ceram. Soc. 90 (2007) 774-783.</a><span id=\"e360\"> </span>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "9",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "_:b68",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work3"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work20",
+            "edm:hasRole": {
+                "@id": "_:b64"
+            },
+            "edm:initials": "K.",
+            "edm:familyName": "Jin",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1-in-work4",
+            "edm:hasRole": {
+                "@id": "_:b37"
+            },
+            "edm:initials": "S.",
+            "edm:familyName": "Schuller",
+            "@type": "edm:Person"
+        },
+
+        {
+            "@id": "_:b69",
+            "rv:index":  3,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work6"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b70",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work5"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work8",
+            "edm:hasRole": {
+                "@id": "_:b56"
+            },
+            "edm:initials": "J.L.",
+            "edm:familyName": "Dussossoy",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b71",
+            "rv:index":  3,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work23"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit7",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work7"
+            },
+            "@type": "nas:Citation"
+        },
+        {
+            "@id": "_:b72",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work17"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work3",
+            "edm:hasRole": {
+                "@id": "_:b68"
+            },
+            "edm:initials": "J.",
+            "edm:familyName": "Voldan",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit2",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work2"
+            },
+            "@type": "nas:Citation"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person1",
+            "edm:emailAddress": "toru@gipc.akita-u.ac.jp",
+            "edm:givenName": "Toru",
+            "edm:familyName": "Sugawara",
+            "@type": "edm:Person",
+            "edm:hasRole": {
+                "@type": "edm:Author",
+                "edm:hasContext": {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+                },
+                "rv:index": 1
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit17",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work17"
+            },
+            "@type": "nas:Citation"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit12",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work12"
+            },
+            "@type": "nas:Citation"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work15",
+            "edm:hasRole": {
+                "@id": "_:b49"
+            },
+            "edm:initials": "P.",
+            "edm:familyName": "Chartrand",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b73",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e381\">[16] </span><a id=\"e382\" href=\"https://doi.org/10.1016/j.mspro.2014.10.011\">S. Gossé, C. Guéneau, S. Bordier, et al., Procedia Mater. Sci. 7 (2014) 79-86.</a>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "16",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work16",
+            "edm:hasRole": {
+                "@id": "_:b42"
+            },
+            "edm:initials": "C.",
+            "edm:familyName": "Guéneau",
+            "@type": "edm:Person"
+        },
+
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work10",
+            "edm:hasRole": {
+                "@id": "_:b65"
+            },
+            "edm:initials": "O.",
+            "edm:familyName": "Majérus",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit20",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work20"
+            },
+            "@type": "nas:Citation"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work11",
+            "edm:hasRole": {
+                "@id": "_:b58"
+            },
+            "edm:initials": "D.",
+            "edm:familyName": "Caurant",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b74",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e367\">[11] </span><a id=\"e369\" href=\"https://doi.org/10.1007/s10853-014-8581-9\">N. Chouard, D. Caurant, O. Majérus, et al., J. Mat. Sci. 50 (2015) 219-241.</a><span id=\"e368\"> </span>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "11",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person3-in-work23",
+            "edm:hasRole": {
+                "@id": "_:b71"
+            },
+            "edm:initials": "D.K.",
+            "edm:familyName": "Bose",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b75",
+            "rv:bibliographicCitation": {
+                "@value": "[24] T. Söhnel, W. Reichelt, H. Oppermann, Z. anorg. allg. Chem. 623 (1997) 1190-1200.",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "24",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work24",
+            "edm:hasRole": {
+                "@id": "_:b76"
+            },
+            "edm:initials": "W.",
+            "edm:familyName": "Reichelt",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "_:b76",
+            "rv:index":  2,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work24"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b77",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e355\">[8] </span><a id=\"e357\" href=\"https://doi.org/10.1016/j.jnucmat.2007.11.013\">O. Pinet, J.L. Dussossoy, C. David, et al., J. Nucl. Mat. 377 (2008) 307-312.</a><span id=\"e356\"> </span>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "8",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "_:b78",
+            "rv:index":  1,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work18"
+            },
+            "@type": "edm:Author"
+        },
+        {
+            "@id": "_:b79",
+            "rv:bibliographicCitation": {
+                "@value": "<span id=\"e378\">[15] </span><a id=\"e379\" href=\"https://www.sciencedirect.com/science/article/abs/pii/S0364591608000965\">C.W. Bale, E. Bélisle, P. Chartrand et al., Calphad 33 (2009) 295–311.</a>",
+                "@type": "rdf:HTML"
+            },
+            "rv:index": {
+                "@value": "15",
+                "@type": "xsd:int"
+            },
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+            },
+            "@type": "rv:Reference"
+        },
+        {
+            "@id": "_:b80",
+            "rv:index":  3,
+            "edm:hasContext": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work22"
+            },
+            "@type": "edm:Author"
+        },
+
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person2-in-work7",
+            "edm:hasRole": {
+                "@id": "_:b14"
+            },
+            "edm:initials": "P.",
+            "edm:familyName": "Deniard",
+            "@type": "edm:Person"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit6",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work6"
+            },
+            "@type": "nas:Citation"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#person5",
+            "edm:givenName": "Takeshi",
+            "edm:familyName": "Tsukada",
+            "@type": "edm:Person",
+            "edm:hasRole": {
+                "@type": "edm:Author",
+                "edm:hasContext": {
+                    "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+                },
+                "rv:index": 5
+            }
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#org2",
+            "edm:name": "Japan Nuclear Fuel Limited, Engineering Center",
+            "@type": "edm:Organization"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit1",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work1"
+            },
+            "@type": "nas:Citation"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit16",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work16"
+            },
+            "@type": "nas:Citation"
+        },
+        {
+            "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#bibcit11",
+            "edm:mentions": {
+                "@id": "https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2#work11"
+            },
+            "@type": "nas:Citation"
+        }
+    ],
+    "@context": {
+        "schema": "https://schema.org/",
+        "rv": "https://data.elsevier.com/research/schema/rv/",
+        "dcam": "http://purl.org/dc/dcam/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "ssn": "http://www.w3.org/ns/ssn/",
+        "geo": "http://www.opengis.net/ont/geosparql#",
+        "qb": "http://purl.org/linked-data/cube#",
+        "oa": "https://www.w3.org/ns/oa/",
+        "doap": "http://usefulinc.com/ns/doap#",
+        "sh": "http://www.w3.org/ns/shacl#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "brick": "https://brickschema.org/schema/Brick#",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "vann": "http://purl.org/vocab/vann/",
+        "prov": "http://www.w3.org/ns/prov#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "csvw": "http://www.w3.org/ns/csvw#",
+        "sosa": "http://www.w3.org/ns/sosa/",
+        "nas": "https://data.elsevier.com/publishing/schema/nas/",
+        "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+        "void": "http://rdfs.org/ns/void#",
+        "org": "http://www.w3.org/ns/org#",
+        "dcmitype": "http://purl.org/dc/dcmitype/",
+        "prof": "http://www.w3.org/ns/dx/prof/",
+        "edm": "https://data.elsevier.com/schema/edm/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "time": "http://www.w3.org/2006/time#",
+        "odrl": "http://www.w3.org/ns/odrl/2/",
+        "dc": "http://purl.org/dc/elements/1.1/"
+    }
+}

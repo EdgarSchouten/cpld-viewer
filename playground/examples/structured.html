@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      CALPHAD optimization of SiO2-B2O3-Al2O3-ZnO-CaO-Na2O-Li2O-MoO3 system and
+      their applications to high-level radioactive waste vitrification
+    </title>
+    <meta
+      name="id"
+      content="https://data.elsevier.com/data-platform/work/f47093a6-0cfa-40b1-ac2f-4371fcb1b0a2"
+    >
+    <meta charset="utf-8" >
+    <meta name="dcterms.conformsTo" content="https://w3id.org/cpld/" >
+    <link rel="schema.dcterms" href="http://purl.org/dc/terms/" >
+    <link
+      rel="preload"
+      href="structured.jsonld"
+      type="application/ld+json"
+      as="fetch"
+    >
+    <link rel="stylesheet" href="development.css">
+    <link
+      type="application/ld+json"
+      href="structured.jsonld"
+      rel="describedby"
+    >
+  </head>
+  <body>
+    <header id="e37">
+      <hgroup id="title_group">
+        <h1 id="title">
+          CALPHAD optimization of
+          SiO<sub>2</sub>-B<sub>2</sub>O<sub>3</sub>-Al<sub>2</sub>O<sub>3</sub>-ZnO-CaO-Na<sub>2</sub>O-Li<sub>2</sub>O-MoO<sub
+            >3</sub
+          >
+          system and their applications to high-level radioactive waste
+          vitrification
+        </h1>
+      </hgroup>
+      <div id="authors_affiliations">
+        <!-- authors  -->
+        <h2 id="authors_head">Authors</h2>
+        <ol id="e456">
+          <li id="author1">
+            <span id="au1">Toru Sugawara</span>
+            <a id="lnk1" href="#aff1"><sup>1</sup></a>
+            <a id="lnk" href="#fn1"><sup>*</sup></a>
+          </li>
+          <li id="author2">
+            <span id="au2">Toshiaki Ohira</span>
+            <a id="lnk2" href="#aff1"><sup>1</sup></a>
+          </li>
+          <li id="author3">
+            <span id="au3">Kohei Owaku</span>
+            <a id="lnk3" href="#aff2"><sup>2</sup></a>
+          </li>
+          <li id="author4">
+            <span id="au4">Norio Kanehira</span>
+            <a id="lnk4" href="#aff2"><sup>2</sup></a>
+          </li>
+          <li id="author5">
+            <span id="au5">Takeshi Tsukada</span>
+            <a id="lnk5" href="#aff2"><sup>2</sup></a>
+          </li>
+        </ol>
+        <!-- affiliations -->
+        <ol id="affiliations">
+          <li id="aff1" value="1">
+            <span id="org1">Graduate School of Engineering Science</span>
+          </li>
+          <li id="aff2" value="2">
+            <span id="org2"
+              >Japan Nuclear Fuel Limited, Engineering Center</span
+            >
+          </li>
+        </ol>
+        <!-- Notes -->
+        <aside id="fn1">
+          <p id="cor_p1">
+            <span id="cor_s1">*</span> Toru Sugawara:
+            <a href="mailto:toru@gipc.akita-u.ac.jp">toru@gipc.akita-u.ac.jp</a
+            >;
+          </p>
+        </aside>
+      </div>
+      <section id="abstract">
+        <h2 id="abstract_head">Abstract</h2>
+        <p id="e76">
+          Element partitioning behavior between immiscible silicate melt and
+          molybdate melt was determined by phase equilibrium experiments in the
+          SiO2-B2O3-Al2O3-ZnO-CaO-Na2O-Li2O-MoO3 system at 1200ºC and 1000ºC (<a
+            id="lnk11"
+            href="#figure3_float"
+            >Figure 3.</a
+          >). By combining these results and thermodynamic data of silicate
+          melts and molybdenum compounds, CALPHAD analysis was performed to
+          construct a database for thermodynamic calculation of phase equilibria
+          for MoO3-bearing alumino-borosilicate melts.&#xa0;&#xa0;The
+          thermodynamic database will be useful for predicting the phase
+          separation of molybdate melt and crystallization of Powellite (CaMoO4)
+          in vitrification process of high-level radioactive waste.
+        </p>
+      </section>
+      <section id="keywords">
+        <h2 id="keywords_head">Keywords</h2>
+        <ol id="keyword_list">
+          <li id="kwd1">CALPHAD</li>
+          <li id="kwd2">silicate melt</li>
+          <li id="kwd3">high-level waste</li>
+          <li id="kwd4">vitrification</li>
+          <li id="kwd5">molybdenum</li>
+          <li id="kwd6">High-level radioactive waste</li>
+          <li id="kwd7">High purity reagents</li>
+          <li id="kwd8">Electron-probe micro analyzer</li>
+          <li id="kwd9">Volatilization loss</li>
+          <li id="kwd10">Thermodynamic analysis</li>
+          <li id="kwd11">Liquid-liquid phase separation</li>
+          <li id="kwd12">Gibbs energy</li>
+          <li id="kwd13">SBAZCNLM system</li>
+          <li id="kwd14">Phase equilibrium</li>
+          <li id="kwd15">SiO2-B2O3-Al2O3-ZnO-CaO-Na2O-Li2O-MoO3</li>
+          <li id="kwd16">Compositional relationships</li>
+          <li id="kwd17">Silicate melts</li>
+          <li id="kwd18">Molybdate melts</li>
+          <li id="kwd19">Thermodynamic database</li>
+          <li id="kwd20">CALPHAD analysis</li>
+          <li id="kwd21">Dissolution behavior</li>
+          <li id="kwd22">MoO3 solubility</li>
+        </ol>
+      </section>
+      <section id="highlights">
+        <h2 id="highlights_header">Highlights</h2>
+        <ol id="highlights_list">
+          <li id="highlight1">
+            Phase equilibrium experiments were carried out in the SiO<sub
+              id="e6"
+              >2</sub
+            >-B<sub id="e7">2</sub>O<sub id="e8">3</sub>-Al<sub id="e9">2</sub
+            >O<sub id="e10">3</sub>-ZnO-CaO-Na<sub id="e11">2</sub>O-Li<sub
+              id="e12"
+              >2</sub
+            >O-MoO<sub id="e13">3</sub> system at 1200ºC and 1000ºC.
+          </li>
+          <li id="highlight2">
+            Phase relationship between coexisting silicate melt and molybdate
+            melt was optimized by CALPHAD methodology
+          </li>
+          <li id="highlight3">
+            Example application of thermodynamic database was indicated for
+            Japanese high-level waste glass
+          </li>
+        </ol>
+      </section>
+      <section id="e20">
+        <h2 id="heading1">Declaration of Competing interest</h2>
+        <p id="e21">
+          Toru Sugawara reports financial support was provided by The Ministry
+          of Economy, Trade and Industry, Japan. If there are other authors,
+          they declare that they have no known competing financial interests or
+          personal relationships that could have appeared to influence the work
+          reported in this paper.
+        </p>
+      </section>
+    </header>
+    <section id="section2">
+      <h2 id="heading2"><span id="s2h1s1">1. </span>Introduction</h2>
+      <p id="e89">
+        High-level radioactive waste (HLW) is mixed with borosilicate glass,
+        vitrified and then disposed of in a geological repository
+        <a id="bibcit1" href="#bibref1">[1]</a>-<a id="bibcit2" href="#bibref2"
+          >[2]</a
+        >. In this process, attention must be paid to the behavior of
+        molybdenum, one of the fission products, because molybdenum-bearing
+        silicate melt exhibit liquid-liquid phase separation
+        <a id="bibcit3" href="#bibref3">[3]</a
+        ><a id="bibcit4_1" href="#bibref4"></a>-<a id="bibcit5" href="#bibref5"
+          >[5]</a
+        >.&#xa0;&#xa0;When molybdate liquid formed by a phase separation is
+        cooled, it crystallizes as water-soluble Na<sub id="e90">2</sub>MoO<sub
+          id="e91"
+          >4</sub
+        >
+        phase. Therefore, solubility and crystallization of molybdenum phase
+        have been investigated in order to improve chemical durability of HLW
+        glass <a id="bibcit6" href="#bibref6">[6]</a
+        ><a id="bibcit7_1" href="#bibref7"></a
+        ><a id="bibcit8_1" href="#bibref8"></a
+        ><a id="bibcit9_1" href="#bibref9"></a
+        ><a id="bibcit10_1" href="#bibref11"></a
+        ><a id="bibcit11_1" href="#bibref11"></a>-<a
+          id="bibcit12"
+          href="#bibref12"
+          >[12]</a
+        >. In recent years, thermodynamic database for silicate systems has been
+        developed by CALPHAD (CALculation of PHAse Diagrams) methodology
+        <a id="bibcit13" href="#bibref13">[13]</a
+        ><a id="bibcit14_1" href="#bibref14"></a>-<a
+          id="bibcit15"
+          href="#bibref15"
+          >[15]</a
+        >. The CALPHAD for a SiO<sub id="e92">2</sub>-Na<sub id="e93">2</sub
+        >O-MoO<sub id="e94">3</sub> system has also been carried out
+        <a id="bibcit4_2" href="#bibref4">[4]</a>,
+        <a id="bibcit5_1" href="#bibref5">[5]</a>,
+        <a id="bibcit16" href="#bibref16">[16]</a>.
+      </p>
+      <p id="e95">
+        In this study, we performed the followings to predict the MoO<sub
+          id="e96"
+          >3</sub
+        >
+        solubility and phase separation of HLW glass melt by thermodynamic
+        calculation.
+      </p>
+      <p id="e97">
+        (1) The chemical compositions of coexisting silicate and molybdate melts
+        were investigated by phase equilibrium experiments in the SiO<sub
+          id="e98"
+          >2</sub
+        >-B<sub id="e99">2</sub>O<sub id="e100">3</sub>-Al<sub id="e101">2</sub
+        >O<sub id="e102">3</sub>-ZnO-CaO-Na<sub id="e103">2</sub>O-Li<sub
+          id="e104"
+          >2</sub
+        >O-MoO<sub id="e105">3 </sub>(SBAZCNLM) system.
+      </p>
+      <p id="e106">
+        (2) CALPHAD calculation was performed in the B<sub id="e107">2</sub
+        >O<sub id="e108">3</sub>-Na<sub id="e109">2</sub>O-Li<sub id="e110"
+          >2</sub
+        >O-CaO-ZnO-MoO<sub id="e111">3</sub> system.
+      </p>
+      <p id="e112">
+        (3) Combining the phase equilibrium data of (1), thermodynamic data of
+        SiO<sub id="e113">2</sub>-Na<sub id="e114">2</sub>O-MoO<sub id="e115"
+          >3</sub
+        >
+        system [5] and the interaction parameters by (2), CALPHAD calculation
+        was carried out and thermodynamic database of the SBAZCNLM system was
+        constructed. Some application examples are also shown in this paper.
+      </p>
+    </section>
+    <section id="section22">
+      <h2 id="sec2h1">
+        <span id="s22h1s1">2. </span>Phase equilibrium experiments of MoO<sub
+          id="e118"
+          >3</sub
+        >-rich alumino-borosilicate system
+      </h2>
+      <p id="e119">
+        Phase equilibrium experiments were carried out in the SBAZCNLM system.
+        The experimental composition is described as
+      </p>
+      <math display="block" style="overflow: scroll" id="e120"
+        ><mn>0.87</mn><mo>(</mo><mi>s</mi><mo>[</mo><mo>(</mo><mn>1</mn
+        ><mo>-</mo><mi>x</mi><mo>-</mo><mi>y</mi><mo>-</mo><mi>p</mi><mo>)</mo
+        ><mi>Si</mi><mi>O</mi><mn>2</mn><mo>-</mo><mi>x</mi><mi>B</mi><mn>2</mn
+        ><mi>O</mi><mn>3</mn><mo>-</mo><mi>y</mi><mi>Al</mi><mn>2</mn><mi>O</mi
+        ><mn>3</mn><mo>-</mo><mi>p</mi><mi>Zn</mi><mi>O</mi><mo>]</mo><mo>-</mo
+        ><mo>(</mo><mn>1</mn><mo>-</mo><mi>s</mi><mo>)</mo><mo>[</mo><mo>(</mo
+        ><mn>1</mn><mo>-</mo><mi>z</mi><mo>-</mo><mi>q</mi><mo>)</mo><mi>N</mi
+        ><mi>a</mi><mn>2</mn><mi>O</mi><mo>-</mo><mi>z</mi><mi>Ca</mi><mi>O</mi
+        ><mo>-</mo><mi>q</mi><mi>Li</mi><mn>2</mn><mi>O</mi><mo>]</mo><mo>)</mo
+        ><mo>-</mo><mn>0.13</mn><mi>Mo</mi><mi>O</mi><mn>3</mn></math
+      >
+      <p id="e141">
+        where
+        <var id="e142">s</var> is a mole fraction of total of network-former
+        oxide and intermediate oxide (NF), <var id="e442">x</var>,
+        <var id="e144">y</var>, and <var id="e145">p</var> are the proportions
+        of B<sub id="e146">2</sub>O<sub id="e147">3</sub>, Al<sub id="e148"
+          >2</sub
+        >O<sub id="e149">3</sub>, and ZnO in the NF, respectively,
+        <var id="e150">z</var> and
+        <var id="e151">q</var>
+        are the proportions of CaO and Li<sub id="e152">2</sub>O in the
+        network-modifier oxides (NM). In this study, 51 different compositions
+        were prepared in the range of <var id="e1511">s</var>=0.800-0.620,
+        <var id="e154">x</var>=0.397-0.186, <var id="e155">y</var>=0.100-0.010,
+        <var id="e156">p</var>=0.070-0.027, <var id="e157">z</var>=0.353-0.100,
+        <var id="e158">q</var>=0.600-0.100.&#xa0;&#xa0;In all starting
+        composition, excess amount of MoO<sub id="e159">3</sub> (13mol%) was
+        added to achieve phase separation of silicate melt and molybdate melt.
+      </p>
+      <p id="e160">
+        The experimental method was basically the same as that used for other
+        MoO<sub id="e161">3</sub>-bearing systems reported previously [5, 12].
+        High purity reagents of SiO<sub id="e162">2</sub>, B<sub id="e163"
+          >2</sub
+        >O<sub id="e164">3</sub>, Al<sub id="e165">2</sub>O<sub id="e166">3</sub
+        >, ZnO, Na<sub id="e167">2</sub>CO<sub id="e168">3</sub>, CaCO<sub
+          id="e169"
+          >3</sub
+        >, Li<sub id="e170">2</sub>CO<sub id="e171">3</sub>, and MoO<sub
+          id="e172"
+          >3</sub
+        >
+        were weighed, mixed in an agate mortar for 30 minutes, and then
+        decarbonated at 550 ºC for 12 hours. Approximately 8.5 g of the
+        decarbonated material was placed in a platinum crucible and held at
+        1200ºC or 1000ºC for 24 hours, and then quenched by water cooling of
+        crucible with a rate of 20ºC/sec. Our preliminary experiments confirmed
+        that equilibrium was reached within 24 hours.
+      </p>
+      <p id="e173">
+        The quenched sample separated into an upper silicate glass and a
+        molybdenum-rich precipitate. Each sample was embedded in resin,
+        polished, and observed by Electron-probe micro analyzer (JEOL-JXA8230).
+        The silicate glass and molybdate precipitate was analyzed by EPMA for
+        B<sub id="e174">2</sub>O<sub id="e175">3</sub>, Inductively Coupled
+        Plasma Atomic Emission Spectroscopy (SII SPS-7700) for Li<sub id="e176"
+          >2</sub
+        >O and X-ray Fluorescence (Rigaku ZSX Primus II) for other oxides.
+      </p>
+      <p id="e177">
+        The amount of silicate phase and molybdate phase was determined by
+        mass-balance calculation based on the initial composition and analytical
+        composition.&#xa0;&#xa0;Volatilization loss at 1200ºC was estimated to
+        be 1~10wt% for B<sub id="e178">2</sub>O<sub id="e179">3</sub> and less
+        than 0.5wt% for Na<sub id="e180">2</sub>O. The thermodynamic analysis
+        was performed using the net bulk compositions by analysis, considering
+        the losses of these elements.
+      </p>
+      <p id="e181">
+        Example of the chemical compositions of coexisting silicate melt and
+        molybdate melt is shown in
+        <a id="ref1tab1" href="#table1">Table 1</a>.&#xa0;&#xa0;We observed that
+        the solubility of MoO<sub id="e182">3</sub> in silicate melts increased
+        and amount of molybdate melt decreased with increasing bulk B<sub
+          id="e183"
+          >2</sub
+        >O<sub id="e184">3</sub>/(SiO<sub id="e185">2</sub>+Al<sub id="e186"
+          >2</sub
+        >O<sub id="e187">3</sub>), CaO/Na<sub id="e188">2</sub>O and
+        temperature.
+      </p>
+      <table id="table1">
+        <caption id="t1cap1">
+          <span>Table 1 </span
+          >Example of chemical composition of coexisting silicate melt and
+          molybdate melt at 1200ºC observed by phase equilibrium experiment and
+          comparison between experimental and calculated compositions.
+        </caption>
+        <thead>
+          <tr>
+            <th colspan="2" rowspan="2" scope="col">
+              Initial composition / wt%
+            </th>
+            <th colspan="2" scope="col">Silicate melt</th>
+            <th colspan="2" scope="col">Molybdate melt</th>
+          </tr>
+          <tr>
+            <th scope="col">Exp.</th>
+            <th scope="col">Calc.</th>
+            <th scope="col">Exp.</th>
+            <th scope="col">Calc.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SiO<sub>2</sub></td>
+            <td>39,8</td>
+            <td>39,1</td>
+            <td>38,8</td>
+            <td>0,8</td>
+            <td>0,9</td>
+          </tr>
+          <tr>
+            <td>B<sub>2</sub>O<sub>3</sub></td>
+            <td>9,5</td>
+            <td>9,2</td>
+            <td>8,9</td>
+            <td>0,2</td>
+            <td>0,6</td>
+          </tr>
+          <tr>
+            <td>Al<sub>2</sub>O<sub>3</sub></td>
+            <td>4,1</td>
+            <td>4,2</td>
+            <td>4,0</td>
+            <td>0,0</td>
+            <td>0,2</td>
+          </tr>
+          <tr>
+            <td>ZnO</td>
+            <td>2,5</td>
+            <td>2,5</td>
+            <td>2,3</td>
+            <td>0,1</td>
+            <td>0,3</td>
+          </tr>
+          <tr>
+            <td>CaO</td>
+            <td>4,4</td>
+            <td>3,6</td>
+            <td>2,8</td>
+            <td>0,9</td>
+            <td>1,7</td>
+          </tr>
+          <tr>
+            <td>Na<sub>2</sub>O</td>
+            <td>14,0</td>
+            <td>9,5</td>
+            <td>10,2</td>
+            <td>4,2</td>
+            <td>3,5</td>
+          </tr>
+          <tr>
+            <td>Li<sub>2</sub>O</td>
+            <td>3,2</td>
+            <td>2,3</td>
+            <td>2,0</td>
+            <td>0,7</td>
+            <td>1,1</td>
+          </tr>
+          <tr>
+            <td>MoO<sub>3</sub></td>
+            <td>22,6</td>
+            <td>7,5</td>
+            <td>5,9</td>
+            <td>15,2</td>
+            <td>16,8</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>100,0</td>
+            <td>77,9</td>
+            <td>75,0</td>
+            <td>22,1</td>
+            <td>25,0</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="section3">
+      <h2 id="heading3"><span id="s3h1s1">3. </span>Thermodynamic analysis</h2>
+      <section id="section3_1">
+        <h3 id="heading3_1"><span id="s31h1s1">3-1. </span>Method</h3>
+        <p id="e192">
+          The Gibbs energy of the liquid phase (
+          <math id="e193">
+            <msup>
+              <mrow>
+                <mi> G </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> Liq </mi>
+              </mrow>
+            </msup> </math
+          >) is the sum of the Gibbs energy of end-member components (
+          <math id="e194">
+            <msubsup>
+              <mrow>
+                <mi> G </mi>
+              </mrow>
+              <mrow>
+                <mi> i </mi>
+              </mrow>
+              <mrow>
+                <mo> ° </mo>
+              </mrow>
+            </msubsup> </math
+          >) and the Gibbs energy of mixing (
+          <math id="e195">
+            <msub>
+              <mrow>
+                <mi> G </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> Mix </mi>
+              </mrow>
+            </msub> </math
+          >),
+        </p>
+
+        <figure id="matheq1">
+          <figcaption class="label">(1)</figcaption>
+          <math id="e197">
+            <msup>
+              <mrow>
+                <mi> G </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> Liq </mi>
+              </mrow> </msup
+            ><mo> = </mo
+            ><munder>
+              <mo> ∑ </mo>
+              <mrow>
+                <mi> i </mi>
+              </mrow> </munder
+            ><mrow>
+              <msub>
+                <mrow>
+                  <mi> x </mi>
+                </mrow>
+                <mrow>
+                  <mi> i </mi>
+                </mrow>
+              </msub>
+              <msubsup>
+                <mrow>
+                  <mi> G </mi>
+                </mrow>
+                <mrow>
+                  <mi> i </mi>
+                </mrow>
+                <mrow>
+                  <mo> ° </mo>
+                </mrow>
+              </msubsup> </mrow
+            ><mo> + </mo
+            ><msub>
+              <mrow>
+                <mi> G </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> Mix </mi>
+              </mrow> </msub
+            ><mi mathvariant="italic"> &#xa0;&#xa0;&#xa0; </mi>
+          </math>
+        </figure>
+
+        <p id="e198">
+          Here, <var id="e199">x<sub>i</sub></var> represents the mole fraction
+          of component <var id="e200">i</var>. The
+          <var id="e201">G<sup>Liq</sup></var> was expressed by associate
+          species model <a id="bibcit17" href="#bibref17">[17]</a>,
+          <a id="bibcit18" href="#bibref18">[18]</a>, which considers not only
+          simple oxides but also the existence of associate species that are
+          thought to be highly stable in the melt. In this case, the
+          <var id="e202">G<sub>Mix</sub></var> is expressed as follows using the
+          enthalpy of mixing (<var id="e203">H<sub>Mix</sub></var
+          >) and the entropy of mixing (<var id="e204">S<sub>Mix</sub></var
+          >):
+        </p>
+        <figure id="matheq2">
+          <figcaption>(2)</figcaption>
+          <math id="e206">
+            <msub>
+              <mrow>
+                <mi> G </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> Mix </mi>
+              </mrow> </msub
+            ><mo> = </mo
+            ><msub>
+              <mrow>
+                <mi> H </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> Mix </mi>
+              </mrow> </msub
+            ><mo> - </mo><mi> T </mi
+            ><msub>
+              <mrow>
+                <mi> S </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> Mix </mi>
+              </mrow> </msub
+            ><mo> = </mo
+            ><munder>
+              <mo> ∑ </mo>
+              <mrow>
+                <mi> i </mi>
+              </mrow> </munder
+            ><mrow>
+              <munder>
+                <mo> ∑ </mo>
+                <mrow>
+                  <mi> j </mi>
+                </mrow>
+              </munder>
+              <mrow>
+                <msub>
+                  <mrow>
+                    <mi> x </mi>
+                  </mrow>
+                  <mrow>
+                    <mi> i </mi>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mrow>
+                    <mi> x </mi>
+                  </mrow>
+                  <mrow>
+                    <mi> j </mi>
+                  </mrow>
+                </msub>
+              </mrow> </mrow
+            ><munder>
+              <mo> ∑ </mo>
+              <mrow>
+                <mi> k </mi>
+              </mrow> </munder
+            ><mrow>
+              <msubsup>
+                <mrow>
+                  <mi> L </mi>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="italic"> ij </mi>
+                </mrow>
+                <mrow>
+                  <mi> k </mi>
+                </mrow>
+              </msubsup>
+              <msup>
+                <mrow>
+                  <mfenced separators="|">
+                    <mrow>
+                      <msub>
+                        <mrow>
+                          <mi> x </mi>
+                        </mrow>
+                        <mrow>
+                          <mi> i </mi>
+                        </mrow>
+                      </msub>
+                      <mo> - </mo>
+                      <msub>
+                        <mrow>
+                          <mi> x </mi>
+                        </mrow>
+                        <mrow>
+                          <mi> j </mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                  </mfenced>
+                </mrow>
+                <mrow>
+                  <mi> k </mi>
+                </mrow>
+              </msup> </mrow
+            ><mo> + </mo><mi mathvariant="italic"> RT </mi
+            ><munder>
+              <mo> ∑ </mo>
+              <mrow>
+                <mi> i </mi>
+              </mrow> </munder
+            ><mrow>
+              <msub>
+                <mrow>
+                  <mi> x </mi>
+                </mrow>
+                <mrow>
+                  <mi> i </mi>
+                </mrow>
+              </msub>
+              <mi mathvariant="italic"> ln </mi>
+              <msub>
+                <mrow>
+                  <mi> x </mi>
+                </mrow>
+                <mrow>
+                  <mi> i </mi>
+                </mrow>
+              </msub> </mrow
+            ><mi mathvariant="italic"> &#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </mi>
+          </math>
+        </figure>
+        <p id="e207">
+          Here,
+          <math id="e208">
+            <msubsup>
+              <mrow>
+                <mi> L </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> ij </mi>
+              </mrow>
+              <mrow>
+                <mi> k </mi>
+              </mrow>
+            </msubsup>
+          </math>
+          is an interaction parameter for approximating the
+          <math id="e209">
+            <msub>
+              <mrow>
+                <mi> H </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> Mix </mi>
+              </mrow>
+            </msub>
+          </math>
+          using Redlich-Kister model
+          <a id="bibcit18_1" href="#bibref18">[18]</a>, and
+          <math id="e210">
+            <mi> R </mi>
+          </math>
+          is the gas constant.
+        </p>
+        <p id="e211">
+          Liquid-liquid phase separation occurs when two local minima are formed
+          in the Gibbs energy of liquid phase due to the competition between the
+          negative
+          <math id="e212">
+            <mo> - </mo><mi> T </mi
+            ><msub>
+              <mrow>
+                <mi> S </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> Mix </mi>
+              </mrow>
+            </msub>
+          </math>
+          term and the positive
+          <math id="e213">
+            <msub>
+              <mrow>
+                <mi> H </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> Mix </mi>
+              </mrow>
+            </msub> </math
+          >. The phase separation of borosilicate melt and molybdate melt is due
+          to the fact that Mo<sup id="e214">6+</sup> ions with a large
+          coordination number have difficulty entering the network structure of
+          silicate melt.
+        </p>
+        <p id="e215">
+          In this study, the
+          <math id="e216">
+            <msub>
+              <mrow>
+                <mi> H </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> Mix </mi>
+              </mrow>
+            </msub>
+          </math>
+          of liquid phase of SBAZCNLM system was expressed by using a total of
+          293
+          <math id="e217">
+            <msubsup>
+              <mrow>
+                <mi> L </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> ij </mi>
+              </mrow>
+              <mrow>
+                <mi> k </mi>
+              </mrow>
+            </msubsup> </math
+          >. They can be roughly classified into four categories.
+        </p>
+        <p id="e220">
+          <math id="e221">
+            <msub>
+              <mrow>
+                <mi> G </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> Mix </mi>
+              </mrow> </msub
+            ><mo> = </mo
+            ><msub>
+              <mrow>
+                <mi> H </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> Mix </mi>
+              </mrow> </msub
+            ><mo> - </mo><mi> T </mi
+            ><msub>
+              <mrow>
+                <mi> S </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> Mix </mi>
+              </mrow>
+            </msub>
+          </math>
+        </p>
+        <p id="e222">
+          <math id="e223">
+            <mo> = </mo
+            ><munder>
+              <mo> ∑ </mo>
+              <mrow>
+                <mi> i </mi>
+              </mrow> </munder
+            ><mrow>
+              <munder>
+                <mo> ∑ </mo>
+                <mrow>
+                  <mi> j </mi>
+                </mrow>
+              </munder>
+              <mrow>
+                <msub>
+                  <mrow>
+                    <mi> x </mi>
+                  </mrow>
+                  <mrow>
+                    <mi> i </mi>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mrow>
+                    <mi> x </mi>
+                  </mrow>
+                  <mrow>
+                    <mi> j </mi>
+                  </mrow>
+                </msub>
+              </mrow> </mrow
+            ><munder>
+              <mo> ∑ </mo>
+              <mrow>
+                <mi> k </mi>
+              </mrow> </munder
+            ><mrow>
+              <msubsup>
+                <mrow>
+                  <mi> L </mi>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="italic"> ij </mi>
+                </mrow>
+                <mrow>
+                  <mi> k </mi>
+                </mrow>
+              </msubsup>
+              <msup>
+                <mrow>
+                  <mfenced separators="|">
+                    <mrow>
+                      <msub>
+                        <mrow>
+                          <mi> x </mi>
+                        </mrow>
+                        <mrow>
+                          <mi> i </mi>
+                        </mrow>
+                      </msub>
+                      <mo> - </mo>
+                      <msub>
+                        <mrow>
+                          <mi> x </mi>
+                        </mrow>
+                        <mrow>
+                          <mi> j </mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                  </mfenced>
+                </mrow>
+                <mrow>
+                  <mi> k </mi>
+                </mrow>
+              </msup>
+            </mrow>
+          </math>
+        </p>
+        <p id="e224">
+          <math id="e225">
+            <mo> + </mo>
+          </math>
+        </p>
+        <p id="e226">
+          <math id="e227">
+            <mi mathvariant="italic"> RT </mi
+            ><munder>
+              <mo> ∑ </mo>
+              <mrow>
+                <mi> i </mi>
+              </mrow> </munder
+            ><mrow>
+              <msub>
+                <mrow>
+                  <mi> x </mi>
+                </mrow>
+                <mrow>
+                  <mi> i </mi>
+                </mrow>
+              </msub>
+              <mi mathvariant="italic"> ln </mi>
+              <msub>
+                <mrow>
+                  <mi> x </mi>
+                </mrow>
+                <mrow>
+                  <mi> i </mi>
+                </mrow>
+              </msub> </mrow
+            ><mi mathvariant="italic"> &#xa0;&#xa0;&#xa0; </mi>
+          </math>
+        </p>
+        <p id="e229">
+          First, the
+          <math id="e230">
+            <msubsup>
+              <mrow>
+                <mi> L </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> ij </mi>
+              </mrow>
+              <mrow>
+                <mi> k </mi>
+              </mrow>
+            </msubsup>
+          </math>
+          values for calculating the
+          <math id="e231">
+            <msub>
+              <mrow>
+                <mi> H </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> Mix </mi>
+              </mrow>
+            </msub>
+          </math>
+          of alumino-borosilicate melt (
+          <math id="e232">
+            <msubsup>
+              <mrow>
+                <mi> L </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> ij </mi>
+              </mrow>
+              <mrow>
+                <mi> k </mi>
+              </mrow> </msubsup
+            ><mfenced separators="|">
+              <mrow>
+                <mi mathvariant="italic"> SBAZCNL </mi>
+              </mrow> </mfenced
+            ><mo> , </mo><mi> &#xa0; </mi> </math
+          >n (number of parameters) = 201).&#xa0;&#xa0;This is a molybdenum-free
+          composition, and we used thermodynamic database (AKITBASE) developed
+          by GTT Technologies.
+        </p>
+        <p id="e233">
+          Second, the
+          <math id="e234">
+            <msubsup>
+              <mrow>
+                <mi> L </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> ij </mi>
+              </mrow>
+              <mrow>
+                <mi> k </mi>
+              </mrow>
+            </msubsup>
+          </math>
+          values for calculating the
+          <math id="e235">
+            <msub>
+              <mrow>
+                <mi> H </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> Mix </mi>
+              </mrow>
+            </msub>
+          </math>
+          of SiO<sub id="e236">2</sub>-free molybdenum-bearing melt (
+          <math id="e237">
+            <msubsup>
+              <mrow>
+                <mi> L </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> ij </mi>
+              </mrow>
+              <mrow>
+                <mi> k </mi>
+              </mrow> </msubsup
+            ><mo> ( </mo><mi mathvariant="italic"> BZNCLM </mi
+            ><mo> ) </mo> </math
+          >, n=31) Here, Na<sub id="e238">2</sub>MoO<sub id="e239">4</sub>,
+          CaMoO<sub id="e240">4</sub>, ZnMoO<sub id="e241">4</sub>, and Li<sub
+            id="e242"
+            >2</sub
+          >MoO<sub id="e243">4</sub> were assumed as associate species. Based on
+          the phase equilibrium diagrams of B<sub id="e244">2</sub>O<sub
+            id="e245"
+            >3</sub
+          >-ZnO-CaO-Na<sub id="e246">2</sub>O-Li<sub id="e247">2</sub>O-MoO<sub
+            id="e248"
+            >3</sub
+          >
+          system <a id="bibcit19" href="#bibref19">[19]</a>, the
+          <math id="e249">
+            <msubsup>
+              <mrow>
+                <mi> L </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> ij </mi>
+              </mrow>
+              <mrow>
+                <mi> k </mi>
+              </mrow>
+            </msubsup>
+          </math>
+          of the melt phase was optimized by CALPHAD methodology. Then,
+          calorimetric data was used to calculate the
+          <math id="e250">
+            <msubsup>
+              <mrow>
+                <mi> G </mi>
+              </mrow>
+              <mrow>
+                <mi> i </mi>
+              </mrow>
+              <mrow>
+                <mo> ° </mo>
+              </mrow>
+            </msubsup>
+          </math>
+          of molybdenum associate species ([5] for MoO<sub id="e251">3</sub> and
+          Na<sub id="e252">2</sub>MoO<sub id="e253">4</sub>,
+          <a id="bibcit23" href="#bibref23">[23]</a>,
+          <a id="bibcit24" href="#bibref24">[24]</a> for CaMoO<sub id="e254"
+            >4</sub
+          >, <a id="bibcit25" href="#bibref25">[25]</a>,
+          <a id="bibcit26" href="#bibref26">[26]</a> for Li<sub id="e255">2</sub
+          >MoO<sub id="e256">4</sub>, [27] for ZnMoO<sub id="e257">4</sub>).
+          Comparisons of the experimental and calculated phase compositions are
+          shown in Fig. 1.
+        </p>
+        <figure id="figure1_float">
+          <img
+            id="figure1_image"
+            src="./media/Figure%201_V2-converted.jpg"
+            data-original-filename="Figure 1_V2"
+            alt="Figure 1_V2"
+          >
+          <figcaption id="figure1_caption">
+            <p id="e1112">
+              <span id="figure1_label">Figure 1.</span> Binary phase diagrams
+              for MoO <sub id="e409">3</sub>-bearing systems calculated using
+              thermodynamic database developed in this study and FACTSage [28].
+              Solid circles represent experimental phase boundary [24].
+            </p>
+          </figcaption>
+        </figure>
+        <p id="e258">
+          <span
+            id="e259"
+            data-type="ole_object"
+            data-ole-clsid="0002ce03-0000-0000-c000-000000000046"
+            data-ole-progid="Equation.DSMT4"
+          ></span
+          >&#xa0;<span id="e260">&#xa0;or</span>&#xa0;&#xa0;&#xa0;<span
+            id="e261"
+            data-type="ole_object"
+            data-ole-clsid="0002ce03-0000-0000-c000-000000000046"
+            data-ole-progid="Equation.DSMT4"
+          ></span
+          >;
+          <math id="e262">
+            <msub>
+              <mrow>
+                <mi> ε </mi>
+              </mrow>
+              <mrow>
+                <msub>
+                  <mrow>
+                    <mi> F </mi>
+                  </mrow>
+                  <mrow>
+                    <mi> z </mi>
+                  </mrow>
+                </msub>
+                <mo> - </mo>
+                <msub>
+                  <mrow>
+                    <mi> b </mi>
+                  </mrow>
+                  <mrow>
+                    <mn> 1 </mn>
+                  </mrow>
+                </msub>
+              </mrow> </msub
+            ><mo> = </mo><mn> 0 </mn>
+          </math>
+          and
+          <math id="e263">
+            <msub>
+              <mrow>
+                <mi> ε </mi>
+              </mrow>
+              <mrow>
+                <msub>
+                  <mrow>
+                    <mi> F </mi>
+                  </mrow>
+                  <mrow>
+                    <mi> z </mi>
+                  </mrow>
+                </msub>
+                <mo> - </mo>
+                <msub>
+                  <mrow>
+                    <mi> b </mi>
+                  </mrow>
+                  <mrow>
+                    <mn> 2 </mn>
+                  </mrow>
+                </msub>
+              </mrow> </msub
+            ><mo> = </mo><mn> 6 </mn
+            ><msub>
+              <mrow>
+                <mi> F </mi>
+              </mrow>
+              <mrow>
+                <mi> z </mi>
+              </mrow> </msub
+            ><msub>
+              <mrow>
+                <mi> L </mi>
+              </mrow>
+              <mrow>
+                <mn> 2 </mn>
+              </mrow> </msub
+            ><mi> b </mi><mo> / </mo><mi> E </mi><mi> h </mi><mo> ( </mo
+            ><msup>
+              <mrow>
+                <mi> b </mi>
+              </mrow>
+              <mrow>
+                <mn> 3 </mn>
+              </mrow> </msup
+            ><mo> - </mo
+            ><msup>
+              <mrow>
+                <mi> d </mi>
+              </mrow>
+              <mrow>
+                <mn> 3 </mn>
+              </mrow> </msup
+            ><mo> ) </mo>
+          </math>
+        </p>
+        <p id="e264">
+          Third is SiO<sub id="e265">2</sub>-Na<sub id="e266">2</sub>O-MoO<sub
+            id="e267"
+            >3</sub
+          >
+          system. The
+          <math id="e268">
+            <msubsup>
+              <mrow>
+                <mi> L </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> ij </mi>
+              </mrow>
+              <mrow>
+                <mi> k </mi>
+              </mrow>
+            </msubsup>
+          </math>
+          values optimized by [5] (
+          <math id="e269">
+            <msubsup>
+              <mrow>
+                <mi> L </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> ij </mi>
+              </mrow>
+              <mrow>
+                <mi> k </mi>
+              </mrow> </msubsup
+            ><mfenced separators="|">
+              <mrow>
+                <mi mathvariant="italic"> SNM </mi>
+              </mrow>
+            </mfenced> </math
+          >, n=10) was used.
+        </p>
+        <p id="e270">
+          Remaining are interaction parameters between alumino-borosilicate
+          species and molybdenum associate species in the SiO<sub id="e271"
+            >2</sub
+          >-B<sub id="e272">2</sub>O<sub id="e273">3</sub>-Al<sub id="e274"
+            >2</sub
+          >O<sub id="e275">3</sub>-ZnO-CaO-Na<sub id="e276">2</sub>O-Li<sub
+            id="e277"
+            >2</sub
+          >O-MoO<sub id="e278">3</sub> system (
+          <math id="e279">
+            <msubsup>
+              <mrow>
+                <mi> L </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> ij </mi>
+              </mrow>
+              <mrow>
+                <mi> k </mi>
+              </mrow> </msubsup
+            ><mo> ( </mo><mi mathvariant="italic"> SBAZCNLM </mi
+            ><mo> ) </mo> </math
+          >, n=51). We assumed all parameters are independent of temperature.
+          Once these parameters are set, the chemical composition of coexisting
+          silicate melt and molybdate melt can be calculated from bulk
+          composition and temperature.&#xa0;&#xa0;A set of the
+          <math id="e280">
+            <msubsup>
+              <mrow>
+                <mi> L </mi>
+              </mrow>
+              <mrow>
+                <mi mathvariant="italic"> ij </mi>
+              </mrow>
+              <mrow>
+                <mi> k </mi>
+              </mrow> </msubsup
+            ><mfenced separators="|">
+              <mrow>
+                <mi mathvariant="italic"> SBAZCNLM </mi>
+              </mrow>
+            </mfenced>
+          </math>
+          were optimized so that sum of the residuals between calculated and
+          experimental compositions (Fig. 2) is minimized by using FACTSage
+          [15].
+        </p>
+        <figure id="figure2_float">
+          <figcaption id="figure2_caption">
+            <p id="e281">
+              <span id="figure2_label">Figure 2</span> represents comparisons of
+              the amount of oxide components of coexisting silicate melt and
+              molybdate melt by thermodynamic calculation using optimized
+              <math id="e284">
+                <msubsup>
+                  <mrow>
+                    <mi> L </mi>
+                  </mrow>
+                  <mrow>
+                    <mi mathvariant="italic"> ij </mi>
+                  </mrow>
+                  <mrow>
+                    <mi> k </mi>
+                  </mrow> </msubsup
+                ><mfenced separators="|">
+                  <mrow>
+                    <mi mathvariant="italic"> SBAZCNLM </mi>
+                  </mrow>
+                </mfenced>
+              </math>
+              and their experimental values. The 1σ errors for each component
+              are also given in the Fig. 2. Calculated example for the
+              experimental data that was not used for optimization is shown in
+              Table 1. The MoO <sub id="e285">3</sub> solubility in silicate
+              melt (
+              <math id="e286">
+                <msubsup>
+                  <mrow>
+                    <mi> X </mi>
+                  </mrow>
+                  <mrow>
+                    <mi mathvariant="italic"> MoO </mi>
+                    <mn> 3 </mn>
+                  </mrow>
+                  <mrow>
+                    <mi mathvariant="italic"> SL </mi>
+                  </mrow>
+                </msubsup>
+              </math>
+              ) observed in experiments was in the range of 4-28 wt%. The 1σ
+              error between the calculated and experimental
+              <math id="e287">
+                <msubsup>
+                  <mrow>
+                    <mi> X </mi>
+                  </mrow>
+                  <mrow>
+                    <mi mathvariant="italic"> MoO </mi>
+                    <mn> 3 </mn>
+                  </mrow>
+                  <mrow>
+                    <mi mathvariant="italic"> SL </mi>
+                  </mrow>
+                </msubsup>
+              </math>
+              was ±2.2wt%.
+            </p>
+          </figcaption>
+          <img
+            id="figure2_image"
+            src="./media/Figure%202_V2-converted.jpg"
+            data-original-filename="Figure 2_V2"
+            alt="Figure 2_V2"
+          >
+        </figure>
+      </section>
+      <section id="section3_2">
+        <h3 id="heading3_2"><span id="s32h1s1">3-2. </span>Results</h3>
+        <p id="e288">
+          Thermodynamic calculations were able to largely reproduce the element
+          partitioning by phase separation observed in experiments, but there
+          was a tendency to slightly overestimate Na<sub id="e289">2</sub>O in
+          silicate melt and CaO and Li<sub id="e290">2</sub>O in molybdate melt.
+          These discrepancies may be seemingly resolved by considering the
+          temperature dependence of the parameters or higher order parameters,
+          but in the absence of thermochemical evidence to support them, they
+          were not considered further in this study.
+        </p>
+      </section>
+    </section>
+    <section id="section4">
+      <h2 id="heading4">
+        <span id="s4h1s1">4. </span>Application of thermodynamic database
+      </h2>
+      <p id="e293">
+        Using a thermodynamic database, we performed several calculations on the
+        dissolution behavior of MoO<sub id="e294">3</sub> in Japanese simulated
+        HLW glasses. <a id="lnk12" href="#figure3_float">Figure 3.</a> shows the
+        composition dependence of the
+        <math id="e295">
+          <msubsup>
+            <mrow>
+              <mi> X </mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="italic"> MoO </mi>
+              <mn> 3 </mn>
+            </mrow>
+            <mrow>
+              <mi mathvariant="italic"> SL </mi>
+            </mrow>
+          </msubsup>
+        </math>
+        at 1200ºC. The MoO<sub id="e296">3</sub> solubility of the current glass
+        bead was calculated to be 10.9wt%. Thermodynamic calculation shows that
+        when the amount of Na<sub id="e297">2</sub>O+Li<sub id="e298">2</sub
+        >O+CaO+ZnO is less than 20mol%, the
+        <math id="e299">
+          <msubsup>
+            <mrow>
+              <mi> X </mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="italic"> MoO </mi>
+              <mn> 3 </mn>
+            </mrow>
+            <mrow>
+              <mi mathvariant="italic"> SL </mi>
+            </mrow>
+          </msubsup>
+        </math>
+        increases significantly with increasing (B<sub id="e301">2</sub>O<sub
+          id="e302"
+          >3 </sub
+        ><span id="e300"><sub id="e303">-</sub></span
+        ><sub id="e304"> </sub>Al<sub id="e305">2</sub>O<sub id="e306">3</sub
+        >)/SiO<sub id="e307">2</sub>.
+      </p>
+      <p id="e308">
+        <a id="lnk13" href="#figure3_float">Figure 3.</a> shows the liquidus
+        phase diagram for the current glass bead composition and its
+        surroundings. It is predicted that phase separation becomes more likely
+        to occur as the Na<sub id="e309">2</sub>O/CaO ratio decreases and the
+        SiO<sub id="e310">2</sub>/B<sub id="e311">2</sub>O<sub id="e312">3</sub>
+        ratio increases and is reduced with decreasing MoO<sub id="e313">3</sub>
+        content.
+      </p>
+      <figure id="figure3_float">
+        <figcaption id="figure3_caption">
+          <p id="fig3cap1">
+            <span id="figure3_label">Figure 3.</span>
+            Application example of thermodynamic database,
+          </p>
+          <ol id="fig3cap1ol1" style="list-style-type: none">
+            <li value="1">
+              <span>(a) </span>MoO<sub id="e416">3</sub> solubility (wt%) at
+              1200ºC in pseudo ternary system SiO<sub id="e417">2</sub> –
+              0.806B<sub id="e418">2</sub>O<sub id="e419">3</sub>+0.194Al<sub
+                id="e420"
+                >2</sub
+              >O<sub id="e421">3</sub> – Na<sub id="e422">2</sub>O+Li<sub
+                id="e423"
+                >2</sub
+              >O+CaO+ZnO,
+            </li>
+            <li value="2">
+              <span>(b) </span>Liquidus phase diagram of HLW glass as function
+              of CaO/Na<sub id="e424">2</sub>O and SiO<sub id="e425">2</sub
+              >/B<sub id="e426">2</sub>O<sub id="e427">3</sub> ratios when
+              MoO<sub id="e428">3</sub> content is 4.0wt%.
+            </li>
+          </ol>
+          <p>
+            Dash line is a phase boundary between molybdate liquid and quartz at
+            3.0wt% MoO<sub id="e429">3</sub>. Open circles represent current
+            glass composition.
+          </p>
+        </figcaption>
+        <img
+          id="figure3_image"
+          src="./media/Figure%203_V2-converted.jpg"
+          data-original-filename="Figure 3_V2"
+          alt="Figure 3_V2"
+        >
+      </figure>
+    </section>
+    <section id="section5">
+      <h2 id="heading5"><span id="s5h1s1">5. </span>Summary</h2>
+      <p id="e316">
+        Phase equilibrium experiments were performed in the SiO<sub id="e317"
+          >2</sub
+        >-B<sub id="e318">2</sub>O<sub id="e319">3</sub>-Al<sub id="e320">2</sub
+        >O<sub id="e321">3</sub>-ZnO-CaO-Na<sub id="e322">2</sub>O-Li<sub
+          id="e323"
+          >2</sub
+        >O-MoO<sub id="e324">3</sub> system to clarify the compositional
+        relationship between coexisting silicate melt and molybdate melt. Using
+        experimental data and thermodynamic data on borosilicate melts, the
+        thermodynamic database to calculate dissolution behavior of MoO<sub
+          id="e325"
+          >3</sub
+        >
+        was constructed through CALPHAD analysis.&#xa0;&#xa0;In high-level waste
+        glass compositions, the higher the CaO/Na<sub id="e326">2</sub>O ratio
+        and the B<sub id="e327">2</sub>O<sub id="e328">3</sub>/(SiO<sub
+          id="e329"
+          >2</sub
+        >+Al<sub id="e330">2</sub>O<sub id="e331">3</sub>) ratio, the higher the
+        MoO<sub id="e332">3</sub> solubility and suppress phase separation. This
+        behavior can be reproduced by using thermodynamic database.
+      </p>
+    </section>
+    <section id="section_ack">
+      <h2 id="heading_ack">Acknowledgments</h2>
+      <p id="e335">
+        This work was carried out as a part of the basic research programs of
+        vitrification technology for waste volume reduction (JPJ010599)
+        supported by the Ministry of Economy, Trade and Industry, Japan.
+      </p>
+    </section>
+    <section id="references">
+      <h2 id="references_head">References</h2>
+      <ol id="reflist">
+        <li id="bibref1" value="1">
+          <span id="bibreflb1">[1] </span>L. Lutze, Silicate Glasses, in: R.C.E.
+          W. Lutze (Ed.), Radioactive Waste Forms for the Future, North Holland,
+          Amsterdam, 1988, pp. 335-392.
+        </li>
+        <li id="bibref2" value="2">
+          <span id="bibreflb2">[2] </span
+          ><a id="e341" href="https://doi.org/10.1557/mrs.2017.8"
+            >J.S. McCloy, A. Goel, MRS Bull. 42 (2017) 233-240.</a
+          >
+        </li>
+        <li id="bibref3" value="3">
+          <span id="bibreflb3">[3] </span>M. Stemprok, J. Voldan,
+          Ceramics-Silikaty 18 (1974) 19-30.
+        </li>
+        <li id="bibref4" value="4">
+          <span id="bibreflb4">[4] </span
+          ><a id="e345" href="https://doi.org/10.1016/j.jnoncrysol.2022.121997"
+            >S. Schuller, P. Benigni, S. Gossé, J. Non-Cryst. Solids 60 (2023)
+            121997.</a
+          >
+        </li>
+        <li id="bibref5" value="5">
+          <span id="bibreflb5">[5] </span
+          ><a id="e348" href="https://doi.org/10.1007/s10973-024-13659-7"
+            >T. Sugawara, T. Ohira, R. Kondo et al., J. Therm. Anal. Calorim.
+            (2024) https://doi.org/10.1007/s10973-024-13659-7</a
+          >
+        </li>
+        <li id="bibref6" value="6">
+          <span id="bibreflb6">[6] </span>B.F. Dunnett, N.R. Gribble, R. Short,
+          et al., Glass Technol. Eu. J. Glass Sci. Technol. 53 (2012) 166-171.
+        </li>
+        <li id="bibref7" value="7">
+          <span id="bibreflb7">[7] </span
+          ><a id="e353" href="https://doi.org/10.1016/j.jnoncrysol.2003.09.055"
+            >N. Henry, P. Deniard, S. Jobic, et al., J. Non-Cryst. Solids 333
+            (2004) 199-205.</a
+          ><span id="e352"> </span>
+        </li>
+        <li id="bibref8" value="8">
+          <span id="bibreflb8">[8] </span
+          ><a id="e357" href="https://doi.org/10.1016/j.jnucmat.2007.11.013"
+            >O. Pinet, J.L. Dussossoy, C. David, et al., J. Nucl. Mat. 377
+            (2008) 307-312.</a
+          ><span id="e356"> </span>
+        </li>
+        <li id="bibref9" value="9">
+          <span id="bibreflb9">[9] </span
+          ><a id="e361" href="https://doi.org/10.1111/j.1551-2916.2006.01467.x"
+            >D. Caurant, O. Majérus, E. Fadel, et al., J. Am. Ceram. Soc. 90
+            (2007) 774-783.</a
+          ><span id="e360"> </span>
+        </li>
+        <li id="bibref10" value="10">
+          <span id="bibreflb10">[10] </span
+          ><a id="e365" href="https://doi.org/10.1016/j.jnoncrysol.2011.02.015"
+            >N. Chouard, D. Caurant, O. Majérus, et al., J. Non-Cryst. Solids
+            357 (2011) 2752-2762.</a
+          ><span id="e364"> </span>
+        </li>
+        <li id="bibref11" value="11">
+          <span id="bibreflb11">[11] </span
+          ><a id="e369" href="https://doi.org/10.1007/s10853-014-8581-9"
+            >N. Chouard, D. Caurant, O. Majérus, et al., J. Mat. Sci. 50 (2015)
+            219-241.</a
+          ><span id="e368"> </span>
+        </li>
+        <li id="bibref12" value="12">
+          <span id="bibreflb12">[12] </span
+          ><a id="e372" href="https://doi.org/10.3390/inorganics11070311"
+            >M. Nagata, T. Sugawara, Inorganics 11 (2023) 311.</a
+          >
+        </li>
+        <li id="bibref13" value="13">
+          <span id="bibreflb13">[13] </span
+          ><a id="e375" href="https://doi.org/10.15826/chimtech.2018.5.1.02"
+            >S.A. Decterov, Chimica Techno Acta 5 (2018) 16-48.</a
+          >
+        </li>
+        <li id="bibref14" value="14">
+          <span id="bibreflb14">[14] </span>Thermo-Calc Software, TCS Metal
+          Oxide Solutions Database (TCOX11) Technical Information, 2021, pp. 71.
+        </li>
+        <li id="bibref15" value="15">
+          <span id="bibreflb15">[15] </span
+          ><a
+            id="e379"
+            href="https://www.sciencedirect.com/science/article/abs/pii/S0364591608000965"
+            >C.W. Bale, E. Bélisle, P. Chartrand et al., Calphad 33 (2009)
+            295–311.</a
+          >
+        </li>
+        <li id="bibref16" value="16">
+          <span id="bibreflb16">[16] </span
+          ><a id="e382" href="https://doi.org/10.1016/j.mspro.2014.10.011"
+            >S. Gossé, C. Guéneau, S. Bordier, et al., Procedia Mater. Sci. 7
+            (2014) 79-86.</a
+          >
+        </li>
+        <li id="bibref17" value="17">
+          <span id="bibreflb17">[17] </span
+          ><a
+            id="e385"
+            href="https://doi.org/10.1111/j.1151-2916.2002.tb00552.x"
+            >T.M. Besmann, K.E. Spear, J. Am. Ceram. Soc. 85 (2002)
+            2887-2894.</a
+          >
+        </li>
+        <li id="bibref18" value="18">
+          <span id="bibreflb18">[18] </span
+          ><a id="e388" href="https://doi.org/10.1016/j.calphad.2006.03.003"
+            >E. Yazhenskikh, K. Hack, M. Müller, CALPHAD 30 (2006) 270-276.</a
+          >
+        </li>
+        <li id="bibref19" value="19">
+          <span id="bibreflb19">[19] </span>The Phase Equilibria Diagrams PC
+          Database, Version 4.0, American Ceramic Society and NIST (2016).
+        </li>
+        <li id="bibref20" value="20">
+          <span id="bibreflb20">[20] </span
+          ><a id="e392" href="https://doi.org/10.1016/j.tca.2018.09.011"
+            >T. Sugawara, K. Jin, Thermochim. Acta 668 (2018) 185-193.</a
+          >
+        </li>
+        <li id="bibref21" value="21">
+          <span id="bibreflb21">[21] </span
+          ><a id="e395" href="https://doi.org/10.1016/j.jallcom.2015.09.171"
+            >A.E. Musikhin, V.N. Naumov, M.A. Bespyatov, et al., J. Alloys
+            Compd. 655 (2016) 165-171.</a
+          >
+        </li>
+        <li id="bibref22" value="22">
+          <span id="bibreflb22">[22] </span
+          ><a id="e399" href="https://doi.org/10.1016/j.jallcom.2015.03.159"
+            >A.E. Musikhin, V.N. Naumov, M.A. Bespyatov, et al., J. Alloys
+            Compd. 639 (2015) 145-148.</a
+          ><span id="e398"> </span>
+        </li>
+        <li id="bibref23" value="23">
+          <span id="bibreflb23">[23] </span
+          ><a id="e402" href="https://doi.org/10.1016/0925-8388(94)90778-1"
+            >R.P. Tangri, V. Venugopal, D.K. Bose, J. Alloys Compd. 205 (1994)
+            129-133.</a
+          >
+        </li>
+        <li id="bibref24" value="24">
+          <span id="bibreflb24">[24] </span>T. Söhnel, W. Reichelt, H.
+          Oppermann, Z. anorg. allg. Chem. 623 (1997) 1190-1200.
+        </li>
+      </ol>
+    </section>
+  </body>
+</html>

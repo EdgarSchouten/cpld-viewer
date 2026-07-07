@@ -1,0 +1,86 @@
+{
+  "@context": [
+    {
+      "schema": "https://schema.org/",
+      "ex": "https://example.org/news/2024/linked-data-summit#",
+      "doc": "https://example.org/news/2024/linked-data-summit/doc#",
+      "oa": "http://www.w3.org/ns/oa#",
+      "nas": "https://data.elsevier.com/publishing/schema/nas/"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://example.org/news/2024/linked-data-summit",
+      "@type": "schema:NewsArticle",
+      "schema:headline": "Linked Data Summit Draws Record Attendance",
+      "schema:datePublished": "2024-03-12",
+      "schema:author": {
+        "@id": "ex:journalist-007"
+      },
+      "schema:publisher": {
+        "@id": "ex:organization-234"
+      },
+      "schema:about": [
+        {
+          "@id": "ex:event-456"
+        }
+      ]
+    },
+    {
+      "@id": "ex:journalist-007",
+      "@type": "schema:Person",
+      "schema:name": "Maria Kovacs",
+      "schema:worksFor": {
+        "@id": "ex:outlet-011"
+      }
+    },
+    {
+      "@id": "ex:outlet-011",
+      "@type": "schema:NewsMediaOrganization",
+      "schema:name": "World Tech News"
+    },
+    {
+      "@id": "ex:location-123",
+      "@type": "schema:City",
+      "schema:name": "Geneva",
+      "schema:containedInPlace": {
+        "@id": "https://www.wikidata.org/entity/Q39"
+      }
+    },
+    {
+      "@id": "ex:event-456",
+      "@type": "schema:Event",
+      "schema:name": "Linked Data Summit",
+      "schema:location": {
+        "@id": "ex:location-123"
+      },
+      "schema:organizer": {
+        "@id": "ex:organizer-234"
+      }
+    },
+    {
+      "@id": "ex:organizer-234",
+      "@type": "schema:Organization",
+      "schema:name": "World Wide Web Consortium",
+      "schema:url": "https://www.w3.org/"
+    },
+    {
+      "@id": "doc:contributor",
+      "schema:mentions": {
+        "@id": "ex:some-person-001"
+      }
+    },
+    {
+      "@id": "ex:some-person-001",
+      "@type": "schema:Person",
+      "schema:name": "Lena Park"
+    },
+    {
+      "@id": "doc:e3f7d101",
+      "@type": "nas:Byline",
+      "schema:mentions": {
+        "@id": "ex:journalist-007"
+      }
+    }
+  ]
+}

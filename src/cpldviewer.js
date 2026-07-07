@@ -220,7 +220,7 @@ function prepareLED(datablockJSON) {
   
     loadPromises.push(loadJSONLD(jsonArray));
   
-    Promise.all(loadPromises).then((values) => {	// n.b. only a success handler
+    Promise.all(loadPromises).then((values) => {
       console.log("Processing annotations");
       // Go over any annotations that have an XPathSelector with a TextRangeSelector in them.
       let hasTarget = $rdf.sym(OA_HAS_TARGET);
@@ -349,10 +349,13 @@ function prepareLED(datablockJSON) {
     
       // Show number of statements loaded (promises may update this further later)
       $("#cpld-statement-count").text("#" + store.length);
-  
+
+      resolve();
+    }).catch((err) => {
+      prepareLayout();
       resolve();
     });
-  
+
 
   });
 }
@@ -394,16 +397,32 @@ function setRange(el, fragmentId, start, end, annotationURI) {
     var foundStart = false;
     var charCount = 0, endCharCount;
 
+    // oa:TextPositionSelector positions are counted from the first non-whitespace
+    // character of the element, so skip any leading whitespace text nodes.
+    var leadingWS = 0;
+    for (var ti = 0; ti < textNodes.length; ti++) {
+      var nodeText = textNodes[ti].nodeValue;
+      var nonWSIdx = nodeText.search(/\S/);
+      if (nonWSIdx === -1) {
+        leadingWS += nodeText.length;
+      } else {
+        leadingWS += nonWSIdx;
+        break;
+      }
+    }
+    var adjStart = Number(start) + leadingWS;
+    var adjEnd   = Number(end)   + leadingWS;
+
     for (var i = 0, textNode; textNode = textNodes[i++];) {
       endCharCount = charCount + textNode.length;
-      if (!foundStart && start >= charCount
-        && (start < endCharCount ||
-          (start == endCharCount && i <= textNodes.length))) {
-        range.setStart(textNode, start - charCount);
+      if (!foundStart && adjStart >= charCount
+        && (adjStart < endCharCount ||
+          (adjStart == endCharCount && i <= textNodes.length))) {
+        range.setStart(textNode, adjStart - charCount);
         foundStart = true;
       }
-      if (foundStart && end <= endCharCount) {
-        range.setEnd(textNode, end - charCount);
+      if (foundStart && adjEnd <= endCharCount) {
+        range.setEnd(textNode, adjEnd - charCount);
         break;
       }
       charCount = endCharCount;
@@ -613,6 +632,9 @@ function loadJSONLD(json, rdfStore = store) {
       // First convert to NQuads, then parse with rdflib.js as the latter cannot parse a JSON-LD document that is an Array.
       jsonld.toRDF(json, {format: 'application/n-quads'}).then( data => {
         loadQuads(data, rdfStore, resolve, reject);
+      }).catch(err => {
+        postMessage(`Failed to convert JSON-LD to RDF triples. The @context may be unreachable.<br/><pre>${err && err.message ? err.message : err}</pre>`, false, 'error', false);
+        reject(err);
       });
     } catch (err) {
       console.log("Failed to convert JSON-LD to RDF!");
