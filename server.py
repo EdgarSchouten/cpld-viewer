@@ -94,14 +94,19 @@ def playground():
 
 @app.route("/playground/examples/<path:filename>")
 def playground_example_file(filename):
-    if not (filename.endswith(".html") or filename.endswith(".jsonld")):
+    if not (filename.endswith(".html") or filename.endswith(".jsonld") or filename.endswith(".css")):
         return make_response("Forbidden", 403)
     path = (ROOT / "playground" / "examples" / filename).resolve()
     if not str(path).startswith(str(ROOT / "playground" / "examples")):
         return make_response("Forbidden", 403)
     if not path.exists():
         return make_response("Not found", 404)
-    ct = "text/html; charset=utf-8" if filename.endswith(".html") else "application/ld+json"
+    if filename.endswith(".html"):
+        ct = "text/html; charset=utf-8"
+    elif filename.endswith(".css"):
+        ct = "text/css; charset=utf-8"
+    else:
+        ct = "application/ld+json"
     return make_response(path.read_text(encoding="utf-8"), 200, {"Content-Type": ct})
 
 

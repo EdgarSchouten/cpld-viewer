@@ -362,14 +362,14 @@
     <span class="iri-label">Document IRI:</span>
     <input id="document-iri" type="text" class="form-control form-control-sm"
            value="https://example.org/document" spellcheck="false">
-    <button id="render-btn" class="btn btn-sm btn-render">Render</button>
+    <button id="render-btn" type="button" class="btn btn-sm btn-render">Render</button>
     <div class="form-check form-switch mb-0">
       <input class="form-check-input" type="checkbox" id="auto-render" checked>
       <label class="form-check-label" for="auto-render">Auto</label>
     </div>
     <div class="ms-auto d-flex gap-2">
-      <button id="open-load-dialog-btn" class="btn btn-sm btn-outline-secondary btn-tool">Load&#8202;&#9660;</button>
-      <button id="copy-btn"             class="btn btn-sm btn-outline-secondary btn-tool">Copy HTML</button>
+      <button id="open-load-dialog-btn" type="button" class="btn btn-sm btn-outline-secondary btn-tool">Load&#8202;&#9660;</button>
+      <button id="copy-btn" type="button" class="btn btn-sm btn-outline-secondary btn-tool">Copy HTML</button>
     </div>
   </div>
 
@@ -386,13 +386,17 @@
           <li class="nav-item">
             <a class="nav-link" href="#" id="tab-jsonld">JSON-LD</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="tab-css">CSS</a>
+          </li>
         </ul>
         <span id="jsonld-indicator" class="badge rounded-pill ms-1" style="display:none;font-size:.65rem;background:#FA6900">!</span>
       </div>
       <div id="error-banner"></div>
       <div id="editor-container">
-        <div id="html-wrapper" class="editor-wrapper"></div>
+        <div id="html-wrapper"   class="editor-wrapper"></div>
         <div id="jsonld-wrapper" class="editor-wrapper" style="display:none"></div>
+        <div id="css-wrapper"    class="editor-wrapper" style="display:none"></div>
       </div>
       <div id="status-bar">
         <span id="status-text" class="status-ok">Ready</span>
@@ -411,7 +415,7 @@
           <li class="nav-item"><a class="nav-link"        href="#" id="tab-graph">Graph</a></li>
         </ul>
       </div>
-      <iframe id="preview-iframe" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+      <iframe id="preview-iframe" title="Preview" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
       <div id="graph-container"></div>
     </div>
 
@@ -424,12 +428,12 @@
 <dialog id="load-dialog">
   <div class="dialog-header">
     <h5>&#9674; Load Document</h5>
-    <button class="dialog-close" id="close-load-dialog" title="Close">&times;</button>
+    <button type="button" class="dialog-close" id="close-load-dialog" title="Close">&times;</button>
   </div>
 
   <div class="dialog-tabs">
-    <button class="dialog-tab active" data-pane="examples">Examples</button>
-    <button class="dialog-tab"        data-pane="file">From File</button>
+    <button type="button" class="dialog-tab active" data-pane="examples">Examples</button>
+    <button type="button" class="dialog-tab"        data-pane="file">From File</button>
   </div>
 
   <div class="dialog-body">
@@ -573,6 +577,28 @@ const jsonldEditor = CodeMirror(document.getElementById('jsonld-wrapper'), {
   mode: { name: 'javascript', json: true },
 });
 
+const DEFAULT_CSS = `/* CP/LD content styles */
+body {
+  padding: 1.5rem 2rem;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  margin-top: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}`;
+
+const cssEditor = CodeMirror(document.getElementById('css-wrapper'), {
+  ...CM_OPTS_COMMON,
+  value: DEFAULT_CSS,
+  mode: 'css',
+});
+
 // ================================================================
 // Tab switching (editor panel)
 // ================================================================
@@ -581,15 +607,18 @@ let currentTab = 'html';
 
 function switchTab(tab) {
   currentTab = tab;
-  document.getElementById('tab-html').classList.toggle('active', tab === 'html');
+  document.getElementById('tab-html').classList.toggle('active',   tab === 'html');
   document.getElementById('tab-jsonld').classList.toggle('active', tab === 'jsonld');
+  document.getElementById('tab-css').classList.toggle('active',    tab === 'css');
   document.getElementById('html-wrapper').style.display   = tab === 'html'   ? '' : 'none';
   document.getElementById('jsonld-wrapper').style.display = tab === 'jsonld' ? '' : 'none';
-  (tab === 'html' ? htmlEditor : jsonldEditor).refresh();
+  document.getElementById('css-wrapper').style.display    = tab === 'css'    ? '' : 'none';
+  ({ html: htmlEditor, jsonld: jsonldEditor, css: cssEditor }[tab]).refresh();
 }
 
 document.getElementById('tab-html').addEventListener('click',   (e) => { e.preventDefault(); switchTab('html'); });
 document.getElementById('tab-jsonld').addEventListener('click', (e) => { e.preventDefault(); switchTab('jsonld'); });
+document.getElementById('tab-css').addEventListener('click',    (e) => { e.preventDefault(); switchTab('css'); });
 
 // ================================================================
 // Render
@@ -620,7 +649,64 @@ function getMediaJsBaseUrl() {
   return new URL('../media/js/', window.location.href).toString();
 }
 
-function buildDocument(fullHtml, jsonldText, documentIRI, baseUrl) {
+// Scope user CSS to #cpld-body-content so it doesn't bleed into the cpldviewer.js
+// navbar/toast overlay. Handles @media/@supports nesting; passes @keyframes etc. through.
+function scopeUserCSS(css) {
+  const SCOPE = '#cpld-body-content';
+
+  function prefixSel(sel) {
+    return sel.split(',').map(s => {
+      s = s.trim();
+      if (!s) return '';
+      // Replace document-root selectors with the content container
+      s = s.replace(/\b(body|html|:root)\b/g, SCOPE);
+      // Prefix any selector that doesn't already start with SCOPE
+      if (!s.startsWith(SCOPE)) s = SCOPE + ' ' + s;
+      return s;
+    }).filter(Boolean).join(', ');
+  }
+
+  function transformBlock(src) {
+    let out = '';
+    let i = 0;
+    while (i < src.length) {
+      // consume leading whitespace
+      const ws0 = i;
+      while (i < src.length && /\s/.test(src[i])) i++;
+      out += src.slice(ws0, i);
+      if (i >= src.length) break;
+
+      // read up to the next opening brace
+      const selStart = i;
+      while (i < src.length && src[i] !== '{') i++;
+      if (i >= src.length) break;
+      const selector = src.slice(selStart, i).trim();
+      i++; // skip '{'
+
+      // collect block body, tracking depth
+      let depth = 1, blockStart = i;
+      while (i < src.length && depth > 0) {
+        if (src[i] === '{') depth++;
+        else if (src[i] === '}') depth--;
+        i++;
+      }
+      const body = src.slice(blockStart, i - 1);
+
+      if (/^@(media|supports|layer)\b/.test(selector)) {
+        out += `${selector} {\n${transformBlock(body)}\n}`;
+      } else if (selector.startsWith('@')) {
+        out += `${selector} {${body}}`;  // keyframes, font-face, etc.
+      } else {
+        out += `${prefixSel(selector)} {${body}}`;
+      }
+    }
+    return out;
+  }
+
+  return transformBlock(css);
+}
+
+function buildDocument(fullHtml, jsonldText, cssText, documentIRI, baseUrl) {
   const safeJsonld = jsonldText.replace(/<\/script>/gi, '<\\/script>');
   const safeIRI    = (documentIRI || '').replace(/"/g, '&quot;');
   const safeBase   = baseUrl.replace(/"/g, '&quot;');
@@ -629,17 +715,22 @@ function buildDocument(fullHtml, jsonldText, documentIRI, baseUrl) {
   const doc    = parser.parseFromString(fullHtml, 'text/html');
   const lang   = doc.documentElement.getAttribute('lang') || 'en';
 
-  // Collect head children, skipping items we control
+  // Collect head children, skipping items we control or replace
   const headItems = [];
   for (const el of doc.head.children) {
     const tag  = el.tagName.toLowerCase();
     const name = (el.getAttribute('name') || '').toLowerCase();
-    if (tag === 'meta' && el.hasAttribute('charset'))   continue;
-    if (tag === 'meta' && name === 'id')                continue;
-    if (tag === 'base')                                  continue;
+    const rel  = (el.getAttribute('rel') || '').trim().split(/\s+/);
+    if (tag === 'meta' && el.hasAttribute('charset'))           continue;
+    if (tag === 'meta' && name === 'id')                        continue;
+    if (tag === 'base')                                         continue;
+    if (tag === 'link' && rel.includes('stylesheet'))           continue;
     if (tag === 'script' && (el.getAttribute('src') || '').includes('cpldviewer')) continue;
     headItems.push(el.outerHTML);
   }
+
+  const styleBlock = cssText.trim()
+    ? `<style>\n${scopeUserCSS(cssText.trim())}\n</style>` : '';
 
   return `<!DOCTYPE html>
 <html lang="${lang}">
@@ -649,6 +740,7 @@ function buildDocument(fullHtml, jsonldText, documentIRI, baseUrl) {
 <base href="${safeBase}">
 ${headItems.join('\n')}
 <script src="cpldviewer.js"><\/script>
+${styleBlock}
 <script type="application/ld+json">
 ${safeJsonld}
 <\/script>
@@ -679,7 +771,7 @@ function render() {
 
   setStatus('Rendering…', 'busy');
   const iframe = document.getElementById('preview-iframe');
-  iframe.srcdoc = buildDocument(htmlBody, jsonldText, documentIRI, getMediaJsBaseUrl());
+  iframe.srcdoc = buildDocument(htmlBody, jsonldText, cssEditor.getValue(), documentIRI, getMediaJsBaseUrl());
   iframe.onload = () => setStatus('Ready', 'ok');
 }
 
@@ -691,8 +783,42 @@ function scheduleRender() {
 
 htmlEditor.on('change', scheduleRender);
 jsonldEditor.on('change', scheduleRender);
+cssEditor.on('change', scheduleRender);
 document.getElementById('document-iri').addEventListener('input', scheduleRender);
 document.getElementById('render-btn').addEventListener('click', render);
+
+// ================================================================
+// Stylesheet extraction (for CSS editor tab)
+// ================================================================
+
+async function extractStylesheets(htmlDoc, fetchBaseUrl) {
+  const links = Array.from(htmlDoc.querySelectorAll('link[rel~="stylesheet"]'));
+  const serverOrigin = fetchBaseUrl ? new URL(fetchBaseUrl).origin : window.location.origin;
+  const results = [];
+  for (const link of links) {
+    const media = (link.getAttribute('media') || '').trim();
+    if (media && !window.matchMedia(media).matches) continue;
+    // getAttribute gives the raw attribute string, unaffected by <base href>.
+    // link.href (IDL) would be resolved against the document's <base>, which in CP/LD
+    // documents points to a semantic IRI — not the server path we need.
+    const rawHref = link.getAttribute('href');
+    if (!rawHref) continue;
+    let url;
+    try {
+      url = new URL(rawHref, fetchBaseUrl).href;
+      // If <base href> resolution sneaked in and placed the URL on a foreign host,
+      // fall back to resolving just the filename against fetchBaseUrl.
+      if (new URL(url).origin !== serverOrigin) {
+        url = new URL(rawHref.replace(/^.*\//, ''), fetchBaseUrl).href;
+      }
+    } catch (_) { continue; }
+    try {
+      const resp = await fetch(url);
+      if (resp.ok) results.push(await resp.text());
+    } catch (_) { /* skip unreachable */ }
+  }
+  return results.join('\n\n');
+}
 
 // ================================================================
 // Load example into editors
@@ -702,13 +828,18 @@ async function loadExample(key) {
   const ex = EXAMPLES[key];
   if (!ex) return;
   const base = '/playground/examples/';
+  const fetchBase = window.location.origin + base;
   const [htmlText, jsonld] = await Promise.all([
     fetch(base + key + '.html').then(r => r.text()),
     fetch(base + key + '.jsonld').then(r => r.text()),
   ]);
   const { iri } = parseCPLDHtml(htmlText);
+  const parser = new DOMParser();
+  const htmlDoc = parser.parseFromString(htmlText, 'text/html');
+  const css = await extractStylesheets(htmlDoc, fetchBase) || DEFAULT_CSS;
   htmlEditor.setValue(htmlText.trimEnd());
   jsonldEditor.setValue(jsonld.trimEnd());
+  cssEditor.setValue(css.trimEnd());
   document.getElementById('document-iri').value = iri || ex.iri;
   closeLoadDialog();
   render();
@@ -722,6 +853,7 @@ document.getElementById('copy-btn').addEventListener('click', () => {
   const doc = buildDocument(
     htmlEditor.getValue(),
     jsonldEditor.getValue(),
+    cssEditor.getValue(),
     document.getElementById('document-iri').value.trim(),
     getMediaJsBaseUrl()
   );
@@ -827,10 +959,16 @@ async function handleHtmlFile(file) {
   try {
     const text = await readFileText(file);
     const { iri, jsonld } = parseCPLDHtml(text);
+    const parser = new DOMParser();
+    const htmlDoc = parser.parseFromString(text, 'text/html');
+    const baseEl = htmlDoc.querySelector('base[href]');
+    const fetchBase = baseEl ? baseEl.getAttribute('href') : null;
+    const css = await extractStylesheets(htmlDoc, fetchBase) || DEFAULT_CSS;
 
     htmlEditor.setValue(text);
     if (jsonld) jsonldEditor.setValue(jsonld);
-    if (iri)    document.getElementById('document-iri').value = iri;
+    cssEditor.setValue(css.trimEnd());
+    if (iri) document.getElementById('document-iri').value = iri;
 
     setStatus(`Loaded: ${file.name}`, 'ok');
     render();
