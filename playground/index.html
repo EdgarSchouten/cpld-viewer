@@ -549,6 +549,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/htmlmixed/htmlmixed.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/matchbrackets.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/closebrackets.min.js"></script>
+<script src="/playground/validation.js"></script>
 
 <script>
 'use strict';
@@ -1350,207 +1351,10 @@ function renderGraph() {
 }
 
 // ================================================================
-// Bibliographic validation
+// Bibliographic validation  (logic lives in playground/validation.js)
 // ================================================================
 
-function buildPrefixMap(context) {
-  const map = {};
-  for (const ctx of [].concat(context || [])) {
-    if (ctx && typeof ctx === 'object' && !Array.isArray(ctx)) {
-      for (const [k, v] of Object.entries(ctx)) {
-        if (!k.startsWith('@') && typeof v === 'string') map[k] = v;
-      }
-    }
-  }
-  return map;
-}
-
-function expandIRI(curie, prefixMap) {
-  if (!curie) return curie;
-  if (curie.startsWith('http://') || curie.startsWith('https://')) return curie;
-  const colon = curie.indexOf(':');
-  if (colon > 0 && prefixMap[curie.slice(0, colon)]) {
-    return prefixMap[curie.slice(0, colon)] + curie.slice(colon + 1);
-  }
-  return curie;
-}
-
-function fragmentId(iri) {
-  if (!iri) return null;
-  const idx = iri.indexOf('#');
-  return idx >= 0 ? iri.slice(idx + 1) : null;
-}
-
-function skipCheck(id, label) {
-  return { id, label, status: 'skip', summary: 'Skipped — preceding check did not pass.', items: [] };
-}
-
-// Check 1: exactly one nas:References node
-function checkRefsSection(data, prefixMap) {
-  const refsType = expandIRI('nas:References', prefixMap);
-  const nodes = [].concat(data['@graph'] || (data['@id'] ? [data] : []));
-  const found = nodes.filter(n =>
-    n && [].concat(n['@type'] || []).map(t => expandIRI(t, prefixMap)).includes(refsType)
-  );
-  if (found.length === 0) {
-    return { id: 'ref-section', label: 'References section present', status: 'fail',
-      summary: 'No node typed nas:References found in JSON-LD.', items: [], refsIRI: null };
-  }
-  if (found.length > 1) {
-    return { id: 'ref-section', label: 'References section present', status: 'fail',
-      summary: `${found.length} nodes typed nas:References found — expected exactly one.`,
-      items: found.map(n => ({ id: n['@id'] || '(blank)', status: 'fail', message: 'Duplicate nas:References node' })),
-      refsIRI: null };
-  }
-  return { id: 'ref-section', label: 'References section present', status: 'pass',
-    summary: `Found: ${found[0]['@id']}`, items: [], refsIRI: expandIRI(found[0]['@id'], prefixMap) };
-}
-
-// Check 2: <li> elements with id inside the refs HTML element are all typed nas:ReferenceItem
-function checkChildrenAnnotated(data, prefixMap, htmlDoc, refsIRI) {
-  const refItemType = expandIRI('nas:ReferenceItem', prefixMap);
-  const refsFragId  = fragmentId(refsIRI);
-  const refsEl      = refsFragId ? htmlDoc.getElementById(refsFragId) : null;
-
-  if (!refsEl) {
-    return { id: 'children-annotated', label: 'Reference children annotated', status: 'fail',
-      summary: `HTML element with id="${refsFragId}" not found.`, items: [], refItemIRIs: [] };
-  }
-
-  const htmlChildIds = Array.from(refsEl.querySelectorAll('li[id]'))
-    .map(el => el.id).filter(Boolean);
-
-  const nodes = [].concat(data['@graph'] || (data['@id'] ? [data] : []));
-  const refItemIRIs = nodes
-    .filter(n => n && [].concat(n['@type'] || []).map(t => expandIRI(t, prefixMap)).includes(refItemType))
-    .map(n => n['@id']).filter(Boolean);
-  const refItemFragIds = new Set(refItemIRIs.map(iri => fragmentId(expandIRI(iri, prefixMap))).filter(Boolean));
-
-  const items = htmlChildIds.map(cid => ({
-    id: cid, status: refItemFragIds.has(cid) ? 'pass' : 'fail',
-    message: refItemFragIds.has(cid)
-      ? 'Annotated as nas:ReferenceItem' : 'Not found as nas:ReferenceItem in JSON-LD',
-  }));
-  const failing = items.filter(i => i.status === 'fail');
-
-  return { id: 'children-annotated', label: 'Reference children annotated',
-    status: failing.length ? 'fail' : 'pass',
-    summary: failing.length
-      ? `${failing.length} of ${items.length} children lack a nas:ReferenceItem annotation`
-      : `All ${items.length} children annotated as nas:ReferenceItem`,
-    items: failing, refItemIRIs };
-}
-
-// Check 3: every nas:ReferenceItem has schema:mentions → schema:CreativeWork (or subclass)
-// Without a reasoner we check for schema:CreativeWork explicitly; data should declare it.
-function checkWorkLink(data, prefixMap, refItemIRIs) {
-  const schemaMentions   = expandIRI('schema:mentions', prefixMap);
-  const schemaCreativeWork = expandIRI('schema:CreativeWork', prefixMap);
-  const nodes            = [].concat(data['@graph'] || (data['@id'] ? [data] : []));
-  const byId             = Object.fromEntries(nodes.filter(n => n && n['@id']).map(n => [n['@id'], n]));
-
-  if (!prefixMap['schema']) {
-    return { id: 'work-link', label: 'Reference items link a schema:CreativeWork', status: 'fail',
-      summary: 'Prefix "schema:" is not declared in @context — cannot resolve schema:mentions or schema:CreativeWork.',
-      items: [] };
-  }
-
-  const items = refItemIRIs.map(iri => {
-    const node = byId[iri];
-    if (!node) return { id: iri, status: 'fail', message: 'Node not found in JSON-LD graph' };
-    let mentions = [];
-    for (const [key, val] of Object.entries(node)) {
-      if (!key.startsWith('@') && expandIRI(key, prefixMap) === schemaMentions) {
-        mentions = [].concat(val); break;
-      }
-    }
-    if (!mentions.length)
-      return { id: iri, status: 'fail', message: 'Missing schema:mentions property' };
-    const hasWork = mentions.some(m => {
-      const tid = (m && m['@id']) || (typeof m === 'string' ? m : null);
-      if (!tid) return false;
-      const target = byId[tid];
-      return target && [].concat(target['@type'] || []).map(t => expandIRI(t, prefixMap)).includes(schemaCreativeWork);
-    });
-    return { id: iri, status: hasWork ? 'pass' : 'fail',
-      message: hasWork ? 'Links a schema:CreativeWork via schema:mentions' : 'schema:mentions target does not include schema:CreativeWork in its @type' };
-  });
-  const failing = items.filter(i => i.status === 'fail');
-
-  return { id: 'work-link', label: 'Reference items link a schema:CreativeWork',
-    status: failing.length ? 'fail' : 'pass',
-    summary: failing.length
-      ? `${failing.length} of ${items.length} reference items missing a valid schema:CreativeWork link`
-      : `All ${items.length} reference items link a schema:CreativeWork`,
-    items: failing };
-}
-
-// Check 4: every nas:ReferenceItem must have:
-//   4a) a nas:Citation that schema:mentions the same Work (linked indirectly via shared target)
-//   4b) an <a href="#refFrag"> outside the refs section in the HTML
-function checkInTextCitation(data, prefixMap, htmlDoc, refsIRI, refItemIRIs) {
-  const citationType   = expandIRI('nas:Citation', prefixMap);
-  const schemaMentions = expandIRI('schema:mentions', prefixMap);
-  const refsFragId     = fragmentId(refsIRI);
-  const refsEl         = refsFragId ? htmlDoc.getElementById(refsFragId) : null;
-  const nodes          = [].concat(data['@graph'] || (data['@id'] ? [data] : []));
-
-  // Return the set of IRIs that a node schema:mentions
-  function mentionedIRIs(node) {
-    for (const [key, val] of Object.entries(node)) {
-      if (!key.startsWith('@') && expandIRI(key, prefixMap) === schemaMentions) {
-        return new Set([].concat(val)
-          .map(v => (v && v['@id']) || (typeof v === 'string' ? v : null))
-          .filter(Boolean));
-      }
-    }
-    return new Set();
-  }
-
-  // All nas:Citation nodes
-  const citationNodes = nodes.filter(n =>
-    n && [].concat(n['@type'] || []).map(t => expandIRI(t, prefixMap)).includes(citationType)
-  );
-
-  const items = refItemIRIs.map(iri => {
-    const frag    = fragmentId(expandIRI(iri, prefixMap));
-    const refNode = nodes.find(n => n && n['@id'] === iri);
-    const refWorks = refNode ? mentionedIRIs(refNode) : new Set();
-
-    // 4a: find a nas:Citation that schema:mentions the same Work as this refItem
-    const hasJsonLD = refWorks.size > 0 && citationNodes.some(cit =>
-      [...mentionedIRIs(cit)].some(w => refWorks.has(w))
-    );
-
-    // 4b: <a href="#frag"> outside the refs container
-    let htmlLinkCount = 0;
-    if (frag) {
-      for (const a of htmlDoc.querySelectorAll(`a[href="#${frag}"]`)) {
-        if (!refsEl || !refsEl.contains(a)) htmlLinkCount++;
-      }
-    }
-    const hasHtmlLink = htmlLinkCount > 0;
-
-    if (hasJsonLD && hasHtmlLink)
-      return { id: iri, status: 'pass',
-        message: 'nas:Citation shares schema:mentions target, and <a href> present in HTML body' };
-    const missing = [];
-    if (!hasJsonLD)   missing.push('no nas:Citation sharing the same schema:mentions target');
-    if (!hasHtmlLink) missing.push(`no <a href="#${frag}"> outside the references section`);
-    return { id: iri, status: 'fail', message: missing.join('; ') };
-  });
-  const failing = items.filter(i => i.status === 'fail');
-
-  return { id: 'in-text-citation', label: 'In-text citations present',
-    status: failing.length ? 'fail' : 'pass',
-    summary: failing.length
-      ? `${failing.length} of ${items.length} reference items lack an in-text citation`
-      : `All ${items.length} reference items have an in-text citation`,
-    items: failing };
-}
-
 function runValidation() {
-  const htmlText   = htmlEditor.getValue();
   const jsonldText = jsonldEditor.getValue();
   let data;
   try { data = JSON.parse(jsonldText); } catch (e) {
@@ -1559,26 +1363,8 @@ function runValidation() {
     return;
   }
   const prefixMap = buildPrefixMap(data['@context']);
-  const htmlDoc   = new DOMParser().parseFromString(htmlText, 'text/html');
-
-  const c1 = checkRefsSection(data, prefixMap);
-  if (c1.status !== 'pass') {
-    renderValidationReport([c1,
-      skipCheck('children-annotated', 'Reference children annotated'),
-      skipCheck('work-link',          'Reference items link a schema:CreativeWork'),
-      skipCheck('in-text-citation',   'In-text citations present')]);
-    return;
-  }
-  const c2 = checkChildrenAnnotated(data, prefixMap, htmlDoc, c1.refsIRI);
-  if (!c2.refItemIRIs.length) {
-    renderValidationReport([c1, c2,
-      skipCheck('work-link',        'Reference items link a schema:CreativeWork'),
-      skipCheck('in-text-citation', 'In-text citations present')]);
-    return;
-  }
-  renderValidationReport([c1, c2,
-    checkWorkLink(data, prefixMap, c2.refItemIRIs),
-    checkInTextCitation(data, prefixMap, htmlDoc, c1.refsIRI, c2.refItemIRIs)]);
+  const htmlDoc   = new DOMParser().parseFromString(htmlEditor.getValue(), 'text/html');
+  renderValidationReport(runChecks(VALIDATION_CHECKS, data, prefixMap, htmlDoc));
 }
 
 function renderValidationReport(results) {

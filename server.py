@@ -92,6 +92,15 @@ def playground():
     return make_response(html, 200, {"Content-Type": "text/html; charset=utf-8"})
 
 
+@app.route("/playground/validation.js")
+def playground_validation_js():
+    path = ROOT / "playground" / "validation.js"
+    if not path.exists():
+        return make_response("Not found", 404)
+    return make_response(path.read_text(encoding="utf-8"), 200,
+                         {"Content-Type": "text/javascript; charset=utf-8"})
+
+
 @app.route("/playground/examples/<path:filename>")
 def playground_example_file(filename):
     if not (filename.endswith(".html") or filename.endswith(".jsonld") or filename.endswith(".css")):
