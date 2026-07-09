@@ -3,6 +3,7 @@
 ## Current Functionalities
 
 ### VS Code Extension
+
 - Open any CP/LD-compliant HTML file in VSCode and run `CPLD Viewer` from the command palette.
 - Linked JSON-LD (via `<link type="application/ld+json" rel="describedby" href="...">`) is fetched and merged with any inline `<script type="application/ld+json">` blocks.
 - Hovering over annotated elements (matched by fragment ID) shows the RDF triples in which the resource appears as subject or object.
@@ -10,16 +11,18 @@
 - Configuration options: allow local images/styles, always-dereference IRIs, load local contexts, proxy support.
 
 ### Web Application (`server.py` + `playground/`)
+
 Flask 3.x server with four routes:
 
 | Route | Description |
-|---|---|
+| --- | --- |
 | `GET /playground/index.html` | Interactive playground |
 | `GET /playground/examples/<file>` | Serves `.html`, `.jsonld`, `.css` example files |
 | `GET /view?file=` / `?url=` | Renders a local or remote CP/LD document |
 | `GET /browse?uri=` | Linked-data dereferencing proxy |
 
 #### Playground (`playground/index.html`)
+
 Three-pane editor built on CodeMirror 5:
 
 - **HTML tab** — Full CP/LD document source (`htmlmixed` mode).
@@ -27,6 +30,7 @@ Three-pane editor built on CodeMirror 5:
 - **CSS tab** — Document stylesheet (`css` mode). Defaults to `DEFAULT_CSS` if no `<link rel="stylesheet">` is present or loadable.
 
 On every render, `buildDocument()`:
+
 1. Parses the full HTML to extract `<head>` children (dropping `<base>`, `<meta charset>`, `<meta name="id">`, `<link rel="stylesheet">`, and the `cpldviewer.js` `<script>`).
 2. Injects `<base href>` (pointing to `/media/js/` so `cpldviewer.js` resolves) and `<meta name="id">`.
 3. Runs `scopeUserCSS()` on the CSS editor content: transforms `body`/`html`/`:root` to `#cpld-body-content` and prefixes all other selectors, so user styles are scoped to the document content area and do not bleed into the cpldviewer.js navbar/toast overlay.
@@ -36,22 +40,26 @@ On every render, `buildDocument()`:
 The result is written to `iframe.srcdoc`.
 
 #### Preview panel
+
 - **Preview tab** — srcdoc iframe running `cpldviewer.js` (Bootstrap 4, jQuery, jsonld.js, rdflib.js). Fragment-ID decorated elements get ◊ markers and triple toasts on click.
 - **Graph tab** — Cytoscape.js (COSE layout) showing RDF entities as nodes and object properties as directed edges. Clicking a node opens a floating info panel with its datatype properties.
 
 #### Loading documents
+
 - **Load Example** dialog — three built-in examples (scholarly article, news article, text-annotation). Each has paired `.html`, `.jsonld`, `.css` files in `playground/examples/`. On load, `extractStylesheets()` fetches the linked CSS (resolving relative hrefs against the server path, not the semantic `<base href>`) and populates the CSS editor.
 - **File upload** — drag a local `.html` or `.jsonld` file. The HTML file's linked JSON-LD and stylesheet are extracted into their respective editors.
 - **Copy HTML** — copies the full assembled document to the clipboard.
 
 #### Open Annotation support (`src/cpldviewer.js`)
+
 - `oa:XPathSelector` — resolves an XPath expression to a DOM element.
 - `oa:TextPositionSelector` — highlights a character-offset range within an element, stripping leading whitespace before counting.
 - `oa:refinedBy` — when present, only the refinement selector's range is highlighted (not the outer selector).
 
 ### Built-in examples (`playground/examples/`)
+
 | Example | Font style |
-|---|---|
+| --- | --- |
 | `scholarly-article` | Georgia / serif |
 | `news-article` | Helvetica Neue / sans-serif |
 | `text-annotations` | Trebuchet MS / humanist sans |
@@ -75,13 +83,14 @@ The result is written to `iframe.srcdoc`.
 ## Future Development
 
 ### Bibliographic reference validation
+
 A validation pass that checks CP/LD documents for conformant bibliographic structure. The checks, in order:
 
 1. **References section present** — Is there exactly one document fragment typed as `nas:References`? (Required.)
 
 2. **All children annotated** — Are all child elements of that fragment listed in the JSON-LD as a `nas:ReferenceItem`? (Required: every child element with an `id` attribute must appear as a subject typed `nas:ReferenceItem`.)
 
-3. **Work link on every reference** — Does every `nas:ReferenceItem` include an `edm:mentions` property pointing to an `edm:Work`? (Required.)
+3. **Work link on every reference** — Does every `nas:ReferenceItem` include a `schema:mentions` property pointing to a node typed `schema:CreativeWork`? (Required. Without a reasoner, subclasses such as `schema:ScholarlyArticle` must be accompanied by an explicit `schema:CreativeWork` declaration in the `@type` array.)
 
 4. **In-text citations** — Does every `nas:ReferenceItem` have a corresponding `nas:Citation` in the body text of the HTML, realised as an `<a href="#fragment-id">` linking back to the reference item's fragment? (Required.)
 

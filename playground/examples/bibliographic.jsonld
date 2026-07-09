@@ -1,0 +1,117 @@
+{
+  "@context": [
+    {
+      "schema": "https://schema.org/",
+      "nas":    "https://data.elsevier.com/publishing/schema/nas/",
+      "oa":     "http://www.w3.org/ns/oa#",
+      "ex":     "https://example.org/",
+      "doc":    "https://example.org/biblio#"
+    }
+  ],
+  "@graph": [
+    {
+      "@id":   "https://example.org/biblio",
+      "@type": "schema:ScholarlyArticle",
+      "schema:name":   "Knowledge Graphs in Publishing: A Survey",
+      "schema:author": { "@id": "ex:person-a-example" },
+      "schema:hasPart": [
+        { "@id": "doc:b5c6d7e8" },
+        { "@id": "doc:d3e4f5a6" },
+        { "@id": "doc:f1a2b3c4" },
+        { "@id": "doc:refs01"   },
+        { "@id": "doc:cit01"    },
+        { "@id": "doc:cit02"    },
+        { "@id": "doc:cit03"    },
+        { "@id": "doc:e7f8a9b0" },
+        { "@id": "doc:c1d2e3f4" },
+        { "@id": "doc:ref01"    },
+        { "@id": "doc:ref02"    },
+        { "@id": "doc:ref03"    }
+      ]
+    },
+
+    { "@id": "doc:b5c6d7e8", "@type": "nas:Abstract" },
+    { "@id": "doc:d3e4f5a6", "@type": "nas:Introduction" },
+    { "@id": "doc:f1a2b3c4", "@type": "nas:Section" },
+    {
+      "@id":   "doc:cit01",
+      "@type": "nas:Citation",
+      "schema:mentions": { "@id": "ex:work-knowledge-graphs-2021" }
+
+    },
+    {
+      "@id":   "doc:cit02",
+      "@type": "nas:Citation",
+      "schema:mentions": { "@id": "ex:work-json-ld-primer-2014" }
+
+    },
+    {
+      "@id":   "doc:cit03",
+      "@type": "nas:Citation",
+      "schema:mentions": { "@id": "ex:work-linked-data-design-2006" }
+
+    },
+    {
+      "@id":   "doc:e7f8a9b0",
+      "@type": "nas:AuthorName",
+      "schema:mentions": { "@id": "ex:person-a-example" }
+    },
+    {
+      "@id":   "doc:c1d2e3f4",
+      "@type": "nas:Affiliation",
+      "schema:mentions": { "@id": "ex:org-ildr" }
+    },
+
+    {
+      "@id":   "ex:person-a-example",
+      "@type": "schema:Person",
+      "schema:name":        "A. Example",
+      "schema:affiliation": { "@id": "ex:org-ildr" }
+    },
+    {
+      "@id":   "ex:org-ildr",
+      "@type": "schema:Organization",
+      "schema:name": "Institute for Linked Data Research"
+    },
+
+    {
+      "@id": "doc:refs01",
+      "@type": "nas:References"
+    },
+
+    {
+      "@id":   "doc:ref01",
+      "@type": "nas:ReferenceItem",
+      "schema:mentions": { "@id": "ex:work-knowledge-graphs-2021" }
+    },
+    {
+      "@id":   "doc:ref02",
+      "@type": "nas:ReferenceItem",
+      "schema:mentions": { "@id": "ex:work-json-ld-primer-2014" }
+    },
+    {
+      "@id":   "doc:ref03",
+      "@type": "nas:ReferenceItem",
+      "schema:mentions": { "@id": "ex:work-linked-data-design-2006" }
+    },
+
+    {
+      "@id":   "ex:work-knowledge-graphs-2021",
+      "@type": ["schema:ScholarlyArticle", "schema:CreativeWork"],
+      "schema:name":          "Knowledge Graphs: An Overview",
+      "schema:datePublished": "2021"
+    },
+    {
+      "@id":   "ex:work-json-ld-primer-2014",
+      "@type": ["schema:ScholarlyArticle", "schema:CreativeWork"],
+      "schema:name":          "A JSON-LD Primer",
+      "schema:datePublished": "2014"
+    },
+    {
+      "@id":   "ex:work-linked-data-design-2006",
+      "@type": ["schema:ScholarlyArticle", "schema:CreativeWork"],
+      "schema:name":          "Linked Data: Design Issues",
+      "schema:datePublished": "2006"
+    }
+  ]
+}
