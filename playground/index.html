@@ -549,6 +549,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/htmlmixed/htmlmixed.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/matchbrackets.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/closebrackets.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/n3/browser/n3.min.js"></script>
+<script src="/playground/comunica-browser.js"></script>
 <script src="/playground/validation.js"></script>
 
 <script>
@@ -1354,7 +1356,9 @@ function renderGraph() {
 // Bibliographic validation  (logic lives in playground/validation.js)
 // ================================================================
 
-function runValidation() {
+async function runValidation() {
+  document.getElementById('validate-container').innerHTML =
+    '<div style="padding:16px;color:#888;font-size:.82rem">Running validation…</div>';
   const jsonldText = jsonldEditor.getValue();
   let data;
   try { data = JSON.parse(jsonldText); } catch (e) {
@@ -1362,9 +1366,13 @@ function runValidation() {
       summary: 'JSON-LD parse error: ' + e.message, items: [] }]);
     return;
   }
-  const prefixMap = buildPrefixMap(data['@context']);
-  const htmlDoc   = new DOMParser().parseFromString(htmlEditor.getValue(), 'text/html');
-  renderValidationReport(runChecks(VALIDATION_CHECKS, data, prefixMap, htmlDoc));
+  try {
+    const htmlDoc = new DOMParser().parseFromString(htmlEditor.getValue(), 'text/html');
+    renderValidationReport(await runChecks(VALIDATION_CHECKS, data, htmlDoc));
+  } catch (err) {
+    renderValidationReport([{ id: 'error', label: 'Validation error', status: 'fail',
+      summary: String(err), items: [] }]);
+  }
 }
 
 function renderValidationReport(results) {

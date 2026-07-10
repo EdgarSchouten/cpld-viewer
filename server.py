@@ -92,13 +92,24 @@ def playground():
     return make_response(html, 200, {"Content-Type": "text/html; charset=utf-8"})
 
 
-@app.route("/playground/validation.js")
-def playground_validation_js():
-    path = ROOT / "playground" / "validation.js"
+def _serve_playground_js(filename):
+    path = (ROOT / "playground" / filename).resolve()
+    if not str(path).startswith(str(ROOT / "playground")):
+        return make_response("Forbidden", 403)
     if not path.exists():
         return make_response("Not found", 404)
     return make_response(path.read_text(encoding="utf-8"), 200,
                          {"Content-Type": "text/javascript; charset=utf-8"})
+
+
+@app.route("/playground/validation.js")
+def playground_validation_js():
+    return _serve_playground_js("validation.js")
+
+
+@app.route("/playground/comunica-browser.js")
+def playground_comunica_js():
+    return _serve_playground_js("comunica-browser.js")
 
 
 @app.route("/playground/examples/<path:filename>")
