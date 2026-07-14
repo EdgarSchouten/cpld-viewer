@@ -1086,6 +1086,7 @@ document.addEventListener('mouseup', () => {
 
 let currentView = 'preview';
 let cy = null;
+let _showGraphNodeInfo = null; // set by renderGraph(); used by focusGraphNode()
 
 function setPreviewView(view) {
   if (currentView === view) return;
@@ -1104,6 +1105,28 @@ function setPreviewView(view) {
 document.getElementById('tab-preview').addEventListener('click',  (e) => { e.preventDefault(); setPreviewView('preview'); });
 document.getElementById('tab-graph').addEventListener('click',    (e) => { e.preventDefault(); setPreviewView('graph'); });
 document.getElementById('tab-validate').addEventListener('click', (e) => { e.preventDefault(); setPreviewView('validate'); });
+
+// Message from the preview iframe: switch to Graph View and focus the given IRI.
+window.addEventListener('message', (event) => {
+  if (!event.data || event.data.type !== 'cpld-focus-graph') return;
+  focusGraphNode(event.data.iri);
+});
+
+function focusGraphNode(iri) {
+  // Switch to graph tab (renderGraph() runs synchronously, setting cy).
+  // If already on the graph tab the guard in setPreviewView returns early,
+  // but cy is already populated so we can select immediately either way.
+  if (currentView !== 'graph') setPreviewView('graph');
+
+  if (!cy) return;
+  const node = cy.getElementById(iri);
+  if (!node.length) return;
+
+  cy.elements().unselect();
+  node.select();
+  cy.animate({ center: { eles: node }, zoom: Math.max(cy.zoom(), 1.2) }, { duration: 250 });
+  if (_showGraphNodeInfo) _showGraphNodeInfo(node);
+}
 
 // ================================================================
 // Graph visualisation — JSON-LD → Cytoscape.js
@@ -1160,7 +1183,7 @@ function extractGraphElements(jsonldText) {
 
   function walk(obj, parentId, via) {
     if (!obj || typeof obj !== 'object' || Array.isArray(obj)) return;
-    const id    = obj['@id'];
+    const id    = obj['@id'] ? expand(obj['@id']) : null;
     const types = obj['@type'];
 
     if (id) ensureNode(id, types);
@@ -1179,7 +1202,7 @@ function extractGraphElements(jsonldText) {
           if (id) addDatatypeProp(id, propLabel, v['@value']);
         } else {
           // Object value
-          const tid = v['@id'];
+          const tid = v['@id'] ? expand(v['@id']) : null;
           if (tid) {
             ensureNode(tid, v['@type']);
             if (id) addEdge(id, propLabel, tid);
@@ -1223,6 +1246,7 @@ function renderGraph() {
   const elements  = extractGraphElements(jsonldEditor.getValue());
 
   if (cy) { cy.destroy(); cy = null; }
+  _showGraphNodeInfo = null;
 
   if (elements.filter(e => !e.data.source).length === 0) {
     container.innerHTML = '<div id="graph-empty">No graph data — enter valid JSON-LD to visualise.</div>';
@@ -1347,6 +1371,8 @@ function renderGraph() {
     document.getElementById('ni-close-btn')
       .addEventListener('click', () => { infoPanel.style.display = 'none'; cy.elements().unselect(); });
   }
+
+  _showGraphNodeInfo = showNodeInfo;
 
   cy.on('tap', 'node', (e) => showNodeInfo(e.target));
   cy.on('tap', (e)      => { if (e.target === cy) { infoPanel.style.display = 'none'; } });

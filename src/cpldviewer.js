@@ -988,10 +988,15 @@ function scrollTo(elementID, options = undefined) {
 function makeToastHeader(resource, title) {
   var header = $('<div class="toast-header" data-resource="' + resource + '">' +
     '<strong class="mr-auto text-primary">' + title + '</strong>' +
+    '<button type="button" class="cpld-graph-btn ml-1 mb-1" title="Show in Graph View" aria-label="Show in Graph View" style="background:none;border:none;color:#aaa;font-size:.95rem;cursor:pointer;line-height:1;padding:0 3px;">&#9679;</button>' +
     '<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">' +
     '<span aria-hidden="true">&times;</span>' +
     '</button>' +
     '</div>');
+  header.find('.cpld-graph-btn').on('click', function (e) {
+    e.stopPropagation();
+    window.parent.postMessage({ type: 'cpld-focus-graph', iri: resource }, '*');
+  });
   return header;
 }
 
