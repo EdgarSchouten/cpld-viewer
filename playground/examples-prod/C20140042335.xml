@@ -1,0 +1,5538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xocs:metadoc xsi:schemaLocation="http://www.elsevier.com/xml/xocs/dtd http://schema.elsevier.com/dtds/document/fulltext/xcr/xocs-article.xsd" xmlns:xocs="http://www.elsevier.com/xml/xocs/dtd" xmlns="http://www.elsevier.com/xml/bk/dtd" xmlns:bk="http://www.elsevier.com/xml/bk/dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:tb="http://www.elsevier.com/xml/common/table/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cals="http://www.elsevier.com/xml/common/cals/dtd">
+  <xocs:meta>
+    <xocs:content-family>nonserial</xocs:content-family>
+    <xocs:content-type>BK</xocs:content-type>
+    <xocs:cid>313908</xocs:cid>
+    <xocs:ssids>
+      <xocs:ssid type="subj">291904</xocs:ssid>
+      <xocs:ssid type="content">35</xocs:ssid>
+    </xocs:ssids>
+    <xocs:srctitle>Mandell, Douglas y Bennett. Enfermedades Infecciosas. Principios y Práctica +</xocs:srctitle>
+    <xocs:orig-load-date>2017-06-14</xocs:orig-load-date>
+    <xocs:ew-transaction-id>2017-06-13T23:00:18</xocs:ew-transaction-id>
+    <xocs:eid>3-s2.0-C20140042335</xocs:eid>
+    <xocs:pii-formatted>C2014-0-04233-5</xocs:pii-formatted>
+    <xocs:pii-unformatted>C20140042335</xocs:pii-unformatted>
+    <xocs:hub-stage>H300</xocs:hub-stage>
+    <xocs:hub-version-number>H300.2</xocs:hub-version-number>
+    <xocs:timestamp>2026-06-13T20:18:20.623547Z</xocs:timestamp>
+    <xocs:isbns>
+      <xocs:isbn-primary-formatted purpose="SET-MULTIVOL">978-84-9022-917-0</xocs:isbn-primary-formatted>
+      <xocs:isbn-primary-unformatted purpose="SET-MULTIVOL">9788490229170</xocs:isbn-primary-unformatted>
+      <xocs:isbn-formatted purpose="ONLINE">978-84-9022-910-1</xocs:isbn-formatted>
+      <xocs:isbn-unformatted purpose="ONLINE">9788490229101</xocs:isbn-unformatted>
+    </xocs:isbns>
+    <xocs:worktype>edited-volume</xocs:worktype>
+    <xocs:edition>Octava edición</xocs:edition>
+    <xocs:cover-date-text>2016</xocs:cover-date-text>
+    <xocs:cover-date-start>2016-01-01</xocs:cover-date-start>
+    <xocs:cover-date-end>2016-12-31</xocs:cover-date-end>
+    <xocs:cover-date-year>2016</xocs:cover-date-year>
+    <xocs:max-cover-date-year>2016</xocs:max-cover-date-year>
+    <xocs:attachment-metadata-doc>
+      <xocs:attachment-set-type>hub</xocs:attachment-set-type>
+      <xocs:pii-formatted>C2014-0-04233-5</xocs:pii-formatted>
+      <xocs:pii-unformatted>C20140042335</xocs:pii-unformatted>
+      <xocs:eid>3-s2.0-C20140042335</xocs:eid>
+      <xocs:cid>313908</xocs:cid>
+      <xocs:timestamp>2017-06-14T16:55:00.111129-04:00</xocs:timestamp>
+      <xocs:path>/313908/3-s2.0-C20140042335/</xocs:path>
+      <xocs:cover-date-start>2016-01-01</xocs:cover-date-start>
+      <xocs:cover-date-end>2016-12-31</xocs:cover-date-end>
+      <xocs:attachments>
+	<xocs:attachment>
+	  <xocs:attachment-eid>3-s2.0-C20140042335-cov200h.gif</xocs:attachment-eid>
+	  <xocs:ucs-locator>https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:C20140042335/cover/DOWNSAMPLED200/image/gif/b243854ab5c5661864622b087f8c49c5/cov200h.gif</xocs:ucs-locator>
+	  <xocs:ucs-locator>https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:C20140042335/cover/DOWNSAMPLED200/image/gif/b243854ab5c5661864622b087f8c49c5/cov200h.gif</xocs:ucs-locator>
+	  <xocs:file-basename>cov200h</xocs:file-basename>
+	  <xocs:filename>cov200h.gif</xocs:filename>
+	  <xocs:extension>gif</xocs:extension>
+	  <xocs:filesize>28978</xocs:filesize>
+	  <xocs:pixel-height>200</xocs:pixel-height>
+	  <xocs:pixel-width>157</xocs:pixel-width>
+	  <xocs:attachment-type>IMAGE-COVER-H200</xocs:attachment-type>
+	</xocs:attachment>
+	<xocs:attachment>
+	  <xocs:attachment-eid>3-s2.0-C20140042335-cov150h.gif</xocs:attachment-eid>
+	  <xocs:ucs-locator>https://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:C20140042335/cover/DOWNSAMPLED/image/gif/f485b4deec214d5e9c385954eb15f57e/cov150h.gif</xocs:ucs-locator>
+	  <xocs:ucs-locator>https://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:C20140042335/cover/DOWNSAMPLED/image/gif/f485b4deec214d5e9c385954eb15f57e/cov150h.gif</xocs:ucs-locator>
+	  <xocs:file-basename>cov150h</xocs:file-basename>
+	  <xocs:filename>cov150h.gif</xocs:filename>
+	  <xocs:extension>gif</xocs:extension>
+	  <xocs:filesize>21643</xocs:filesize>
+	  <xocs:pixel-height>150</xocs:pixel-height>
+	  <xocs:pixel-width>118</xocs:pixel-width>
+	  <xocs:attachment-type>IMAGE-COVER-H150</xocs:attachment-type>
+	</xocs:attachment>
+      </xocs:attachments>
+    </xocs:attachment-metadata-doc>
+    <xocs:open-access>
+      <xocs:oa-articles-count>0</xocs:oa-articles-count>
+      <xocs:oa-open-archive-articles-count>0</xocs:oa-open-archive-articles-count>
+    </xocs:open-access>
+  </xocs:meta>
+  <xocs:nonserial-hub>
+    <book version="5.3" xml:lang="es" docsubtype="bk">
+      <info>
+	<ce:pii>C2014-0-04233-5</ce:pii>
+	<ce:isbn>978-84-9022-917-0</ce:isbn>
+	<ce:copyright type="full-transfer" year="2016">Elsevier España, S.L.U.</ce:copyright>
+	<ce:imprint>Elsevier</ce:imprint>
+      </info>
+      <top>
+	<ce:title>Mandell, Douglas y Bennett. Enfermedades infecciosas. Principios y práctica</ce:title>
+	<ce:edition>Octava edición</ce:edition>
+	<ce:copyright-line>Copyright © 2016 Elsevier España, S.L.U.</ce:copyright-line>
+	<cover-image>
+	  <ce:figure id="f0010">
+	    <ce:link id="lk0010" locator="cover"/>
+	  </ce:figure>
+	</cover-image>
+	<ce:editors>
+	  <ce:author-group>
+	    <ce:author id="au0010">
+	      <ce:given-name>John E.</ce:given-name>
+	      <ce:surname>Bennett</ce:surname>
+	      <ce:degrees>MD, MACP</ce:degrees>
+	    </ce:author>
+	    <ce:affiliation id="aff0010">
+	      <ce:textfn id="tfn0010">Adjunct Professor of Medicine<ce:br/>Uniformed Services University of the Health Sciences<ce:br/>F. Edward Hebert School of Medicine<ce:br/>Bethesda, Maryland</ce:textfn>
+	    </ce:affiliation>
+	  </ce:author-group>
+	  <ce:author-group>
+	    <ce:author id="au0015">
+	      <ce:given-name>Raphael</ce:given-name>
+	      <ce:surname>Dolin</ce:surname>
+	      <ce:degrees>MD</ce:degrees>
+	    </ce:author>
+	    <ce:affiliation id="aff0015">
+	      <ce:textfn id="tfn0015">Maxwell Finland Professor of Medicine (Microbiology and Molecular Genetics)<ce:br/>Harvard Medical School</ce:textfn>
+	    </ce:affiliation>
+	    <ce:affiliation id="aff0020">
+	      <ce:textfn id="tfn0020">Attending Physician<ce:br/>Beth Israel Deaconess Medical Center</ce:textfn>
+	    </ce:affiliation>
+	    <ce:affiliation id="aff0025">
+	      <ce:textfn id="tfn0025">Brigham and Women’s Hospital<ce:br/>Boston, Massachusetts</ce:textfn>
+	    </ce:affiliation>
+	  </ce:author-group>
+	  <ce:author-group>
+	    <ce:author id="au0020">
+	      <ce:given-name>Martin J.</ce:given-name>
+	      <ce:surname>Blaser</ce:surname>
+	      <ce:degrees>MD</ce:degrees>
+	    </ce:author>
+	    <ce:affiliation id="aff0030">
+	      <ce:textfn id="tfn0030">Muriel G. and George W. Singer Professor of Translational Medicine<ce:br/>Professor of Microbiology<ce:br/>Director, Human Microbiome Program<ce:br/>Departments of Medicine and Microbiology<ce:br/>New York University School of Medicine<ce:br/>Langone Medical Center<ce:br/>New York, New York</ce:textfn>
+	    </ce:affiliation>
+	  </ce:author-group>
+	</ce:editors>
+	<ce:sections>
+	  <ce:para id="p0010" view="all">Copyright © 2016 Elsevier España, S.L.U.</ce:para>
+	</ce:sections>
+      </top>
+      <front>
+	<ce:include-item view="all">
+	  <ce:pii>B978-84-9022-917-0.00325-5</ce:pii>
+	  <ce:doi>10.1016/B978-84-9022-917-0.00325-5</ce:doi>
+	  <ce:title>Portada</ce:title>
+	  <ce:pages>
+	    <ce:first-page>i</ce:first-page>
+	  </ce:pages>
+	</ce:include-item>
+	<ce:include-item view="all">
+	  <ce:pii>B978-84-9022-917-0.00326-7</ce:pii>
+	  <ce:doi>10.1016/B978-84-9022-917-0.00326-7</ce:doi>
+	  <ce:title>Página de créditos</ce:title>
+	  <ce:pages>
+	    <ce:first-page>ii</ce:first-page>
+	  </ce:pages>
+	</ce:include-item>
+	<ce:include-item view="all">
+	  <ce:pii>B978-84-9022-917-0.00327-9</ce:pii>
+	  <ce:doi>10.1016/B978-84-9022-917-0.00327-9</ce:doi>
+	  <ce:title>Revisores de la edición española</ce:title>
+	  <ce:pages>
+	    <ce:first-page>iii</ce:first-page>
+	  </ce:pages>
+	</ce:include-item>
+	<ce:include-item view="all">
+	  <ce:pii>B978-84-9022-917-0.00328-0</ce:pii>
+	  <ce:doi>10.1016/B978-84-9022-917-0.00328-0</ce:doi>
+	  <ce:title>Colaboradores</ce:title>
+	  <ce:pages>
+	    <ce:first-page>iv</ce:first-page>
+	    <ce:last-page>xxiv</ce:last-page>
+	  </ce:pages>
+	</ce:include-item>
+	<ce:include-item view="all">
+	  <ce:pii>B978-84-9022-917-0.00329-2</ce:pii>
+	  <ce:doi>10.1016/B978-84-9022-917-0.00329-2</ce:doi>
+	  <ce:title>Prólogo a la octava edición</ce:title>
+	  <ce:pages>
+	    <ce:first-page>xxv</ce:first-page>
+	  </ce:pages>
+	</ce:include-item>
+	<ce:include-item view="all">
+	  <ce:pii>B978-84-9022-917-0.00330-9</ce:pii>
+	  <ce:doi>10.1016/B978-84-9022-917-0.00330-9</ce:doi>
+	  <ce:title>Prólogo a la octava edición española</ce:title>
+	  <ce:pages>
+	    <ce:first-page>xxvi</ce:first-page>
+	  </ce:pages>
+	</ce:include-item>
+      </front>
+      <body>
+	<volume id="v1">
+	  <ce:label>Volumen 1</ce:label>
+	  <part id="pa0010">
+	    <ce:label>I</ce:label>
+	    <ce:title>Principios básicos en el diagnóstico y el tratamiento de las enfermedades infecciosas</ce:title>
+	    <part id="pa0015">
+	      <ce:label>A</ce:label>
+	      <ce:title>Patogenia microbiana</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00001-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00001-9</ce:doi>
+		<ce:title>Perspectiva molecular de la patogenia microbiana</ce:title>
+		<ce:pages>
+		  <ce:first-page>1</ce:first-page>
+		  <ce:last-page>12</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>12.e1</ce:first-page>
+		  <ce:last-page>12.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00002-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00002-0</ce:doi>
+		<ce:title>El microbioma humano de localizaciones corporales específicas y sus características biológicas únicas</ce:title>
+		<ce:pages>
+		  <ce:first-page>13</ce:first-page>
+		  <ce:last-page>21</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>13.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00003-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00003-2</ce:doi>
+		<ce:title>Prebióticos, probióticos y simbióticos</ce:title>
+		<ce:pages>
+		  <ce:first-page>22</ce:first-page>
+		  <ce:last-page>28</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>22.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>28.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0020">
+	      <ce:label>B</ce:label>
+	      <ce:title>Mecanismos de defensa del huésped</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00004-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00004-4</ce:doi>
+		<ce:title>Mecanismos de defensa del huésped innatos (generales o inespecíficos)</ce:title>
+		<ce:pages>
+		  <ce:first-page>29</ce:first-page>
+		  <ce:last-page>37</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>29.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>37.e1</ce:first-page>
+		  <ce:last-page>37.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00005-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00005-6</ce:doi>
+		<ce:title>Inmunidad adaptativa: anticuerpos e inmunodeficiencias</ce:title>
+		<ce:pages>
+		  <ce:first-page>38</ce:first-page>
+		  <ce:last-page>54</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>38.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>54.e1</ce:first-page>
+		  <ce:last-page>54.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00006-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00006-8</ce:doi>
+		<ce:title>Defensa contra la infección mediada por células</ce:title>
+		<ce:pages>
+		  <ce:first-page>55</ce:first-page>
+		  <ce:last-page>76</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>55.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>76.e1</ce:first-page>
+		  <ce:last-page>76.e6</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00007-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00007-X</ce:doi>
+		<ce:title>Inmunidad de las mucosas</ce:title>
+		<ce:pages>
+		  <ce:first-page>77</ce:first-page>
+		  <ce:last-page>85</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>77.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>85.e1</ce:first-page>
+		  <ce:last-page>85.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00008-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00008-1</ce:doi>
+		<ce:title>Fagocitos granulocíticos</ce:title>
+		<ce:pages>
+		  <ce:first-page>86</ce:first-page>
+		  <ce:last-page>101</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>86.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>101.e1</ce:first-page>
+		  <ce:last-page>101.e6</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00009-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00009-3</ce:doi>
+		<ce:title>Complemento y deficiencias</ce:title>
+		<ce:pages>
+		  <ce:first-page>102</ce:first-page>
+		  <ce:last-page>125</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>102.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>125.e1</ce:first-page>
+		  <ce:last-page>125.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00010-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00010-X</ce:doi>
+		<ce:title>Genética humana e infección</ce:title>
+		<ce:pages>
+		  <ce:first-page>126</ce:first-page>
+		  <ce:last-page>135</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>126.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>135.e1</ce:first-page>
+		  <ce:last-page>135.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00011-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00011-1</ce:doi>
+		<ce:title>Nutrición, inmunidad e infección</ce:title>
+		<ce:pages>
+		  <ce:first-page>136</ce:first-page>
+		  <ce:last-page>145</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>136.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>145.e1</ce:first-page>
+		  <ce:last-page>145.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00012-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00012-3</ce:doi>
+		<ce:title>Evaluación del paciente con sospecha de inmunodeficiencia</ce:title>
+		<ce:pages>
+		  <ce:first-page>146</ce:first-page>
+		  <ce:last-page>157</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>146.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>157.e1</ce:first-page>
+		  <ce:last-page>157.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0025">
+	      <ce:label>C</ce:label>
+	      <ce:title>Epidemiología de las enfermedades infecciosas</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00013-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00013-5</ce:doi>
+		<ce:title>Principios epidemiológicos</ce:title>
+		<ce:pages>
+		  <ce:first-page>158</ce:first-page>
+		  <ce:last-page>171</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>158.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>171.e1</ce:first-page>
+		  <ce:last-page>171.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00014-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00014-7</ce:doi>
+		<ce:title>Amenazas infecciosas emergentes y reemergentes</ce:title>
+		<ce:pages>
+		  <ce:first-page>172</ce:first-page>
+		  <ce:last-page>192</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>172.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>192.e1</ce:first-page>
+		  <ce:last-page>192.e6</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00015-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00015-9</ce:doi>
+		<ce:title>Bioterrorismo: visión general</ce:title>
+		<ce:pages>
+		  <ce:first-page>193</ce:first-page>
+		  <ce:last-page>206</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>193.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>206.e1</ce:first-page>
+		  <ce:last-page>206.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0030">
+	      <ce:label>D</ce:label>
+	      <ce:title>Microbiología clínica</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00016-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00016-0</ce:doi>
+		<ce:title>El clínico y el laboratorio de microbiología</ce:title>
+		<ce:pages>
+		  <ce:first-page>207</ce:first-page>
+		  <ce:last-page>244</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>207.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0035">
+	      <ce:label>E</ce:label>
+	      <ce:title>Tratamiento antiinfeccioso</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00017-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00017-2</ce:doi>
+		<ce:title>Principios del tratamiento antiinfeccioso</ce:title>
+		<ce:pages>
+		  <ce:first-page>245</ce:first-page>
+		  <ce:last-page>256</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>245.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>256.e1</ce:first-page>
+		  <ce:last-page>256.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00018-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00018-4</ce:doi>
+		<ce:title>Mecanismos moleculares de resistencia antimicrobiana en las bacterias</ce:title>
+		<ce:pages>
+		  <ce:first-page>257</ce:first-page>
+		  <ce:last-page>273</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>257.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>273.e1</ce:first-page>
+		  <ce:last-page>273.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00019-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00019-6</ce:doi>
+		<ce:title>Farmacocinética y farmacodinámica de los fármacos antiinfecciosos</ce:title>
+		<ce:pages>
+		  <ce:first-page>274</ce:first-page>
+		  <ce:last-page>285</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>274.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>285.e1</ce:first-page>
+		  <ce:last-page>285.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00020-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00020-2</ce:doi>
+		<ce:title>Penicilinas e inhibidores de β-lactamasas</ce:title>
+		<ce:pages>
+		  <ce:first-page>286</ce:first-page>
+		  <ce:last-page>300</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>286.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>300.e1</ce:first-page>
+		  <ce:last-page>300.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00021-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00021-4</ce:doi>
+		<ce:title>Cefalosporinas</ce:title>
+		<ce:pages>
+		  <ce:first-page>301</ce:first-page>
+		  <ce:last-page>315</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>301.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>315.e1</ce:first-page>
+		  <ce:last-page>315.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00022-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00022-6</ce:doi>
+		<ce:title>Otros antibióticos β-lactámicos</ce:title>
+		<ce:pages>
+		  <ce:first-page>316</ce:first-page>
+		  <ce:last-page>320</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>316.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>320.e1</ce:first-page>
+		  <ce:last-page>320.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00023-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00023-8</ce:doi>
+		<ce:title>Alergia a antibióticos</ce:title>
+		<ce:pages>
+		  <ce:first-page>321</ce:first-page>
+		  <ce:last-page>326</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>321.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00024-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00024-X</ce:doi>
+		<ce:title>Ácido fusídico</ce:title>
+		<ce:pages>
+		  <ce:first-page>327</ce:first-page>
+		  <ce:last-page>332</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>327.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>332.e1</ce:first-page>
+		  <ce:last-page>332.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00025-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00025-1</ce:doi>
+		<ce:title>Aminoglucósidos</ce:title>
+		<ce:pages>
+		  <ce:first-page>333</ce:first-page>
+		  <ce:last-page>345</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>333.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>345.e1</ce:first-page>
+		  <ce:last-page>345.e6</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00026-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00026-3</ce:doi>
+		<ce:title>Tetraciclinas, glicilciclinas y cloranfenicol</ce:title>
+		<ce:pages>
+		  <ce:first-page>346</ce:first-page>
+		  <ce:last-page>362</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>346.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>362.e1</ce:first-page>
+		  <ce:last-page>362.e6</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00027-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00027-5</ce:doi>
+		<ce:title>Rifamicinas</ce:title>
+		<ce:pages>
+		  <ce:first-page>363</ce:first-page>
+		  <ce:last-page>375</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>363.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>375.e1</ce:first-page>
+		  <ce:last-page>375.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00028-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00028-7</ce:doi>
+		<ce:title>Metronidazol</ce:title>
+		<ce:pages>
+		  <ce:first-page>376</ce:first-page>
+		  <ce:last-page>383</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>376.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>383.e1</ce:first-page>
+		  <ce:last-page>383.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00029-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00029-9</ce:doi>
+		<ce:title>Macrólidos, clindamicina y cetólidos</ce:title>
+		<ce:pages>
+		  <ce:first-page>384</ce:first-page>
+		  <ce:last-page>403</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>384.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>403.e1</ce:first-page>
+		  <ce:last-page>403.e5</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00030-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00030-5</ce:doi>
+		<ce:title>Glucopéptidos (vancomicina y teicoplanina), estreptograminas (quinupristina-dalfopristina), lipopéptidos (daptomicina) y lipoglucopéptidos (telavancina)</ce:title>
+		<ce:pages>
+		  <ce:first-page>404</ce:first-page>
+		  <ce:last-page>428</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>404.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>428.e1</ce:first-page>
+		  <ce:last-page>428.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00031-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00031-7</ce:doi>
+		<ce:title>Polimixinas (polimixina B y colistina)</ce:title>
+		<ce:pages>
+		  <ce:first-page>429</ce:first-page>
+		  <ce:last-page>433</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>429.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>433.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00032-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00032-9</ce:doi>
+		<ce:title>Linezolid y otras oxazolidinonas</ce:title>
+		<ce:pages>
+		  <ce:first-page>434</ce:first-page>
+		  <ce:last-page>438</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>434.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>438.e1</ce:first-page>
+		  <ce:last-page>438.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00033-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00033-0</ce:doi>
+		<ce:title>Sulfamidas y trimetoprima</ce:title>
+		<ce:pages>
+		  <ce:first-page>439</ce:first-page>
+		  <ce:last-page>447</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>439.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>447.e1</ce:first-page>
+		  <ce:last-page>447.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00034-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00034-2</ce:doi>
+		<ce:title>Quinolonas</ce:title>
+		<ce:pages>
+		  <ce:first-page>448</ce:first-page>
+		  <ce:last-page>468</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>448.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>468.e1</ce:first-page>
+		  <ce:last-page>468.e8</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00035-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00035-4</ce:doi>
+		<ce:title>Antibacterianos singulares</ce:title>
+		<ce:pages>
+		  <ce:first-page>469</ce:first-page>
+		  <ce:last-page>475</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>469.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>475.e1</ce:first-page>
+		  <ce:last-page>475.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00036-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00036-6</ce:doi>
+		<ce:title>Antimicrobianos urinarios: nitrofurantoína, fosfomicina y metenamina</ce:title>
+		<ce:pages>
+		  <ce:first-page>476</ce:first-page>
+		  <ce:last-page>480</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>476.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>480.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00037-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00037-8</ce:doi>
+		<ce:title>Antibacterianos tópicos</ce:title>
+		<ce:pages>
+		  <ce:first-page>481</ce:first-page>
+		  <ce:last-page>492</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>481.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>492.e1</ce:first-page>
+		  <ce:last-page>492.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00038-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00038-X</ce:doi>
+		<ce:title>Antimicobacterianos</ce:title>
+		<ce:pages>
+		  <ce:first-page>493</ce:first-page>
+		  <ce:last-page>509</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>493.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>509.e1</ce:first-page>
+		  <ce:last-page>509.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00039-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00039-1</ce:doi>
+		<ce:title>Fármacos activos contra hongos, <ce:italic>Pneumocystis</ce:italic> y Microsporidia</ce:title>
+		<ce:pages>
+		  <ce:first-page>510</ce:first-page>
+		  <ce:last-page>525</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>510.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>525.e1</ce:first-page>
+		  <ce:last-page>525.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00040-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00040-8</ce:doi>
+		<ce:title>Antipalúdicos</ce:title>
+		<ce:pages>
+		  <ce:first-page>526</ce:first-page>
+		  <ce:last-page>540</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>526.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>540.e1</ce:first-page>
+		  <ce:last-page>540.e5</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00041-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00041-X</ce:doi>
+		<ce:title>Fármacos en infecciones protozoarias diferentes del paludismo</ce:title>
+		<ce:pages>
+		  <ce:first-page>541</ce:first-page>
+		  <ce:last-page>549</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>541.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>549.e1</ce:first-page>
+		  <ce:last-page>549.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00042-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00042-1</ce:doi>
+		<ce:title>Antihelmínticos</ce:title>
+		<ce:pages>
+		  <ce:first-page>550</ce:first-page>
+		  <ce:last-page>558</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>550.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>558.e1</ce:first-page>
+		  <ce:last-page>558.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00043-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00043-3</ce:doi>
+		<ce:title>Antivirales: principios generales</ce:title>
+		<ce:pages>
+		  <ce:first-page>559</ce:first-page>
+		  <ce:last-page>562</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>559.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00044-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00044-5</ce:doi>
+		<ce:title>Antivirales frente al virus de la gripe y otras infecciones víricas respiratorias</ce:title>
+		<ce:pages>
+		  <ce:first-page>563</ce:first-page>
+		  <ce:last-page>578</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>563.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>578.e1</ce:first-page>
+		  <ce:last-page>578.e5</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00045-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00045-7</ce:doi>
+		<ce:title>Antivirales frente a virus herpes</ce:title>
+		<ce:pages>
+		  <ce:first-page>579</ce:first-page>
+		  <ce:last-page>596</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>579.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>596.e1</ce:first-page>
+		  <ce:last-page>596.e7</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00046-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00046-9</ce:doi>
+		<ce:title>Antivirales frente a los virus de la hepatitis</ce:title>
+		<ce:pages>
+		  <ce:first-page>597</ce:first-page>
+		  <ce:last-page>611</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>597.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>611.e1</ce:first-page>
+		  <ce:last-page>611.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00047-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00047-0</ce:doi>
+		<ce:title>Otros antivirales (interferones, imiquimod, pleconaril)</ce:title>
+		<ce:pages>
+		  <ce:first-page>612</ce:first-page>
+		  <ce:last-page>617</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>612.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>617.e1</ce:first-page>
+		  <ce:last-page>617.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00048-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00048-2</ce:doi>
+		<ce:title>Inmunomoduladores</ce:title>
+		<ce:pages>
+		  <ce:first-page>618</ce:first-page>
+		  <ce:last-page>628</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>618.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>628.e1</ce:first-page>
+		  <ce:last-page>628.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00049-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00049-4</ce:doi>
+		<ce:title>Oxigenoterapia hiperbárica</ce:title>
+		<ce:pages>
+		  <ce:first-page>629</ce:first-page>
+		  <ce:last-page>635</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>629.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>635.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00050-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00050-0</ce:doi>
+		<ce:title>Medicinas alternativas y complementarias en enfermedades infecciosas</ce:title>
+		<ce:pages>
+		  <ce:first-page>636</ce:first-page>
+		  <ce:last-page>643</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>636.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>643.e1</ce:first-page>
+		  <ce:last-page>643.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00051-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00051-2</ce:doi>
+		<ce:title>Responsabilidad en el uso de los antimicrobianos</ce:title>
+		<ce:pages>
+		  <ce:first-page>644</ce:first-page>
+		  <ce:last-page>651</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>644.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>651.e1</ce:first-page>
+		  <ce:last-page>651.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00052-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00052-4</ce:doi>
+		<ce:title>Diseño e interpretación de los estudios clínicos sobre enfermedades infecciosas</ce:title>
+		<ce:pages>
+		  <ce:first-page>652</ce:first-page>
+		  <ce:last-page>665</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>652.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>665.e1</ce:first-page>
+		  <ce:last-page>665.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00053-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00053-6</ce:doi>
+		<ce:title>Tratamiento antibiótico parenteral ambulatorio</ce:title>
+		<ce:pages>
+		  <ce:first-page>666</ce:first-page>
+		  <ce:last-page>671</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>666.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00054-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00054-8</ce:doi>
+		<ce:title>Tablas farmacológicas de los medicamentos antiinfecciosos</ce:title>
+		<ce:pages>
+		  <ce:first-page>672</ce:first-page>
+		  <ce:last-page>733</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>672.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	  </part>
+	  <part id="pa0040">
+	    <ce:label>II</ce:label>
+	    <ce:title>Síndromes clínicos principales</ce:title>
+	    <part id="pa0045">
+	      <ce:label>A</ce:label>
+	      <ce:title>Fiebre</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00055-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00055-X</ce:doi>
+		<ce:title>Regulación de la temperatura y patogenia de la fiebre</ce:title>
+		<ce:pages>
+		  <ce:first-page>734</ce:first-page>
+		  <ce:last-page>746</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>734.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>746.e1</ce:first-page>
+		  <ce:last-page>746.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00056-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00056-1</ce:doi>
+		<ce:title>Fiebre de origen desconocido</ce:title>
+		<ce:pages>
+		  <ce:first-page>747</ce:first-page>
+		  <ce:last-page>757</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>747.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>757.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00057-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00057-3</ce:doi>
+		<ce:title>El enfermo agudo con fiebre y exantema</ce:title>
+		<ce:pages>
+		  <ce:first-page>758</ce:first-page>
+		  <ce:last-page>774</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>758.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>774.e1</ce:first-page>
+		  <ce:last-page>774.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0050">
+	      <ce:label>B</ce:label>
+	      <ce:title>Infecciones de las vías respiratorias superiores</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00058-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00058-5</ce:doi>
+		<ce:title>Resfriado común</ce:title>
+		<ce:pages>
+		  <ce:first-page>775</ce:first-page>
+		  <ce:last-page>779</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>775.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>779.e1</ce:first-page>
+		  <ce:last-page>779.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00059-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00059-7</ce:doi>
+		<ce:title>Faringitis</ce:title>
+		<ce:pages>
+		  <ce:first-page>780</ce:first-page>
+		  <ce:last-page>786</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>780.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>786.e1</ce:first-page>
+		  <ce:last-page>786.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00060-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00060-3</ce:doi>
+		<ce:title>Laringitis aguda</ce:title>
+		<ce:pages>
+		  <ce:first-page>787</ce:first-page>
+		  <ce:last-page>788</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>787.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>788.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00061-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00061-5</ce:doi>
+		<ce:title>Crup en la infancia (laringotraqueobronquitis aguda)</ce:title>
+		<ce:pages>
+		  <ce:first-page>789</ce:first-page>
+		  <ce:last-page>793</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>789.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>793.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00062-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00062-7</ce:doi>
+		<ce:title>Otitis externa, otitis media y mastoiditis</ce:title>
+		<ce:pages>
+		  <ce:first-page>794</ce:first-page>
+		  <ce:last-page>800</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>794.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>800.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00063-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00063-9</ce:doi>
+		<ce:title>Sinusitis</ce:title>
+		<ce:pages>
+		  <ce:first-page>801</ce:first-page>
+		  <ce:last-page>811</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>801.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>811.e1</ce:first-page>
+		  <ce:last-page>811.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00064-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00064-0</ce:doi>
+		<ce:title>Epiglotitis</ce:title>
+		<ce:pages>
+		  <ce:first-page>812</ce:first-page>
+		  <ce:last-page>815</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>812.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>815.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00065-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00065-2</ce:doi>
+		<ce:title>Infecciones de la cavidad oral, el cuello y la cabeza</ce:title>
+		<ce:pages>
+		  <ce:first-page>816</ce:first-page>
+		  <ce:last-page>833</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>816.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>833.e1</ce:first-page>
+		  <ce:last-page>833.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0055">
+	      <ce:label>C</ce:label>
+	      <ce:title>Infecciones pleuropulmonares y bronquiales</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00066-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00066-4</ce:doi>
+		<ce:title>Bronquitis aguda</ce:title>
+		<ce:pages>
+		  <ce:first-page>834</ce:first-page>
+		  <ce:last-page>837</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>834.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>837.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00067-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00067-6</ce:doi>
+		<ce:title>Enfermedad pulmonar obstructiva crónica y exacerbaciones agudas</ce:title>
+		<ce:pages>
+		  <ce:first-page>838</ce:first-page>
+		  <ce:last-page>846</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>838.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>846.e1</ce:first-page>
+		  <ce:last-page>846.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00068-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00068-8</ce:doi>
+		<ce:title>Bronquiolitis</ce:title>
+		<ce:pages>
+		  <ce:first-page>847</ce:first-page>
+		  <ce:last-page>852</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>847.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>852.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00069-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00069-X</ce:doi>
+		<ce:title>Neumonía aguda</ce:title>
+		<ce:pages>
+		  <ce:first-page>853</ce:first-page>
+		  <ce:last-page>877</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>853.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>877.e1</ce:first-page>
+		  <ce:last-page>877.e5</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00070-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00070-6</ce:doi>
+		<ce:title>Derrame pleural y empiema</ce:title>
+		<ce:pages>
+		  <ce:first-page>878</ce:first-page>
+		  <ce:last-page>886</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>878.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>886.e1</ce:first-page>
+		  <ce:last-page>886.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00071-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00071-8</ce:doi>
+		<ce:title>Absceso pulmonar bacteriano</ce:title>
+		<ce:pages>
+		  <ce:first-page>887</ce:first-page>
+		  <ce:last-page>891</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>887.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00072-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00072-X</ce:doi>
+		<ce:title>Neumonía crónica</ce:title>
+		<ce:pages>
+		  <ce:first-page>892</ce:first-page>
+		  <ce:last-page>905</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>892.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>905.e1</ce:first-page>
+		  <ce:last-page>905.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00073-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00073-1</ce:doi>
+		<ce:title>Fibrosis quística</ce:title>
+		<ce:pages>
+		  <ce:first-page>906</ce:first-page>
+		  <ce:last-page>918</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>906.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>918.e1</ce:first-page>
+		  <ce:last-page>918.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0060">
+	      <ce:label>D</ce:label>
+	      <ce:title>Infecciones del tracto urinario</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00074-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00074-3</ce:doi>
+		<ce:title>Infecciones del tracto urinario</ce:title>
+		<ce:pages>
+		  <ce:first-page>919</ce:first-page>
+		  <ce:last-page>948</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>919.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>948.e1</ce:first-page>
+		  <ce:last-page>948.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0065">
+	      <ce:label>E</ce:label>
+	      <ce:title>Sepsis</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00075-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00075-5</ce:doi>
+		<ce:title>Sepsis, sepsis grave y shock séptico</ce:title>
+		<ce:pages>
+		  <ce:first-page>949</ce:first-page>
+		  <ce:last-page>971</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>949.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>971.e1</ce:first-page>
+		  <ce:last-page>971.e6</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0070">
+	      <ce:label>F</ce:label>
+	      <ce:title>Infecciones intraabdominales</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00076-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00076-7</ce:doi>
+		<ce:title>Peritonitis y abscesos intraperitoneales</ce:title>
+		<ce:pages>
+		  <ce:first-page>972</ce:first-page>
+		  <ce:last-page>997</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>972.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>997.e1</ce:first-page>
+		  <ce:last-page>997.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00077-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00077-9</ce:doi>
+		<ce:title>Infecciones hepáticas y del sistema biliar (absceso hepático, colangitis, colecistitis)</ce:title>
+		<ce:pages>
+		  <ce:first-page>998</ce:first-page>
+		  <ce:last-page>1006</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>998.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1006.e1</ce:first-page>
+		  <ce:last-page>1006.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00078-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00078-0</ce:doi>
+		<ce:title>Infecciones pancreáticas</ce:title>
+		<ce:pages>
+		  <ce:first-page>1007</ce:first-page>
+		  <ce:last-page>1017</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1007.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1017.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00079-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00079-2</ce:doi>
+		<ce:title>Absceso esplénico</ce:title>
+		<ce:pages>
+		  <ce:first-page>1018</ce:first-page>
+		  <ce:last-page>1020</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1018.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00080-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00080-9</ce:doi>
+		<ce:title>Apendicitis</ce:title>
+		<ce:pages>
+		  <ce:first-page>1021</ce:first-page>
+		  <ce:last-page>1024</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1021.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1024.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00081-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00081-0</ce:doi>
+		<ce:title>Diverticulitis y tiflitis</ce:title>
+		<ce:pages>
+		  <ce:first-page>1025</ce:first-page>
+		  <ce:last-page>1028</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1025.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1028.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0075">
+	      <ce:label>G</ce:label>
+	      <ce:title>Infecciones cardiovasculares</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00082-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00082-2</ce:doi>
+		<ce:title>Endocarditis e infecciones intravasculares</ce:title>
+		<ce:pages>
+		  <ce:first-page>1029</ce:first-page>
+		  <ce:last-page>1070</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1029.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1070.e1</ce:first-page>
+		  <ce:last-page>1070.e10</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00083-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00083-4</ce:doi>
+		<ce:title>Endocarditis sobre válvula protésica</ce:title>
+		<ce:pages>
+		  <ce:first-page>1071</ce:first-page>
+		  <ce:last-page>1083</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1071.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1083.e1</ce:first-page>
+		  <ce:last-page>1083.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00084-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00084-6</ce:doi>
+		<ce:title>Infecciones de los dispositivos cardiovasculares no valvulares</ce:title>
+		<ce:pages>
+		  <ce:first-page>1084</ce:first-page>
+		  <ce:last-page>1100</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1084.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1100.e1</ce:first-page>
+		  <ce:last-page>1100.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00085-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00085-8</ce:doi>
+		<ce:title>Profilaxis de la endocarditis infecciosa</ce:title>
+		<ce:pages>
+		  <ce:first-page>1101</ce:first-page>
+		  <ce:last-page>1109</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1101.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1109.e1</ce:first-page>
+		  <ce:last-page>1109.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00086-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00086-X</ce:doi>
+		<ce:title>Miocarditis y pericarditis</ce:title>
+		<ce:pages>
+		  <ce:first-page>1110</ce:first-page>
+		  <ce:last-page>1124</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1110.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1124.e1</ce:first-page>
+		  <ce:last-page>1124.e8</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00087-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00087-1</ce:doi>
+		<ce:title>Mediastinitis</ce:title>
+		<ce:pages>
+		  <ce:first-page>1125</ce:first-page>
+		  <ce:last-page>1135</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1125.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1135.e1</ce:first-page>
+		  <ce:last-page>1135.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0080">
+	      <ce:label>H</ce:label>
+	      <ce:title>Infecciones del sistema nervioso central</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00088-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00088-3</ce:doi>
+		<ce:title>Enfoque del paciente con una infección del sistema nervioso central</ce:title>
+		<ce:pages>
+		  <ce:first-page>1136</ce:first-page>
+		  <ce:last-page>1141</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1136.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00089-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00089-5</ce:doi>
+		<ce:title>Meningitis aguda</ce:title>
+		<ce:pages>
+		  <ce:first-page>1142</ce:first-page>
+		  <ce:last-page>1185</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1142.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1185.e1</ce:first-page>
+		  <ce:last-page>1185.e8</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00090-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00090-1</ce:doi>
+		<ce:title>Meningitis crónica</ce:title>
+		<ce:pages>
+		  <ce:first-page>1186</ce:first-page>
+		  <ce:last-page>1192</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1186.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00091-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00091-3</ce:doi>
+		<ce:title>Encefalitis</ce:title>
+		<ce:pages>
+		  <ce:first-page>1193</ce:first-page>
+		  <ce:last-page>1213</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1193.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1213.e1</ce:first-page>
+		  <ce:last-page>1213.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00092-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00092-5</ce:doi>
+		<ce:title>Absceso cerebral</ce:title>
+		<ce:pages>
+		  <ce:first-page>1214</ce:first-page>
+		  <ce:last-page>1227</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1214.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1227.e1</ce:first-page>
+		  <ce:last-page>1227.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00093-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00093-7</ce:doi>
+		<ce:title>Empiema subdural, absceso epidural y tromboflebitis intracraneal supurativa</ce:title>
+		<ce:pages>
+		  <ce:first-page>1228</ce:first-page>
+		  <ce:last-page>1236</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1228.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1236.e1</ce:first-page>
+		  <ce:last-page>1236.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00094-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00094-9</ce:doi>
+		<ce:title>Infecciones de las derivaciones y drenajes de líquido cefalorraquídeo</ce:title>
+		<ce:pages>
+		  <ce:first-page>1237</ce:first-page>
+		  <ce:last-page>1245</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1237.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1245.e1</ce:first-page>
+		  <ce:last-page>1245.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0085">
+	      <ce:label>I</ce:label>
+	      <ce:title>Infecciones de la piel y los tejidos blandos</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00095-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00095-0</ce:doi>
+		<ce:title>Celulitis, fascitis necrosante e infecciones del tejido subcutáneo</ce:title>
+		<ce:pages>
+		  <ce:first-page>1246</ce:first-page>
+		  <ce:last-page>1269</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1246.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1269.e1</ce:first-page>
+		  <ce:last-page>1269.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00096-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00096-2</ce:doi>
+		<ce:title>Miositis y mionecrosis</ce:title>
+		<ce:pages>
+		  <ce:first-page>1270</ce:first-page>
+		  <ce:last-page>1279</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1270.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1279.e1</ce:first-page>
+		  <ce:last-page>1279.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00097-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00097-4</ce:doi>
+		<ce:title>Linfadenitis y linfangitis</ce:title>
+		<ce:pages>
+		  <ce:first-page>1280</ce:first-page>
+		  <ce:last-page>1291</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1280.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1291.e1</ce:first-page>
+		  <ce:last-page>1291.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0090">
+	      <ce:label>J</ce:label>
+	      <ce:title>Infecciones gastrointestinales e intoxicaciones alimentarias</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00098-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00098-6</ce:doi>
+		<ce:title>Síndromes de infección entérica</ce:title>
+		<ce:pages>
+		  <ce:first-page>1292</ce:first-page>
+		  <ce:last-page>1301</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1292.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1301.e1</ce:first-page>
+		  <ce:last-page>1301.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00099-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00099-8</ce:doi>
+		<ce:title>Esofagitis</ce:title>
+		<ce:pages>
+		  <ce:first-page>1302</ce:first-page>
+		  <ce:last-page>1306</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1302.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1306.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00100-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00100-1</ce:doi>
+		<ce:title>Náuseas, vómitos y diarrea no inflamatoria</ce:title>
+		<ce:pages>
+		  <ce:first-page>1307</ce:first-page>
+		  <ce:last-page>1316</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1307.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1316.e1</ce:first-page>
+		  <ce:last-page>1316.e5</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00101-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00101-3</ce:doi>
+		<ce:title>Enteritis inflamatorias bacterianas</ce:title>
+		<ce:pages>
+		  <ce:first-page>1317</ce:first-page>
+		  <ce:last-page>1324</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1317.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1324.e1</ce:first-page>
+		  <ce:last-page>1324.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00102-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00102-5</ce:doi>
+		<ce:title>Fiebre entérica y otras causas de fiebre y síntomas abdominales</ce:title>
+		<ce:pages>
+		  <ce:first-page>1325</ce:first-page>
+		  <ce:last-page>1338</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1325.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1338.e1</ce:first-page>
+		  <ce:last-page>1338.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00103-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00103-7</ce:doi>
+		<ce:title>Toxiinfecciones alimentarias</ce:title>
+		<ce:pages>
+		  <ce:first-page>1339</ce:first-page>
+		  <ce:last-page>1353</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1339.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1353.e1</ce:first-page>
+		  <ce:last-page>1353.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00104-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00104-9</ce:doi>
+		<ce:title>Esprue tropical: enteropatía</ce:title>
+		<ce:pages>
+		  <ce:first-page>1354</ce:first-page>
+		  <ce:last-page>1358</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1354.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0095">
+	      <ce:label>K</ce:label>
+	      <ce:title>Infecciones osteoarticulares</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00105-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00105-0</ce:doi>
+		<ce:title>Artritis infecciosa de las articulaciones nativas</ce:title>
+		<ce:pages>
+		  <ce:first-page>1359</ce:first-page>
+		  <ce:last-page>1375</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1359.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1375.e1</ce:first-page>
+		  <ce:last-page>1375.e5</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00106-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00106-2</ce:doi>
+		<ce:title>Osteomielitis</ce:title>
+		<ce:pages>
+		  <ce:first-page>1376</ce:first-page>
+		  <ce:last-page>1385</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1376.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1385.e1</ce:first-page>
+		  <ce:last-page>1385.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00107-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00107-4</ce:doi>
+		<ce:title>Infecciones asociadas a implantes ortopédicos</ce:title>
+		<ce:pages>
+		  <ce:first-page>1386</ce:first-page>
+		  <ce:last-page>1398</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1386.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1398.e1</ce:first-page>
+		  <ce:last-page>1398.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0100">
+	      <ce:label>L</ce:label>
+	      <ce:title>Enfermedades de los órganos de la reproducción y enfermedades de transmisión sexual</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00108-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00108-6</ce:doi>
+		<ce:title>Lesiones cutáneas y mucosas genitales</ce:title>
+		<ce:pages>
+		  <ce:first-page>1399</ce:first-page>
+		  <ce:last-page>1407</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1399.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1407.e1</ce:first-page>
+		  <ce:last-page>1407.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00109-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00109-8</ce:doi>
+		<ce:title>Uretritis</ce:title>
+		<ce:pages>
+		  <ce:first-page>1408</ce:first-page>
+		  <ce:last-page>1417</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1408.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1417.e1</ce:first-page>
+		  <ce:last-page>1417.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00110-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00110-4</ce:doi>
+		<ce:title>Vulvovaginitis y cervicitis</ce:title>
+		<ce:pages>
+		  <ce:first-page>1418</ce:first-page>
+		  <ce:last-page>1432</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1418.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1432.e1</ce:first-page>
+		  <ce:last-page>1432.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00111-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00111-6</ce:doi>
+		<ce:title>Infecciones de la pelvis femenina</ce:title>
+		<ce:pages>
+		  <ce:first-page>1433</ce:first-page>
+		  <ce:last-page>1441</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1433.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1441.e1</ce:first-page>
+		  <ce:last-page>1441.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00112-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00112-8</ce:doi>
+		<ce:title>Prostatitis, epididimitis y orquitis</ce:title>
+		<ce:pages>
+		  <ce:first-page>1442</ce:first-page>
+		  <ce:last-page>1448</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1442.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1448.e1</ce:first-page>
+		  <ce:last-page>1448.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0105">
+	      <ce:label>M</ce:label>
+	      <ce:title>Infecciones oculares</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00113-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00113-X</ce:doi>
+		<ce:title>Introducción a las infecciones oculares</ce:title>
+		<ce:pages>
+		  <ce:first-page>1449</ce:first-page>
+		  <ce:last-page>1452</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1449.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00114-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00114-1</ce:doi>
+		<ce:title>Conjuntivitis microbiana</ce:title>
+		<ce:pages>
+		  <ce:first-page>1453</ce:first-page>
+		  <ce:last-page>1462</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1453.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1462.e1</ce:first-page>
+		  <ce:last-page>1462.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00115-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00115-3</ce:doi>
+		<ce:title>Queratitis microbiana</ce:title>
+		<ce:pages>
+		  <ce:first-page>1463</ce:first-page>
+		  <ce:last-page>1477</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1463.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1477.e1</ce:first-page>
+		  <ce:last-page>1477.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00116-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00116-5</ce:doi>
+		<ce:title>Endoftalmitis</ce:title>
+		<ce:pages>
+		  <ce:first-page>1478</ce:first-page>
+		  <ce:last-page>1485</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1478.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1485.e1</ce:first-page>
+		  <ce:last-page>1485.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00117-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00117-7</ce:doi>
+		<ce:title>Uveítis de etiología infecciosa</ce:title>
+		<ce:pages>
+		  <ce:first-page>1486</ce:first-page>
+		  <ce:last-page>1495</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1486.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1495.e1</ce:first-page>
+		  <ce:last-page>1495.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00118-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00118-9</ce:doi>
+		<ce:title>Infecciones perioculares</ce:title>
+		<ce:pages>
+		  <ce:first-page>1496</ce:first-page>
+		  <ce:last-page>1503</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1496.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1503.e1</ce:first-page>
+		  <ce:last-page>1503.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0110">
+	      <ce:label>N</ce:label>
+	      <ce:title>Hepatitis</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00119-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00119-0</ce:doi>
+		<ce:title>Hepatitis viral</ce:title>
+		<ce:pages>
+		  <ce:first-page>1504</ce:first-page>
+		  <ce:last-page>1535</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1504.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1535.e1</ce:first-page>
+		  <ce:last-page>1535.e7</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0115">
+	      <ce:label>O</ce:label>
+	      <ce:title>Síndrome de inmunodeficiencia adquirida</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00120-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00120-7</ce:doi>
+		<ce:title>Perspectivas globales sobre la infección por el virus de la inmunodeficiencia humana y el síndrome de inmunodeficiencia adquirida</ce:title>
+		<ce:pages>
+		  <ce:first-page>1536</ce:first-page>
+		  <ce:last-page>1550</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1536.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1550.e1</ce:first-page>
+		  <ce:last-page>1550.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00121-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00121-9</ce:doi>
+		<ce:title>Epidemiología y prevención del síndrome de inmunodeficiencia adquirida y de la infección por el virus de la inmunodeficiencia humana</ce:title>
+		<ce:pages>
+		  <ce:first-page>1551</ce:first-page>
+		  <ce:last-page>1572</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1551.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1572.e1</ce:first-page>
+		  <ce:last-page>1572.e8</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00122-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00122-0</ce:doi>
+		<ce:title>Diagnóstico de la infección por el virus de la inmunodeficiencia humana</ce:title>
+		<ce:pages>
+		  <ce:first-page>1573</ce:first-page>
+		  <ce:last-page>1598</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1573.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1598.e1</ce:first-page>
+		  <ce:last-page>1598.e7</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00123-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00123-2</ce:doi>
+		<ce:title>Inmunología de la infección por el virus de la inmunodeficiencia humana</ce:title>
+		<ce:pages>
+		  <ce:first-page>1599</ce:first-page>
+		  <ce:last-page>1614</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1599.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1614.e1</ce:first-page>
+		  <ce:last-page>1614.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00124-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00124-4</ce:doi>
+		<ce:title>Manifestaciones clínicas generales de la infección por el virus de la inmunodeficiencia humana (incluidos el síndrome retroviral agudo y las enfermedades orales, cutáneas, renales, oculares, metabólicas y cardíacas)</ce:title>
+		<ce:pages>
+		  <ce:first-page>1615</ce:first-page>
+		  <ce:last-page>1633</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1615.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1633.e1</ce:first-page>
+		  <ce:last-page>1633.e5</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00125-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00125-6</ce:doi>
+		<ce:title>Manifestaciones pulmonares de la infección por el virus de la inmunodeficiencia humana</ce:title>
+		<ce:pages>
+		  <ce:first-page>1634</ce:first-page>
+		  <ce:last-page>1642</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1634.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1642.e1</ce:first-page>
+		  <ce:last-page>1642.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00126-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00126-8</ce:doi>
+		<ce:title>Manifestaciones gastrointestinales, hepatobiliares y pancreáticas de la infección por el virus de la inmunodeficiencia humana</ce:title>
+		<ce:pages>
+		  <ce:first-page>1643</ce:first-page>
+		  <ce:last-page>1650</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1643.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00127-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00127-X</ce:doi>
+		<ce:title>Enfermedades neurológicas causadas por el virus de la inmunodeficiencia humana tipo 1 e infecciones oportunistas</ce:title>
+		<ce:pages>
+		  <ce:first-page>1651</ce:first-page>
+		  <ce:last-page>1667</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1651.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1667.e1</ce:first-page>
+		  <ce:last-page>1667.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00128-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00128-1</ce:doi>
+		<ce:title>Infección por el virus de la inmunodeficiencia humana en la mujer</ce:title>
+		<ce:pages>
+		  <ce:first-page>1668</ce:first-page>
+		  <ce:last-page>1697</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1668.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1697.e1</ce:first-page>
+		  <ce:last-page>1697.e8</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00129-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00129-3</ce:doi>
+		<ce:title>Infección por el virus de la inmunodeficiencia humana en los niños</ce:title>
+		<ce:pages>
+		  <ce:first-page>1698</ce:first-page>
+		  <ce:last-page>1703</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1698.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1703.e1</ce:first-page>
+		  <ce:last-page>1703.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00130-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00130-X</ce:doi>
+		<ce:title>Tratamiento antirretroviral de la infección por el virus de la inmunodeficiencia humana</ce:title>
+		<ce:pages>
+		  <ce:first-page>1704</ce:first-page>
+		  <ce:last-page>1724</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1704.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1724.e1</ce:first-page>
+		  <ce:last-page>1724.e5</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00131-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00131-1</ce:doi>
+		<ce:title>Tratamiento de las infecciones oportunistas asociadas a la infección por el virus de la inmunodeficiencia humana</ce:title>
+		<ce:pages>
+		  <ce:first-page>1725</ce:first-page>
+		  <ce:last-page>1749</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1725.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1749.e1</ce:first-page>
+		  <ce:last-page>1749.e5</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00132-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00132-3</ce:doi>
+		<ce:title>Vacunas contra la infección por el virus de la inmunodeficiencia humana tipo 1</ce:title>
+		<ce:pages>
+		  <ce:first-page>1750</ce:first-page>
+		  <ce:last-page>1757</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1750.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1757.e1</ce:first-page>
+		  <ce:last-page>1757.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0120">
+	      <ce:label>P</ce:label>
+	      <ce:title>Otros síndromes</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00133-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00133-5</ce:doi>
+		<ce:title>Síndrome de fatiga crónica</ce:title>
+		<ce:pages>
+		  <ce:first-page>1758</ce:first-page>
+		  <ce:last-page>1764</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1758.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1764.e1</ce:first-page>
+		  <ce:last-page>1764.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	  </part>
+	</volume>
+	<volume id="v2">
+	  <ce:label>Volumen 2</ce:label>
+	  <part id="pa0125">
+	    <ce:label>III</ce:label>
+	    <ce:title>Agentes etiológicos de las enfermedades infecciosas</ce:title>
+	    <part id="pa0130">
+	      <ce:label>A</ce:label>
+	      <ce:title>Enfermedades virales</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00134-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00134-7</ce:doi>
+		<ce:title>Biología de los virus y enfermedades virales</ce:title>
+		<ce:pages>
+		  <ce:first-page>1765</ce:first-page>
+		  <ce:last-page>1778</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1765.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>1778.e1</ce:first-page>
+		  <ce:last-page>1778.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <part id="pa0135">
+		<ce:label>i</ce:label>
+		<ce:title>Virus de ADN</ce:title>
+		<part id="pa0140">
+		  <ce:label>a</ce:label>
+		  <ce:title>Poxviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00135-9</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00135-9</ce:doi>
+		    <ce:title>Ortopoxvirus: vaccinia (vacuna antivariólica), viruela, viruela del mono y viruela bovina</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1779</ce:first-page>
+		      <ce:last-page>1788</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1779.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1788.e1</ce:first-page>
+		      <ce:last-page>1788.e3</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00136-0</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00136-0</ce:doi>
+		    <ce:title>Otros poxvirus que infectan al ser humano: parapoxvirus (incluido el virus del orf), molluscum contagiosum y yatapoxvirus</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1789</ce:first-page>
+		      <ce:last-page>1792</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1789.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1792.e1</ce:first-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+		<part id="pa0145">
+		  <ce:label>b</ce:label>
+		  <ce:title>Herpesviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00137-2</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00137-2</ce:doi>
+		    <ce:title>Introducción a los Herpesviridae</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1793</ce:first-page>
+		      <ce:last-page>1798</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1793.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1798.e1</ce:first-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00138-4</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00138-4</ce:doi>
+		    <ce:title>Virus del herpes simple</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1799</ce:first-page>
+		      <ce:last-page>1817</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1799.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1817.e1</ce:first-page>
+		      <ce:last-page>1817.e6</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00139-6</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00139-6</ce:doi>
+		    <ce:title>Varicela y herpes zóster (virus de la varicela zóster)</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1818</ce:first-page>
+		      <ce:last-page>1824</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1818.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1824.e1</ce:first-page>
+		      <ce:last-page>1824.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00140-2</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00140-2</ce:doi>
+		    <ce:title>Citomegalovirus (CMV)</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1825</ce:first-page>
+		      <ce:last-page>1842</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1825.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1842.e1</ce:first-page>
+		      <ce:last-page>1842.e4</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00141-4</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00141-4</ce:doi>
+		    <ce:title>Virus de Epstein-Barr (mononucleosis infecciosa, neoplasias asociadas al virus de Epstein-Barr y otras enfermedades)</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1843</ce:first-page>
+		      <ce:last-page>1861</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1843.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1861.e1</ce:first-page>
+		      <ce:last-page>1861.e6</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00142-6</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00142-6</ce:doi>
+		    <ce:title>Virus herpes humanos de tipos 6 y 7 (exantema súbito)</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1862</ce:first-page>
+		      <ce:last-page>1867</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1862.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1867.e1</ce:first-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00143-8</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00143-8</ce:doi>
+		    <ce:title>Virus herpes asociado al sarcoma de Kaposi (virus herpes humano de tipo 8)</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1868</ce:first-page>
+		      <ce:last-page>1873</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1868.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1873.e1</ce:first-page>
+		      <ce:last-page>1873.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00144-X</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00144-X</ce:doi>
+		    <ce:title>Virus del herpes B</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1874</ce:first-page>
+		      <ce:last-page>1877</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1874.e1</ce:first-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+		<part id="pa0150">
+		  <ce:label>c</ce:label>
+		  <ce:title>Adenoviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00145-1</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00145-1</ce:doi>
+		    <ce:title>Adenovirus</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1878</ce:first-page>
+		      <ce:last-page>1884</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1878.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1884.e1</ce:first-page>
+		      <ce:last-page>1884.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+		<part id="pa0155">
+		  <ce:label>d</ce:label>
+		  <ce:title>Papillomaviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00146-3</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00146-3</ce:doi>
+		    <ce:title>Papilomavirus</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1885</ce:first-page>
+		      <ce:last-page>1899</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1885.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1899.e1</ce:first-page>
+		      <ce:last-page>1899.e4</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00147-5</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00147-5</ce:doi>
+		    <ce:title>Virus JC, BK y otros poliomavirus: leucoencefalopatía multifocal progresiva (LMP)</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1900</ce:first-page>
+		      <ce:last-page>1908</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1900.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1908.e1</ce:first-page>
+		      <ce:last-page>1908.e3</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+		<part id="pa0160">
+		  <ce:label>e</ce:label>
+		  <ce:title>Hepadnaviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00148-7</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00148-7</ce:doi>
+		    <ce:title>Virus de la hepatitis B y virus de la hepatitis delta</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1909</ce:first-page>
+		      <ce:last-page>1935</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1909.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1935.e1</ce:first-page>
+		      <ce:last-page>1935.e6</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+		<part id="pa0165">
+		  <ce:label>f</ce:label>
+		  <ce:title>Parvoviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00149-9</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00149-9</ce:doi>
+		    <ce:title>Parvovirus humanos, incluidos parvovirus B19 y bocaparvovirus humanos</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1936</ce:first-page>
+		      <ce:last-page>1944</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1936.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1944.e1</ce:first-page>
+		      <ce:last-page>1944.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+	      </part>
+	      <part id="pa0170">
+		<ce:label>ii</ce:label>
+		<ce:title>Virus de ARN</ce:title>
+		<part id="pa0175">
+		  <ce:label>a</ce:label>
+		  <ce:title>Reoviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00150-5</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00150-5</ce:doi>
+		    <ce:title>Orthoreovirus y orbivirus</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1945</ce:first-page>
+		      <ce:last-page>1947</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1945.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1947.e1</ce:first-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00151-7</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00151-7</ce:doi>
+		    <ce:title>Coltivirus y seadornavirus</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1948</ce:first-page>
+		      <ce:last-page>1950</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1948.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1950.e1</ce:first-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00152-9</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00152-9</ce:doi>
+		    <ce:title>Rotavirus</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1951</ce:first-page>
+		      <ce:last-page>1962</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1951.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1962.e1</ce:first-page>
+		      <ce:last-page>1962.e3</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+		<part id="pa0180">
+		  <ce:label>b</ce:label>
+		  <ce:title>Togaviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00153-0</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00153-0</ce:doi>
+		    <ce:title>Alfavirus</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1963</ce:first-page>
+		      <ce:last-page>1973</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1963.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1973.e1</ce:first-page>
+		      <ce:last-page>1973.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00154-2</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00154-2</ce:doi>
+		    <ce:title>Virus de la rubéola</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1974</ce:first-page>
+		      <ce:last-page>1979</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1974.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1979.e1</ce:first-page>
+		      <ce:last-page>1979.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+		<part id="pa0185">
+		  <ce:label>c</ce:label>
+		  <ce:title>Flaviviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00155-4</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00155-4</ce:doi>
+		    <ce:title>Flavivirus (dengue, fiebre amarilla, encefalitis japonesa, encefalitis del Nilo Occidental, encefalitis de San Luis, encefalitis transmitida por garrapatas, enfermedad del bosque de Kyasanur, fiebre hemorrágica de Alkhurma, Zika)</ce:title>
+		    <ce:pages>
+		      <ce:first-page>1980</ce:first-page>
+		      <ce:last-page>2003</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>1980.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2003.e1</ce:first-page>
+		      <ce:last-page>2003.e6</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00156-6</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00156-6</ce:doi>
+		    <ce:title>Hepatitis C</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2004</ce:first-page>
+		      <ce:last-page>2029</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2004.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2029.e1</ce:first-page>
+		      <ce:last-page>2029.e9</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+		<part id="pa0190">
+		  <ce:label>d</ce:label>
+		  <ce:title>Coronaviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00157-8</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00157-8</ce:doi>
+		    <ce:title>Coronavirus, incluido el síndrome respiratorio agudo grave (SRAG) y el síndrome respiratorio de Oriente Medio (SROM)</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2030</ce:first-page>
+		      <ce:last-page>2038</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2030.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2038.e1</ce:first-page>
+		      <ce:last-page>2038.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+		<part id="pa0195">
+		  <ce:label>e</ce:label>
+		  <ce:title>Paramyxoviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00158-X</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00158-X</ce:doi>
+		    <ce:title>Virus parainfluenza</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2039</ce:first-page>
+		      <ce:last-page>2044</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2039.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2044.e1</ce:first-page>
+		      <ce:last-page>2044.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00159-1</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00159-1</ce:doi>
+		    <ce:title>Virus de la parotiditis</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2045</ce:first-page>
+		      <ce:last-page>2051</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2045.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2051.e1</ce:first-page>
+		      <ce:last-page>2051.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00160-8</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00160-8</ce:doi>
+		    <ce:title>Virus respiratorio sincitial</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2052</ce:first-page>
+		      <ce:last-page>2064</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2052.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2064.e1</ce:first-page>
+		      <ce:last-page>2064.e3</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00161-X</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00161-X</ce:doi>
+		    <ce:title>Metapneumovirus humano</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2065</ce:first-page>
+		      <ce:last-page>2070</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2065.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2070.e1</ce:first-page>
+		      <ce:last-page>2070.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00162-1</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00162-1</ce:doi>
+		    <ce:title>Virus del sarampión</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2071</ce:first-page>
+		      <ce:last-page>2078</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2071.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2078.e1</ce:first-page>
+		      <ce:last-page>2078.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00163-3</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00163-3</ce:doi>
+		    <ce:title>Paramixovirus zoonóticos: virus Nipah, Hendra y Menangle</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2079</ce:first-page>
+		      <ce:last-page>2086</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2079.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2086.e1</ce:first-page>
+		      <ce:last-page>2086.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+		<part id="pa0200">
+		  <ce:label>f</ce:label>
+		  <ce:title>Rhabdoviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00164-5</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00164-5</ce:doi>
+		    <ce:title>Virus de la estomatitis vesicular y virus vesiculares relacionados</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2087</ce:first-page>
+		      <ce:last-page>2089</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2087.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2089.e1</ce:first-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00165-7</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00165-7</ce:doi>
+		    <ce:title>Rabia (rabdovirus)</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2090</ce:first-page>
+		      <ce:last-page>2100</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2090.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2100.e1</ce:first-page>
+		      <ce:last-page>2100.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+		<part id="pa0205">
+		  <ce:label>g</ce:label>
+		  <ce:title>Filoviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00166-9</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00166-9</ce:doi>
+		    <ce:title>Fiebres hemorrágicas por los virus Marburg y Ébola (filovirus)</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2101</ce:first-page>
+		      <ce:last-page>2105</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2101.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2105.e1</ce:first-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+		<part id="pa0210">
+		  <ce:label>h</ce:label>
+		  <ce:title>Orthomyxoviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00167-0</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00167-0</ce:doi>
+		    <ce:title>Virus de la gripe (incluidas gripes aviar y porcina)</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2106</ce:first-page>
+		      <ce:last-page>2131</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2106.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2131.e1</ce:first-page>
+		      <ce:last-page>2131.e6</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+		<part id="pa0215">
+		  <ce:label>i</ce:label>
+		  <ce:title>Bunyaviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00168-2</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00168-2</ce:doi>
+		    <ce:title>Encefalitis de California, síndrome pulmonar por hantavirus y fiebres hemorrágicas producidas por bunyavirus</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2132</ce:first-page>
+		      <ce:last-page>2137</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2132.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2137.e1</ce:first-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+		<part id="pa0220">
+		  <ce:label>j</ce:label>
+		  <ce:title>Arenaviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00169-4</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00169-4</ce:doi>
+		    <ce:title>Coriomeningitis linfocítica, fiebre de Lassa y fiebres hemorrágicas de Sudamérica (arenavirus)</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2138</ce:first-page>
+		      <ce:last-page>2145</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2138.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2145.e1</ce:first-page>
+		      <ce:last-page>2145.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+		<part id="pa0225">
+		  <ce:label>k</ce:label>
+		  <ce:title>Retroviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00170-0</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00170-0</ce:doi>
+		    <ce:title>Virus linfotrópico T humano (HTLV)</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2146</ce:first-page>
+		      <ce:last-page>2162</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2146.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2162.e1</ce:first-page>
+		      <ce:last-page>2162.e5</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00171-2</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00171-2</ce:doi>
+		    <ce:title>Virus de la inmunodeficiencia humana</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2163</ce:first-page>
+		      <ce:last-page>2175</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2163.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2175.e1</ce:first-page>
+		      <ce:last-page>2175.e3</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+		<part id="pa0230">
+		  <ce:label>l</ce:label>
+		  <ce:title>Picornaviridae</ce:title>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00172-4</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00172-4</ce:doi>
+		    <ce:title>Introducción a los enterovirus y parechovirus humanos</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2176</ce:first-page>
+		      <ce:last-page>2182</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2176.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2182.e1</ce:first-page>
+		      <ce:last-page>2182.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00173-6</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00173-6</ce:doi>
+		    <ce:title>Poliovirus</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2183</ce:first-page>
+		      <ce:last-page>2189</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2183.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2189.e1</ce:first-page>
+		      <ce:last-page>2189.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00174-8</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00174-8</ce:doi>
+		    <ce:title>Coxsackievirus, virus ECHO y enterovirus numerados</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2190</ce:first-page>
+		      <ce:last-page>2200</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2190.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2200.e1</ce:first-page>
+		      <ce:last-page>2200.e4</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00175-X</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00175-X</ce:doi>
+		    <ce:title>Parechovirus humanos</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2201</ce:first-page>
+		      <ce:last-page>2204</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2201.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2204.e1</ce:first-page>
+		      <ce:last-page>2204.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00176-1</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00176-1</ce:doi>
+		    <ce:title>Virus de la hepatitis A</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2205</ce:first-page>
+		      <ce:last-page>2222</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2205.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2222.e1</ce:first-page>
+		      <ce:last-page>2222.e5</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		  <ce:include-item view="all">
+		    <ce:pii>B978-84-9022-917-0.00177-3</ce:pii>
+		    <ce:doi>10.1016/B978-84-9022-917-0.00177-3</ce:doi>
+		    <ce:title>Rinovirus</ce:title>
+		    <ce:pages>
+		      <ce:first-page>2223</ce:first-page>
+		      <ce:last-page>2231</ce:last-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2223.e1</ce:first-page>
+		    </ce:pages>
+		    <ce:pages>
+		      <ce:first-page>2231.e1</ce:first-page>
+		      <ce:last-page>2231.e2</ce:last-page>
+		    </ce:pages>
+		  </ce:include-item>
+		</part>
+	      </part>
+	      <part id="pa0235">
+		<ce:label>iii</ce:label>
+		<ce:title>Caliciviridae y otros virus gastrointestinales</ce:title>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00178-5</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00178-5</ce:doi>
+		  <ce:title>Norovirus y sapovirus (calicivirus)</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2232</ce:first-page>
+		    <ce:last-page>2238</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2232.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2238.e1</ce:first-page>
+		    <ce:last-page>2238.e3</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00179-7</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00179-7</ce:doi>
+		  <ce:title>Astrovirus y picobirnavirus</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2239</ce:first-page>
+		    <ce:last-page>2241</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2239.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2241.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+	      </part>
+	      <part id="pa0240">
+		<ce:label>iv</ce:label>
+		<ce:title>Virus no clasificados</ce:title>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00180-3</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00180-3</ce:doi>
+		  <ce:title>Virus de la hepatitis E</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2242</ce:first-page>
+		    <ce:last-page>2253</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2242.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2253.e1</ce:first-page>
+		    <ce:last-page>2253.e3</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+	      </part>
+	    </part>
+	    <part id="pa0245">
+	      <ce:label>B</ce:label>
+	      <ce:title>Enfermedades priónicas</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00181-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00181-5</ce:doi>
+		<ce:title>Priones y enfermedades priónicas del sistema nervioso central (enfermedades neurodegenerativas transmisibles)</ce:title>
+		<ce:pages>
+		  <ce:first-page>2254</ce:first-page>
+		  <ce:last-page>2266</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2254.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2266.e1</ce:first-page>
+		  <ce:last-page>2266.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0250">
+	      <ce:label>C</ce:label>
+	      <ce:title>Enfermedades por clamidias</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00182-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00182-7</ce:doi>
+		<ce:title><ce:italic>Chlamydia trachomatis</ce:italic> (tracoma, infecciones genitales, infecciones perinatales y linfogranuloma venéreo)</ce:title>
+		<ce:pages>
+		  <ce:first-page>2267</ce:first-page>
+		  <ce:last-page>2285</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2267.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2285.e1</ce:first-page>
+		  <ce:last-page>2285.e5</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00183-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00183-9</ce:doi>
+		<ce:title>Psitacosis (debida a <ce:italic>Chlamydia psittaci</ce:italic>)</ce:title>
+		<ce:pages>
+		  <ce:first-page>2286</ce:first-page>
+		  <ce:last-page>2288</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2286.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2288.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00184-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00184-0</ce:doi>
+		<ce:title>
+		  <ce:italic>Chlamydia pneumoniae</ce:italic>
+		</ce:title>
+		<ce:pages>
+		  <ce:first-page>2289</ce:first-page>
+		  <ce:last-page>2297</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2289.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2297.e1</ce:first-page>
+		  <ce:last-page>2297.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0255">
+	      <ce:label>D</ce:label>
+	      <ce:title>Enfermedades por micoplasmas</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00185-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00185-2</ce:doi>
+		<ce:title><ce:italic>Mycoplasma pneumoniae</ce:italic> y neumonía atípica</ce:title>
+		<ce:pages>
+		  <ce:first-page>2298</ce:first-page>
+		  <ce:last-page>2305</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2298.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2305.e1</ce:first-page>
+		  <ce:last-page>2305.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00186-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00186-4</ce:doi>
+		<ce:title>Micoplasmas genitales: <ce:italic>Mycoplasma genitalium, Mycoplasma hominis</ce:italic> y género <ce:italic>Ureaplasma</ce:italic></ce:title>
+		<ce:pages>
+		  <ce:first-page>2306</ce:first-page>
+		  <ce:last-page>2310</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2306.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2310.e1</ce:first-page>
+		  <ce:last-page>2310.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0260">
+	      <ce:label>E</ce:label>
+	      <ce:title>Rickettsiosis, ehrlichiosis y anaplasmosis</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00187-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00187-6</ce:doi>
+		<ce:title>Introducción a las rickettsiosis, las ehrlichiosis y las anaplasmosis</ce:title>
+		<ce:pages>
+		  <ce:first-page>2311</ce:first-page>
+		  <ce:last-page>2315</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2311.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00188-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00188-8</ce:doi>
+		<ce:title><ce:italic>Rickettsia rickettsii</ce:italic> y otras rickettsias del grupo de las fiebres maculosas (fiebre maculosa de las Montañas Rocosas y otras fiebres maculosas)</ce:title>
+		<ce:pages>
+		  <ce:first-page>2316</ce:first-page>
+		  <ce:last-page>2323</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2316.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2323.e1</ce:first-page>
+		  <ce:last-page>2323.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00189-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00189-X</ce:doi>
+		<ce:title><ce:italic>Rickettsia akari</ce:italic> (rickettsiosis pustulosa o viruela rickettsiósica)</ce:title>
+		<ce:pages>
+		  <ce:first-page>2324</ce:first-page>
+		  <ce:last-page>2325</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2324.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00190-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00190-6</ce:doi>
+		<ce:title><ce:italic>Coxiella burnetii</ce:italic> (fiebre Q)</ce:title>
+		<ce:pages>
+		  <ce:first-page>2326</ce:first-page>
+		  <ce:last-page>2334</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2326.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2334.e1</ce:first-page>
+		  <ce:last-page>2334.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00191-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00191-8</ce:doi>
+		<ce:title><ce:italic>Rickettsia prowazekii</ce:italic> (tifus epidémico o transmitido por piojos)</ce:title>
+		<ce:pages>
+		  <ce:first-page>2335</ce:first-page>
+		  <ce:last-page>2338</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2335.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2338.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00192-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00192-X</ce:doi>
+		<ce:title><ce:italic>Rickettsia typhi</ce:italic> (tifus murino)</ce:title>
+		<ce:pages>
+		  <ce:first-page>2339</ce:first-page>
+		  <ce:last-page>2342</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2339.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2342.e1</ce:first-page>
+		  <ce:last-page>2342.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00193-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00193-1</ce:doi>
+		<ce:title><ce:italic>Orientia tsutsugamushi</ce:italic> (tifus de los matorrales)</ce:title>
+		<ce:pages>
+		  <ce:first-page>2343</ce:first-page>
+		  <ce:last-page>2344</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2343.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00194-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00194-3</ce:doi>
+		<ce:title><ce:italic>Ehrlichia chaffeensis</ce:italic> (ehrlichiosis monocitotrópica humana), <ce:italic>Anaplasma phagocytophilum</ce:italic> (anaplasmosis granulocitotrópica humana) y otros miembros de la familia Anaplasmataceae</ce:title>
+		<ce:pages>
+		  <ce:first-page>2345</ce:first-page>
+		  <ce:last-page>2352</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2345.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2352.e1</ce:first-page>
+		  <ce:last-page>2352.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0265">
+	      <ce:label>F</ce:label>
+	      <ce:title>Enfermedades bacterianas</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00195-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00195-5</ce:doi>
+		<ce:title>Introducción a las bacterias y a las enfermedades bacterianas</ce:title>
+		<ce:pages>
+		  <ce:first-page>2353</ce:first-page>
+		  <ce:last-page>2355</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>2353.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <part id="pa0270">
+		<ce:label>i</ce:label>
+		<ce:title>Cocos grampositivos</ce:title>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00196-7</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00196-7</ce:doi>
+		  <ce:title><ce:italic>Staphylococcus aureus</ce:italic> (incluido el síndrome del shock tóxico)</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2356</ce:first-page>
+		    <ce:last-page>2392</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2356.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2392.e1</ce:first-page>
+		    <ce:last-page>2392.e5</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00197-9</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00197-9</ce:doi>
+		  <ce:title><ce:italic>Staphylococcus epidermidis</ce:italic> y otros estafilococos coagulasa-negativos</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2393</ce:first-page>
+		    <ce:last-page>2405</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2393.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2405.e1</ce:first-page>
+		    <ce:last-page>2405.e5</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00198-0</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00198-0</ce:doi>
+		  <ce:title>Clasificación de los estreptococos</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2406</ce:first-page>
+		    <ce:last-page>2407</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2406.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00199-2</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00199-2</ce:doi>
+		  <ce:title>
+		    <ce:italic>Streptococcus pyogenes</ce:italic>
+		  </ce:title>
+		  <ce:pages>
+		    <ce:first-page>2408</ce:first-page>
+		    <ce:last-page>2423</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2408.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2423.e1</ce:first-page>
+		    <ce:last-page>2423.e4</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00200-6</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00200-6</ce:doi>
+		  <ce:title>Secuelas postestreptocócicas no supurativas: fiebre reumática y glomerulonefritis</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2424</ce:first-page>
+		    <ce:last-page>2433</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2424.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2433.e1</ce:first-page>
+		    <ce:last-page>2433.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00201-8</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00201-8</ce:doi>
+		  <ce:title>
+		    <ce:italic>Streptococcus pneumoniae</ce:italic>
+		  </ce:title>
+		  <ce:pages>
+		    <ce:first-page>2434</ce:first-page>
+		    <ce:last-page>2453</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2434.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2453.e1</ce:first-page>
+		    <ce:last-page>2453.e5</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00202-X</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00202-X</ce:doi>
+		  <ce:title>Género <ce:italic>Enterococcus,</ce:italic> grupo <ce:italic>Streptococcus gallolyticus</ce:italic> y género <ce:italic>Leuconostoc</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>2454</ce:first-page>
+		    <ce:last-page>2466</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2454.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2466.e1</ce:first-page>
+		    <ce:last-page>2466.e3</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00203-1</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00203-1</ce:doi>
+		  <ce:title><ce:italic>Streptococcus agalactiae</ce:italic> (estreptococo del grupo B)</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2467</ce:first-page>
+		    <ce:last-page>2475</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2467.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2475.e1</ce:first-page>
+		    <ce:last-page>2475.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00204-3</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00204-3</ce:doi>
+		  <ce:title>Estreptococos viridans, estreptococos nutricionalmente variables, estreptococos de los grupos C y G, y otros microorganismos relacionados</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2476</ce:first-page>
+		    <ce:last-page>2489</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2476.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2489.e1</ce:first-page>
+		    <ce:last-page>2489.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00205-5</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00205-5</ce:doi>
+		  <ce:title>Grupo <ce:italic>Streptococcus anginosus</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>2490</ce:first-page>
+		    <ce:last-page>2494</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2490.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2494.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+	      </part>
+	      <part id="pa0275">
+		<ce:label>ii</ce:label>
+		<ce:title>Bacilos grampositivos</ce:title>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00206-7</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00206-7</ce:doi>
+		  <ce:title><ce:italic>Corynebacterium diphtheriae</ce:italic> (difteria)</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2495</ce:first-page>
+		    <ce:last-page>2502</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2495.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2502.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00207-9</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00207-9</ce:doi>
+		  <ce:title>Otras bacterias corineformes y rodococos</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2503</ce:first-page>
+		    <ce:last-page>2513</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2503.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2513.e1</ce:first-page>
+		    <ce:last-page>2513.e4</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00208-0</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00208-0</ce:doi>
+		  <ce:title>
+		    <ce:italic>Listeria monocytogenes</ce:italic>
+		  </ce:title>
+		  <ce:pages>
+		    <ce:first-page>2514</ce:first-page>
+		    <ce:last-page>2521</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2514.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2521.e1</ce:first-page>
+		    <ce:last-page>2521.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00209-2</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00209-2</ce:doi>
+		  <ce:title><ce:italic>Bacillus anthracis</ce:italic> (carbunco)</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2522</ce:first-page>
+		    <ce:last-page>2542</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2522.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2542.e1</ce:first-page>
+		    <ce:last-page>2542.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00210-9</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00210-9</ce:doi>
+		  <ce:title>Otras especies de <ce:italic>Bacillus</ce:italic> distintas de <ce:italic>Bacillus anthracis</ce:italic> y géneros relacionados</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2543</ce:first-page>
+		    <ce:last-page>2547</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2543.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2547.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00211-0</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00211-0</ce:doi>
+		  <ce:title>
+		    <ce:italic>Erysipelothrix rhusiopathiae</ce:italic>
+		  </ce:title>
+		  <ce:pages>
+		    <ce:first-page>2548</ce:first-page>
+		    <ce:last-page>2550</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2548.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2550.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00212-2</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00212-2</ce:doi>
+		  <ce:title>Enfermedad de Whipple</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2551</ce:first-page>
+		    <ce:last-page>2557</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2551.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+	      </part>
+	      <part id="pa0280">
+		<ce:label>iii</ce:label>
+		<ce:title>Cocos gramnegativos</ce:title>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00213-4</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00213-4</ce:doi>
+		  <ce:title>
+		    <ce:italic>Neisseria meningitidis</ce:italic>
+		  </ce:title>
+		  <ce:pages>
+		    <ce:first-page>2558</ce:first-page>
+		    <ce:last-page>2579</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2558.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2579.e1</ce:first-page>
+		    <ce:last-page>2579.e6</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00214-6</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00214-6</ce:doi>
+		  <ce:title><ce:italic>Neisseria gonorrhoeae</ce:italic> (gonorrea)</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2580</ce:first-page>
+		    <ce:last-page>2597</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2580.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2597.e1</ce:first-page>
+		    <ce:last-page>2597.e3</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00215-8</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00215-8</ce:doi>
+		  <ce:title><ce:italic>Moraxella catarrhalis, Kingella</ce:italic> y otros cocos gramnegativos</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2598</ce:first-page>
+		    <ce:last-page>2605</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2598.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2605.e1</ce:first-page>
+		    <ce:last-page>2605.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+	      </part>
+	      <part id="pa0285">
+		<ce:label>iv</ce:label>
+		<ce:title>Bacilos gramnegativos</ce:title>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00216-X</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00216-X</ce:doi>
+		  <ce:title>
+		    <ce:italic>Vibrio cholerae</ce:italic>
+		  </ce:title>
+		  <ce:pages>
+		    <ce:first-page>2606</ce:first-page>
+		    <ce:last-page>2615</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2606.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2615.e1</ce:first-page>
+		    <ce:last-page>2615.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00217-1</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00217-1</ce:doi>
+		  <ce:title>Otros vibrios patogénicos</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2616</ce:first-page>
+		    <ce:last-page>2620</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2616.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2620.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00218-3</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00218-3</ce:doi>
+		  <ce:title><ce:italic>Campylobacter jejuni</ce:italic> y especies relacionadas</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2621</ce:first-page>
+		    <ce:last-page>2630</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2621.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2630.e1</ce:first-page>
+		    <ce:last-page>2630.e4</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00219-5</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00219-5</ce:doi>
+		  <ce:title><ce:italic>Helicobacter pylori</ce:italic> y otras especies gástricas de <ce:italic>Helicobacter</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>2631</ce:first-page>
+		    <ce:last-page>2639</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2631.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2639.e1</ce:first-page>
+		    <ce:last-page>2639.e4</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00220-1</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00220-1</ce:doi>
+		  <ce:title>Enterobacteriaceae</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2640</ce:first-page>
+		    <ce:last-page>2655</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2640.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2655.e1</ce:first-page>
+		    <ce:last-page>2655.e5</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00221-3</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00221-3</ce:doi>
+		  <ce:title><ce:italic>Pseudomonas aeruginosa</ce:italic> y otras especies de <ce:italic>Pseudomonas</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>2656</ce:first-page>
+		    <ce:last-page>2670</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2656.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2670.e1</ce:first-page>
+		    <ce:last-page>2670.e3</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00222-5</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00222-5</ce:doi>
+		  <ce:title><ce:italic>Stenotrophomonas maltophilia</ce:italic> y <ce:italic>Burkholderia cepacia</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>2671</ce:first-page>
+		    <ce:last-page>2679</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2671.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2679.e1</ce:first-page>
+		    <ce:last-page>2679.e4</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00223-7</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00223-7</ce:doi>
+		  <ce:title><ce:italic>Burkholderia pseudomallei</ce:italic> y <ce:italic>Burkholderia</ce:italic> mallei: melioidosis y muermo</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2680</ce:first-page>
+		    <ce:last-page>2690</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2680.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2690.e1</ce:first-page>
+		    <ce:last-page>2690.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00224-9</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00224-9</ce:doi>
+		  <ce:title>Género <ce:italic>Acinetobacter</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>2691</ce:first-page>
+		    <ce:last-page>2697</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2691.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2697.e1</ce:first-page>
+		    <ce:last-page>2697.e4</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00225-0</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00225-0</ce:doi>
+		  <ce:title>Género <ce:italic>Salmonella</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>2698</ce:first-page>
+		    <ce:last-page>2708</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2698.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2708.e1</ce:first-page>
+		    <ce:last-page>2708.e3</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00226-2</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00226-2</ce:doi>
+		  <ce:title>Disentería bacilar: <ce:italic>Shigella</ce:italic> y <ce:italic>Escherichia coli</ce:italic> enteroinvasiva</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2709</ce:first-page>
+		    <ce:last-page>2714</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2709.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2714.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00227-4</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00227-4</ce:doi>
+		  <ce:title>Especies de <ce:italic>Haemophilus,</ce:italic> incluidos <ce:italic>H. influenzae</ce:italic> y <ce:italic>H. ducreyi</ce:italic> (chancroide)</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2715</ce:first-page>
+		    <ce:last-page>2723</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2715.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2723.e1</ce:first-page>
+		    <ce:last-page>2723.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00228-6</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00228-6</ce:doi>
+		  <ce:title>Brucelosis (especies de <ce:italic>Brucella</ce:italic>)</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2724</ce:first-page>
+		    <ce:last-page>2729</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2724.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2729.e1</ce:first-page>
+		    <ce:last-page>2729.e3</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00229-8</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00229-8</ce:doi>
+		  <ce:title><ce:italic>Francisella tularensis</ce:italic> (tularemia)</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2730</ce:first-page>
+		    <ce:last-page>2743</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2730.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2743.e1</ce:first-page>
+		    <ce:last-page>2743.e3</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00230-4</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00230-4</ce:doi>
+		  <ce:title>Especies de <ce:italic>Pasteurella</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>2744</ce:first-page>
+		    <ce:last-page>2748</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2744.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2748.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00231-6</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00231-6</ce:doi>
+		  <ce:title>Especies de <ce:italic>Yersinia</ce:italic> (incluyendo <ce:italic>Y. pestis</ce:italic>)</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2749</ce:first-page>
+		    <ce:last-page>2761</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2749.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2761.e1</ce:first-page>
+		    <ce:last-page>2761.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00232-8</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00232-8</ce:doi>
+		  <ce:title>
+		    <ce:italic>Bordetella pertussis</ce:italic>
+		  </ce:title>
+		  <ce:pages>
+		    <ce:first-page>2762</ce:first-page>
+		    <ce:last-page>2771</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2762.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2771.e1</ce:first-page>
+		    <ce:last-page>2771.e3</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00233-X</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00233-X</ce:doi>
+		  <ce:title>Fiebre por mordedura de rata: <ce:italic>Streptobacillus moniliformis y Spirillum minus</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>2772</ce:first-page>
+		    <ce:last-page>2775</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2772.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2775.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00234-1</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00234-1</ce:doi>
+		  <ce:title>Enfermedad de los legionarios y fiebre de Pontiac</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2776</ce:first-page>
+		    <ce:last-page>2789</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2776.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2789.e1</ce:first-page>
+		    <ce:last-page>2789.e5</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00235-3</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00235-3</ce:doi>
+		  <ce:title>
+		    <ce:italic>Capnocytophaga</ce:italic>
+		  </ce:title>
+		  <ce:pages>
+		    <ce:first-page>2790</ce:first-page>
+		    <ce:last-page>2794</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2790.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2794.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00236-5</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00236-5</ce:doi>
+		  <ce:title><ce:italic>Bartonella,</ce:italic> incluida la enfermedad por arañazo de gato</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2795</ce:first-page>
+		    <ce:last-page>2810</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2795.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2810.e1</ce:first-page>
+		    <ce:last-page>2810.e4</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00237-7</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00237-7</ce:doi>
+		  <ce:title><ce:italic>Klebsiella granulomatis</ce:italic> (donovanosis, granuloma inguinal)</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2811</ce:first-page>
+		    <ce:last-page>2813</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2811.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2813.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00238-9</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00238-9</ce:doi>
+		  <ce:title>Otros bacilos gramnegativos y gramvariables</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2814</ce:first-page>
+		    <ce:last-page>2831</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2814.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2831.e1</ce:first-page>
+		    <ce:last-page>2831.e4</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+	      </part>
+	      <part id="pa0290">
+		<ce:label>v</ce:label>
+		<ce:title>Espiroquetas</ce:title>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00239-0</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00239-0</ce:doi>
+		  <ce:title>Sífilis (<ce:italic>Treponema pallidum</ce:italic>)</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2832</ce:first-page>
+		    <ce:last-page>2859</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2832.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2859.e1</ce:first-page>
+		    <ce:last-page>2859.e4</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00240-7</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00240-7</ce:doi>
+		  <ce:title>Treponematosis endémicas</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2860</ce:first-page>
+		    <ce:last-page>2863</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2860.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2863.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00241-9</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00241-9</ce:doi>
+		  <ce:title>Género <ce:italic>Leptospira</ce:italic> (leptospirosis)</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2864</ce:first-page>
+		    <ce:last-page>2871</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2864.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2871.e1</ce:first-page>
+		    <ce:last-page>2871.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00242-0</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00242-0</ce:doi>
+		  <ce:title>Fiebre recurrente causada por especies de <ce:italic>Borrelia</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>2872</ce:first-page>
+		    <ce:last-page>2875</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2872.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2875.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00243-2</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00243-2</ce:doi>
+		  <ce:title>Enfermedad de Lyme (borreliosis de Lyme) por <ce:italic>Borrelia burgdorferi</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>2876</ce:first-page>
+		    <ce:last-page>2887</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2876.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2887.e1</ce:first-page>
+		    <ce:last-page>2887.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+	      </part>
+	      <part id="pa0295">
+		<ce:label>vi</ce:label>
+		<ce:title>Bacterias anaerobias</ce:title>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00244-4</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00244-4</ce:doi>
+		  <ce:title>Infecciones por anaerobios: conceptos generales</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2888</ce:first-page>
+		    <ce:last-page>2896</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2888.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2896.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00245-6</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00245-6</ce:doi>
+		  <ce:title>Infección por <ce:italic>Clostridium difficile</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>2897</ce:first-page>
+		    <ce:last-page>2910</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2897.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2910.e1</ce:first-page>
+		    <ce:last-page>2910.e3</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00246-8</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00246-8</ce:doi>
+		  <ce:title>Tétanos <ce:italic>(Clostridium tetani)</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>2911</ce:first-page>
+		    <ce:last-page>2916</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2911.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2916.e1</ce:first-page>
+		    <ce:last-page>2916.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00247-X</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00247-X</ce:doi>
+		  <ce:title>Botulismo <ce:italic>(Clostridium botulinum)</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>2917</ce:first-page>
+		    <ce:last-page>2922</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2917.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2922.e1</ce:first-page>
+		    <ce:last-page>2922.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00248-1</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00248-1</ce:doi>
+		  <ce:title>Gangrena gaseosa y otras enfermedades asociadas a <ce:italic>Clostridium</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>2923</ce:first-page>
+		    <ce:last-page>2927</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2923.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00249-3</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00249-3</ce:doi>
+		  <ce:title>Géneros <ce:italic>Bacteroides, Prevotella, Porphyromonas</ce:italic> y <ce:italic>Fusobacterium</ce:italic> (y otros bacilos anaerobios gramnegativos destacados desde el punto de vista médico)</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2928</ce:first-page>
+		    <ce:last-page>2936</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2928.e1</ce:first-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00250-X</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00250-X</ce:doi>
+		  <ce:title>Cocos anaerobios y bacilos anaerobios grampositivos no formadores de esporas</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2937</ce:first-page>
+		    <ce:last-page>2942</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2937.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2942.e1</ce:first-page>
+		    <ce:last-page>2942.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+	      </part>
+	      <part id="pa0300">
+		<ce:label>vii</ce:label>
+		<ce:title>Enfermedades por micobacterias</ce:title>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00251-1</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00251-1</ce:doi>
+		  <ce:title>
+		    <ce:italic>Mycobacterium tuberculosis</ce:italic>
+		  </ce:title>
+		  <ce:pages>
+		    <ce:first-page>2943</ce:first-page>
+		    <ce:last-page>2978</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2943.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2978.e1</ce:first-page>
+		    <ce:last-page>2978.e4</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00252-3</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00252-3</ce:doi>
+		  <ce:title><ce:italic>Mycobacterium leprae</ce:italic> (lepra)</ce:title>
+		  <ce:pages>
+		    <ce:first-page>2979</ce:first-page>
+		    <ce:last-page>2991</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2979.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2991.e1</ce:first-page>
+		    <ce:last-page>2991.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00253-5</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00253-5</ce:doi>
+		  <ce:title>Complejo <ce:italic>Mycobacterium avium</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>2992</ce:first-page>
+		    <ce:last-page>3004</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>2992.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>3004.e1</ce:first-page>
+		    <ce:last-page>3004.e3</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00254-7</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00254-7</ce:doi>
+		  <ce:title>Infecciones causadas por micobacterias no tuberculosas diferentes a <ce:italic>Mycobacterium avium-intracellulare</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>3005</ce:first-page>
+		    <ce:last-page>3014</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>3005.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>3014.e1</ce:first-page>
+		    <ce:last-page>3014.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+	      </part>
+	      <part id="pa0305">
+		<ce:label>viii</ce:label>
+		<ce:title>Enfermedades producidas por bacterias superiores</ce:title>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00255-9</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00255-9</ce:doi>
+		  <ce:title>Especies de <ce:italic>Nocardia</ce:italic></ce:title>
+		  <ce:pages>
+		    <ce:first-page>3015</ce:first-page>
+		    <ce:last-page>3025</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>3015.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>3025.e1</ce:first-page>
+		    <ce:last-page>3025.e2</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+		<ce:include-item view="all">
+		  <ce:pii>B978-84-9022-917-0.00256-0</ce:pii>
+		  <ce:doi>10.1016/B978-84-9022-917-0.00256-0</ce:doi>
+		  <ce:title>Microorganismos causantes de actinomicosis</ce:title>
+		  <ce:pages>
+		    <ce:first-page>3026</ce:first-page>
+		    <ce:last-page>3036</ce:last-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>3026.e1</ce:first-page>
+		  </ce:pages>
+		  <ce:pages>
+		    <ce:first-page>3036.e1</ce:first-page>
+		    <ce:last-page>3036.e3</ce:last-page>
+		  </ce:pages>
+		</ce:include-item>
+	      </part>
+	    </part>
+	    <part id="pa0310">
+	      <ce:label>G</ce:label>
+	      <ce:title>Micosis</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00257-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00257-2</ce:doi>
+		<ce:title>Introducción a las micosis</ce:title>
+		<ce:pages>
+		  <ce:first-page>3037</ce:first-page>
+		  <ce:last-page>3041</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3037.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00258-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00258-4</ce:doi>
+		<ce:title>Género <ce:italic>Candida</ce:italic></ce:title>
+		<ce:pages>
+		  <ce:first-page>3042</ce:first-page>
+		  <ce:last-page>3058</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3042.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3058.e1</ce:first-page>
+		  <ce:last-page>3058.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00259-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00259-6</ce:doi>
+		<ce:title>Género <ce:italic>Aspergillus</ce:italic></ce:title>
+		<ce:pages>
+		  <ce:first-page>3059</ce:first-page>
+		  <ce:last-page>3073</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3059.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3073.e1</ce:first-page>
+		  <ce:last-page>3073.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00260-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00260-2</ce:doi>
+		<ce:title>Microorganismos causantes de mucormicosis y entomoftoramicosis</ce:title>
+		<ce:pages>
+		  <ce:first-page>3074</ce:first-page>
+		  <ce:last-page>3085</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3074.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3085.e1</ce:first-page>
+		  <ce:last-page>3085.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00261-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00261-4</ce:doi>
+		<ce:title>
+		  <ce:italic>Sporothrix schenckii</ce:italic>
+		</ce:title>
+		<ce:pages>
+		  <ce:first-page>3086</ce:first-page>
+		  <ce:last-page>3091</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3086.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3091.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00262-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00262-6</ce:doi>
+		<ce:title>Microorganismos causantes de cromoblastomicosis</ce:title>
+		<ce:pages>
+		  <ce:first-page>3092</ce:first-page>
+		  <ce:last-page>3095</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3092.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3095.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00263-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00263-8</ce:doi>
+		<ce:title>Microorganismos causantes de micetomas</ce:title>
+		<ce:pages>
+		  <ce:first-page>3096</ce:first-page>
+		  <ce:last-page>3100</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3096.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3100.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00264-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00264-X</ce:doi>
+		<ce:title>Criptococosis (<ce:italic>Cryptococcus neoformans</ce:italic> y <ce:italic>Cryptococcus gattii</ce:italic>)</ce:title>
+		<ce:pages>
+		  <ce:first-page>3101</ce:first-page>
+		  <ce:last-page>3116</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3101.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3116.e1</ce:first-page>
+		  <ce:last-page>3116.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00265-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00265-1</ce:doi>
+		<ce:title><ce:italic>Histoplasma capsulatum</ce:italic> (histoplasmosis)</ce:title>
+		<ce:pages>
+		  <ce:first-page>3117</ce:first-page>
+		  <ce:last-page>3131</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3117.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3131.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00266-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00266-3</ce:doi>
+		<ce:title>Blastomicosis</ce:title>
+		<ce:pages>
+		  <ce:first-page>3132</ce:first-page>
+		  <ce:last-page>3142</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3132.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3142.e1</ce:first-page>
+		  <ce:last-page>3142.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00267-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00267-5</ce:doi>
+		<ce:title>Coccidioidomicosis (género <ce:italic>Coccidioides</ce:italic>)</ce:title>
+		<ce:pages>
+		  <ce:first-page>3143</ce:first-page>
+		  <ce:last-page>3154</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3143.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3154.e1</ce:first-page>
+		  <ce:last-page>3154.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00268-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00268-7</ce:doi>
+		<ce:title>Dermatofitosis (tiñas) y otras micosis superficiales</ce:title>
+		<ce:pages>
+		  <ce:first-page>3155</ce:first-page>
+		  <ce:last-page>3165</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3155.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3165.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00269-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00269-9</ce:doi>
+		<ce:title>Paracoccidioidomicosis</ce:title>
+		<ce:pages>
+		  <ce:first-page>3166</ce:first-page>
+		  <ce:last-page>3174</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3166.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3174.e1</ce:first-page>
+		  <ce:last-page>3174.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00270-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00270-5</ce:doi>
+		<ce:title>Hongos poco frecuentes y especies relacionadas</ce:title>
+		<ce:pages>
+		  <ce:first-page>3175</ce:first-page>
+		  <ce:last-page>3187</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3175.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3187.e1</ce:first-page>
+		  <ce:last-page>3187.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00271-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00271-7</ce:doi>
+		<ce:title>Género <ce:italic>Pneumocystis</ce:italic></ce:title>
+		<ce:pages>
+		  <ce:first-page>3188</ce:first-page>
+		  <ce:last-page>3203</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3188.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3203.e1</ce:first-page>
+		  <ce:last-page>3203.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00272-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00272-9</ce:doi>
+		<ce:title>Microsporidiosis</ce:title>
+		<ce:pages>
+		  <ce:first-page>3204</ce:first-page>
+		  <ce:last-page>3218</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3204.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3218.e1</ce:first-page>
+		  <ce:last-page>3218.e5</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0315">
+	      <ce:label>H</ce:label>
+	      <ce:title>Enfermedades causadas por protozoos</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00273-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00273-0</ce:doi>
+		<ce:title>Introducción a las enfermedades causadas por protozoos</ce:title>
+		<ce:pages>
+		  <ce:first-page>3219</ce:first-page>
+		  <ce:last-page>3220</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3219.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3220.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00274-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00274-2</ce:doi>
+		<ce:title>Género <ce:italic>Entamoeba,</ce:italic> incluida la colitis amebiana y el absceso hepático</ce:title>
+		<ce:pages>
+		  <ce:first-page>3221</ce:first-page>
+		  <ce:last-page>3233</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3221.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3233.e1</ce:first-page>
+		  <ce:last-page>3233.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00275-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00275-4</ce:doi>
+		<ce:title>Amebas de vida libre</ce:title>
+		<ce:pages>
+		  <ce:first-page>3234</ce:first-page>
+		  <ce:last-page>3244</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3234.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3244.e1</ce:first-page>
+		  <ce:last-page>3244.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00276-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00276-6</ce:doi>
+		<ce:title>Género <ce:italic>Plasmodium</ce:italic> (malaria)</ce:title>
+		<ce:pages>
+		  <ce:first-page>3245</ce:first-page>
+		  <ce:last-page>3267</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3245.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3267.e1</ce:first-page>
+		  <ce:last-page>3267.e8</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00277-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00277-8</ce:doi>
+		<ce:title>Género <ce:italic>Leishmania</ce:italic>: leishmaniasis visceral (kala-azar), cutánea y mucosa</ce:title>
+		<ce:pages>
+		  <ce:first-page>3268</ce:first-page>
+		  <ce:last-page>3285</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3268.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3285.e1</ce:first-page>
+		  <ce:last-page>3285.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00278-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00278-X</ce:doi>
+		<ce:title>Género <ce:italic>Trypanosoma</ce:italic> (tripanosomiasis americana, enfermedad de Chagas): biología de los tripanosomas</ce:title>
+		<ce:pages>
+		  <ce:first-page>3286</ce:first-page>
+		  <ce:last-page>3293</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3286.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3293.e1</ce:first-page>
+		  <ce:last-page>3293.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00279-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00279-1</ce:doi>
+		<ce:title>Agentes de la tripanosomiasis africana (enfermedad del sueño)</ce:title>
+		<ce:pages>
+		  <ce:first-page>3294</ce:first-page>
+		  <ce:last-page>3299</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3294.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3299.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00280-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00280-8</ce:doi>
+		<ce:title>
+		  <ce:italic>Toxoplasma gondii</ce:italic>
+		</ce:title>
+		<ce:pages>
+		  <ce:first-page>3300</ce:first-page>
+		  <ce:last-page>3332</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3300.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3332.e1</ce:first-page>
+		  <ce:last-page>3332.e6</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00281-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00281-X</ce:doi>
+		<ce:title>
+		  <ce:italic>Giardia lamblia</ce:italic>
+		</ce:title>
+		<ce:pages>
+		  <ce:first-page>3333</ce:first-page>
+		  <ce:last-page>3339</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3333.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3339.e1</ce:first-page>
+		  <ce:last-page>3339.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00282-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00282-1</ce:doi>
+		<ce:title>
+		  <ce:italic>Trichomonas vaginalis</ce:italic>
+		</ce:title>
+		<ce:pages>
+		  <ce:first-page>3340</ce:first-page>
+		  <ce:last-page>3343</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3340.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3343.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00283-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00283-3</ce:doi>
+		<ce:title>Género <ce:italic>Babesia</ce:italic></ce:title>
+		<ce:pages>
+		  <ce:first-page>3344</ce:first-page>
+		  <ce:last-page>3351</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3344.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3351.e1</ce:first-page>
+		  <ce:last-page>3351.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00284-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00284-5</ce:doi>
+		<ce:title>Criptosporidiosis (género <ce:italic>Cryptosporidium</ce:italic>)</ce:title>
+		<ce:pages>
+		  <ce:first-page>3352</ce:first-page>
+		  <ce:last-page>3362</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3352.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3362.e1</ce:first-page>
+		  <ce:last-page>3362.e6</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00285-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00285-7</ce:doi>
+		<ce:title><ce:italic>Cyclospora cayetanensis, Cystoisospora (Isospora) belli, Sarcocystis</ce:italic> spp., <ce:italic>Balantidium coli</ce:italic> y <ce:italic>Blastocystis</ce:italic> spp.</ce:title>
+		<ce:pages>
+		  <ce:first-page>3363</ce:first-page>
+		  <ce:last-page>3370</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3363.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3370.e1</ce:first-page>
+		  <ce:last-page>3370.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0320">
+	      <ce:label>I</ce:label>
+	      <ce:title>Enfermedades producidas por algas tóxicas</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00286-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00286-9</ce:doi>
+		<ce:title>Enfermedades humanas asociadas a la proliferación de algas nocivas</ce:title>
+		<ce:pages>
+		  <ce:first-page>3371</ce:first-page>
+		  <ce:last-page>3374</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3371.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0325">
+	      <ce:label>J</ce:label>
+	      <ce:title>Enfermedades producidas por helmintos</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00287-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00287-0</ce:doi>
+		<ce:title>Introducción a las infestaciones por helmintos</ce:title>
+		<ce:pages>
+		  <ce:first-page>3375</ce:first-page>
+		  <ce:last-page>3377</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3375.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3377.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00288-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00288-2</ce:doi>
+		<ce:title>Nematodos intestinales (nematelmintos)</ce:title>
+		<ce:pages>
+		  <ce:first-page>3378</ce:first-page>
+		  <ce:last-page>3386</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3378.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3386.e1</ce:first-page>
+		  <ce:last-page>3386.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00289-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00289-4</ce:doi>
+		<ce:title>Nematodos tisulares (triquinelosis, dracunculosis, filariasis, loasis y oncocercosis)</ce:title>
+		<ce:pages>
+		  <ce:first-page>3387</ce:first-page>
+		  <ce:last-page>3394</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3387.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00290-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00290-0</ce:doi>
+		<ce:title>Trematodos (esquistosomas y otras especies hepáticas, intestinales y pulmonares)</ce:title>
+		<ce:pages>
+		  <ce:first-page>3395</ce:first-page>
+		  <ce:last-page>3406</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3395.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3406.e1</ce:first-page>
+		  <ce:last-page>3406.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00291-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00291-2</ce:doi>
+		<ce:title>Cestodos (tenias)</ce:title>
+		<ce:pages>
+		  <ce:first-page>3407</ce:first-page>
+		  <ce:last-page>3417</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3407.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3417.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00292-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00292-4</ce:doi>
+		<ce:title>Larva migratoria visceral y otras infestaciones infrecuentes por helmintos</ce:title>
+		<ce:pages>
+		  <ce:first-page>3418</ce:first-page>
+		  <ce:last-page>3424</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3418.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3424.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0330">
+	      <ce:label>K</ce:label>
+	      <ce:title>Enfermedades ectoparasitarias</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00293-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00293-6</ce:doi>
+		<ce:title>Introducción a las enfermedades ectoparasitarias</ce:title>
+		<ce:pages>
+		  <ce:first-page>3425</ce:first-page>
+		  <ce:last-page>3427</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3425.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3427.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00294-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00294-8</ce:doi>
+		<ce:title>Piojos (pediculosis)</ce:title>
+		<ce:pages>
+		  <ce:first-page>3428</ce:first-page>
+		  <ce:last-page>3432</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3428.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3432.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00295-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00295-X</ce:doi>
+		<ce:title>Sarna</ce:title>
+		<ce:pages>
+		  <ce:first-page>3433</ce:first-page>
+		  <ce:last-page>3437</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3433.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3437.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00296-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00296-1</ce:doi>
+		<ce:title>Miasis y tungiasis</ce:title>
+		<ce:pages>
+		  <ce:first-page>3438</ce:first-page>
+		  <ce:last-page>3442</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3438.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3442.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00297-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00297-3</ce:doi>
+		<ce:title>Ácaros, incluidos los trombicúlidos</ce:title>
+		<ce:pages>
+		  <ce:first-page>3443</ce:first-page>
+		  <ce:last-page>3449</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3443.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3449.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00298-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00298-5</ce:doi>
+		<ce:title>Garrapatas, incluidas las parálisis por garrapatas</ce:title>
+		<ce:pages>
+		  <ce:first-page>3450</ce:first-page>
+		  <ce:last-page>3464</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3450.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3464.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0335">
+	      <ce:label>L</ce:label>
+	      <ce:title>Enfermedades de causa desconocida</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00299-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00299-7</ce:doi>
+		<ce:title>Enfermedad de Kawasaki</ce:title>
+		<ce:pages>
+		  <ce:first-page>3465</ce:first-page>
+		  <ce:last-page>3470</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3465.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3470.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	  </part>
+	  <part id="pa0340">
+	    <ce:label>IV</ce:label>
+	    <ce:title>Problemas especiales</ce:title>
+	    <part id="pa0345">
+	      <ce:label>A</ce:label>
+	      <ce:title>Infecciones nosocomiales</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00300-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00300-0</ce:doi>
+		<ce:title>Prevención de infecciones en el ámbito sanitario</ce:title>
+		<ce:pages>
+		  <ce:first-page>3471</ce:first-page>
+		  <ce:last-page>3478</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3471.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3478.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00301-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00301-2</ce:doi>
+		<ce:title>Desinfección, esterilización y control de los residuos hospitalarios</ce:title>
+		<ce:pages>
+		  <ce:first-page>3479</ce:first-page>
+		  <ce:last-page>3495</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3479.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3495.e1</ce:first-page>
+		  <ce:last-page>3495.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00302-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00302-4</ce:doi>
+		<ce:title>Infecciones causadas por dispositivos intravasculares percutáneos</ce:title>
+		<ce:pages>
+		  <ce:first-page>3496</ce:first-page>
+		  <ce:last-page>3510</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3496.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3510.e1</ce:first-page>
+		  <ce:last-page>3510.e5</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00303-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00303-6</ce:doi>
+		<ce:title>Neumonía nosocomial</ce:title>
+		<ce:pages>
+		  <ce:first-page>3511</ce:first-page>
+		  <ce:last-page>3520</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3511.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3520.e1</ce:first-page>
+		  <ce:last-page>3520.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00304-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00304-8</ce:doi>
+		<ce:title>Infecciones urinarias nosocomiales</ce:title>
+		<ce:pages>
+		  <ce:first-page>3521</ce:first-page>
+		  <ce:last-page>3534</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3521.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3534.e1</ce:first-page>
+		  <ce:last-page>3534.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00305-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00305-X</ce:doi>
+		<ce:title>Hepatitis nosocomial</ce:title>
+		<ce:pages>
+		  <ce:first-page>3535</ce:first-page>
+		  <ce:last-page>3539</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3535.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3539.e1</ce:first-page>
+		  <ce:last-page>3539.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00306-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00306-1</ce:doi>
+		<ce:title>Infecciones transmitidas en transfusiones y trasplantes</ce:title>
+		<ce:pages>
+		  <ce:first-page>3540</ce:first-page>
+		  <ce:last-page>3550</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3540.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3550.e1</ce:first-page>
+		  <ce:last-page>3550.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00307-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00307-3</ce:doi>
+		<ce:title>Virus de la inmunodeficiencia humana en el ámbito sanitario</ce:title>
+		<ce:pages>
+		  <ce:first-page>3551</ce:first-page>
+		  <ce:last-page>3566</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3551.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3566.e1</ce:first-page>
+		  <ce:last-page>3566.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00308-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00308-5</ce:doi>
+		<ce:title>Infecciones nosocomiales causadas por virus herpes</ce:title>
+		<ce:pages>
+		  <ce:first-page>3567</ce:first-page>
+		  <ce:last-page>3574</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3567.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3574.e1</ce:first-page>
+		  <ce:last-page>3574.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0350">
+	      <ce:label>B</ce:label>
+	      <ce:title>Infecciones en huéspedes especiales</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00309-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00309-7</ce:doi>
+		<ce:title>Infecciones en huéspedes inmunocomprometidos: principios generales</ce:title>
+		<ce:pages>
+		  <ce:first-page>3575</ce:first-page>
+		  <ce:last-page>3585</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3575.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3585.e1</ce:first-page>
+		  <ce:last-page>3585.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00310-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00310-3</ce:doi>
+		<ce:title>Profilaxis y tratamiento empírico de las infecciones en los pacientes con cáncer</ce:title>
+		<ce:pages>
+		  <ce:first-page>3586</ce:first-page>
+		  <ce:last-page>3607</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3586.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3607.e1</ce:first-page>
+		  <ce:last-page>3607.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00311-5</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00311-5</ce:doi>
+		<ce:title>Factores de riesgo y abordaje de las infecciones en los receptores de trasplantes</ce:title>
+		<ce:pages>
+		  <ce:first-page>3608</ce:first-page>
+		  <ce:last-page>3619</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3608.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3619.e1</ce:first-page>
+		  <ce:last-page>3619.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00312-7</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00312-7</ce:doi>
+		<ce:title>Infecciones en los receptores de trasplantes de células madre hematopoyéticas</ce:title>
+		<ce:pages>
+		  <ce:first-page>3620</ce:first-page>
+		  <ce:last-page>3636</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3620.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3636.e1</ce:first-page>
+		  <ce:last-page>3636.e5</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00313-9</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00313-9</ce:doi>
+		<ce:title>Infecciones en los receptores de trasplantes de órganos sólidos</ce:title>
+		<ce:pages>
+		  <ce:first-page>3637</ce:first-page>
+		  <ce:last-page>3650</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3637.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00314-0</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00314-0</ce:doi>
+		<ce:title>Infecciones en los pacientes con lesiones medulares</ce:title>
+		<ce:pages>
+		  <ce:first-page>3651</ce:first-page>
+		  <ce:last-page>3657</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3651.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00315-2</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00315-2</ce:doi>
+		<ce:title>Infecciones en el anciano</ce:title>
+		<ce:pages>
+		  <ce:first-page>3658</ce:first-page>
+		  <ce:last-page>3664</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3658.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3664.e1</ce:first-page>
+		  <ce:last-page>3664.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00316-4</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00316-4</ce:doi>
+		<ce:title>Infecciones en pacientes asplénicos</ce:title>
+		<ce:pages>
+		  <ce:first-page>3665</ce:first-page>
+		  <ce:last-page>3674</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3665.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3674.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00317-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00317-6</ce:doi>
+		<ce:title>Infecciones en adictos a drogas por vía parenteral</ce:title>
+		<ce:pages>
+		  <ce:first-page>3675</ce:first-page>
+		  <ce:last-page>3693</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3675.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3693.e1</ce:first-page>
+		  <ce:last-page>3693.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00318-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00318-8</ce:doi>
+		<ce:title>Infecciones de las heridas quirúrgicas y profilaxis antimicrobiana</ce:title>
+		<ce:pages>
+		  <ce:first-page>3694</ce:first-page>
+		  <ce:last-page>3707</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3694.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3707.e1</ce:first-page>
+		  <ce:last-page>3707.e3</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0355">
+	      <ce:label>C</ce:label>
+	      <ce:title>Infecciones quirúrgicas y relacionadas con traumatismos</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00319-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00319-X</ce:doi>
+		<ce:title>Quemaduras</ce:title>
+		<ce:pages>
+		  <ce:first-page>3708</ce:first-page>
+		  <ce:last-page>3713</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3708.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3713.e1</ce:first-page>
+		  <ce:last-page>3713.e2</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00320-6</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00320-6</ce:doi>
+		<ce:title>Mordeduras</ce:title>
+		<ce:pages>
+		  <ce:first-page>3714</ce:first-page>
+		  <ce:last-page>3719</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3714.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3719.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0360">
+	      <ce:label>D</ce:label>
+	      <ce:title>Inmunización</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00321-8</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00321-8</ce:doi>
+		<ce:title>Inmunización</ce:title>
+		<ce:pages>
+		  <ce:first-page>3720</ce:first-page>
+		  <ce:last-page>3759</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3720.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3759.e1</ce:first-page>
+		  <ce:last-page>3759.e4</ce:last-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0365">
+	      <ce:label>E</ce:label>
+	      <ce:title>Zoonosis</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00322-X</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00322-X</ce:doi>
+		<ce:title>Zoonosis</ce:title>
+		<ce:pages>
+		  <ce:first-page>3760</ce:first-page>
+		  <ce:last-page>3764</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3760.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	    <part id="pa0370">
+	      <ce:label>F</ce:label>
+	      <ce:title>Protección del viajero</ce:title>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00323-1</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00323-1</ce:doi>
+		<ce:title>Protección del viajero</ce:title>
+		<ce:pages>
+		  <ce:first-page>3765</ce:first-page>
+		  <ce:last-page>3774</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3765.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3774.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	      <ce:include-item view="all">
+		<ce:pii>B978-84-9022-917-0.00324-3</ce:pii>
+		<ce:doi>10.1016/B978-84-9022-917-0.00324-3</ce:doi>
+		<ce:title>Infecciones al regreso de viajes</ce:title>
+		<ce:pages>
+		  <ce:first-page>3775</ce:first-page>
+		  <ce:last-page>3785</ce:last-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3775.e1</ce:first-page>
+		</ce:pages>
+		<ce:pages>
+		  <ce:first-page>3785.e1</ce:first-page>
+		</ce:pages>
+	      </ce:include-item>
+	    </part>
+	  </part>
+	</volume>
+      </body>
+      <rear>
+	<rearpart id="re0010">
+	  <ce:include-item view="all">
+	    <ce:pii>B978-84-9022-917-0.00335-8</ce:pii>
+	    <ce:doi>10.1016/B978-84-9022-917-0.00335-8</ce:doi>
+	    <ce:title>Índice alfabético</ce:title>
+	    <ce:pages>
+	      <ce:first-page>3787</ce:first-page>
+	      <ce:last-page>3906</ce:last-page>
+	    </ce:pages>
+	  </ce:include-item>
+	</rearpart>
+      </rear>
+    </book>
+  </xocs:nonserial-hub>
+</xocs:metadoc>

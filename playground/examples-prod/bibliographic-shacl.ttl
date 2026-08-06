@@ -1,0 +1,333 @@
+# =============================================================================
+# CPLD Bibliographic Reference — SHACL Shapes
+#
+# Vocabulary: edm: / rv: / nas: as used in Elsevier production JSON-LD exports.
+#
+# Checks
+#   1. nas:References  — at most one references section per document; each
+#                        instance is well-formed (SPARQL count shape + node shape)
+#   2. nas:ReferenceItem — must mention exactly one edm:Work via edm:mentions
+#   3. edm:Work (cited) — must have edm:title; edm:publishedDate recommended;
+#                         edm:partOf required; edm:hasRole → rv:Reference required;
+#                         if edm:hasAuthor present, each author must be edm:Person
+#                         with a well-formed edm:Author role (edm:hasContext → this
+#                         work, exactly one numeric rv:index)
+#   4. nas:Citation    — must mention exactly one edm:Work via edm:mentions
+#   5. Citation–reference consistency — the edm:Work a nas:Citation mentions
+#                                       must also be mentioned by a nas:ReferenceItem
+#   6. rv:Reference    — must have rv:bibliographicCitation, rv:index,
+#                        and edm:hasContext → the citing edm:Work
+#   7. edm:Author role — exactly one numeric rv:index; edm:hasContext → edm:Work
+#   8. edm:Person      — must carry at least one of: edm:name (→ edm:Name),
+#                        edm:familyName, or edm:givenName
+#      edm:Name        — structured name entity with familyName / givenName / initials
+#   9. edm:Organization — must carry edm:name
+# =============================================================================
+
+@prefix sh:           <http://www.w3.org/ns/shacl#> .
+@prefix nas:          <https://data.elsevier.com/publishing/schema/nas/> .
+@prefix edm:          <https://data.elsevier.com/schema/edm/> .
+@prefix rv:           <https://data.elsevier.com/research/schema/rv/> .
+@prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:          <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bibrefSchema: <https://data.elsevier.com/publication/platform/schema/pub/bibliographicreferences#> .
+
+
+# ── Shared prefix declarations for SPARQL-based shapes ───────────────────────
+
+bibrefSchema:SparqlPrefixes
+    sh:declare
+        [ sh:prefix "nas" ; sh:namespace "https://data.elsevier.com/publishing/schema/nas/"^^xsd:anyURI ] ,
+        [ sh:prefix "edm" ; sh:namespace "https://data.elsevier.com/schema/edm/"^^xsd:anyURI ] ,
+        [ sh:prefix "rv"  ; sh:namespace "https://data.elsevier.com/research/schema/rv/"^^xsd:anyURI ] .
+
+
+# ── Check 1a: nas:References — each instance is structurally well-formed ──────
+# (No properties are required on the node itself beyond its @type and @id.)
+# The "exactly one per document" constraint is expressed in check 1b below.
+
+bibrefSchema:ReferencesShape
+    a sh:NodeShape ;
+    sh:targetClass nas:References ;
+    sh:name        "References section" ;
+    sh:description "The document must contain exactly one node of type nas:References." ;
+    sh:severity    sh:Violation .
+
+# ── Check 1b: Exactly one nas:References node per document (SPARQL) ──────────
+# Reports every nas:References node when more than one exists in the graph.
+
+bibrefSchema:ReferencesCountShape
+    a sh:NodeShape ;
+    sh:targetClass nas:References ;
+    sh:name        "Unique references section" ;
+
+    sh:sparql [
+        sh:message  "More than one nas:References node found in the document. Exactly one is required." ;
+        sh:severity sh:Violation ;
+        sh:prefixes bibrefSchema:SparqlPrefixes ;
+        sh:select   """
+            SELECT $this
+            WHERE {
+                {
+                    SELECT (COUNT(?s) AS ?n)
+                    WHERE { ?s a nas:References }
+                }
+                FILTER (?n > 1)
+            }
+        """ ;
+    ] .
+
+
+# ── Check 2: Every nas:ReferenceItem must mention exactly one edm:Work ────────
+
+bibrefSchema:ReferenceItemShape
+    a sh:NodeShape ;
+    sh:targetClass nas:ReferenceItem ;
+    sh:name        "Reference item" ;
+
+    sh:property [
+        sh:path        edm:mentions ;
+        sh:name        "Work link" ;
+        sh:description "Every reference item must link to exactly one edm:Work via edm:mentions." ;
+        sh:minCount    1 ;
+        sh:maxCount    1 ;
+        sh:class       edm:Work ;
+        sh:severity    sh:Violation ;
+    ] .
+
+
+# ── Check 3: Every edm:Work cited by a ReferenceItem must have a title ────────
+# edm:publishedDate is strongly recommended (sh:Warning).
+
+bibrefSchema:ReferencedWorkShape
+    a sh:NodeShape ;
+    sh:targetClass edm:Work ;
+    sh:name        "Referenced work" ;
+
+    sh:property [
+        sh:path        edm:title ;
+        sh:name        "Title" ;
+        sh:description "Every cited work must carry at least one edm:title." ;
+        sh:minCount    1 ;
+        sh:severity    sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path        edm:publishedDate ;
+        sh:name        "Publication date" ;
+        sh:description "Every cited work should carry a publication date (xsd:gYear or literal)." ;
+        sh:minCount    1 ;
+        sh:severity    sh:Warning ;
+    ] ;
+
+    sh:property [
+        sh:path        edm:partOf ;
+        sh:name        "Part of publication" ;
+        sh:description "Every cited work must have an edm:partOf relation to an edm:Journal, edm:Book, edm:Chapter, or edm:Work." ;
+        sh:minCount    1 ;
+        sh:severity    sh:Violation ;
+        sh:or (
+            [ sh:class edm:Journal  ]
+            [ sh:class edm:Book     ]
+            [ sh:class edm:Chapter  ]
+            [ sh:class edm:Work     ]
+            [ sh:class rv:Source    ]
+        ) ;
+    ] ;
+
+    sh:property [
+        sh:path        edm:hasAuthor ;
+        sh:name        "Author" ;
+        sh:description "Each author of an edm:Work must be typed edm:Person." ;
+        sh:class       edm:Person ;
+        sh:severity    sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path        edm:hasRole ;
+        sh:name        "Reference role" ;
+        sh:description "When an edm:Work is cited in another article its edm:hasRole must point to a node typed rv:Reference." ;
+        sh:class       rv:Reference ;
+        sh:severity    sh:Violation ;
+    ] ;
+
+    sh:sparql [
+        sh:message  "Person <{?person}> is listed as edm:hasAuthor of this edm:Work but does not have an edm:Author role whose edm:hasContext points back to this same work." ;
+        sh:severity sh:Violation ;
+        sh:prefixes bibrefSchema:SparqlPrefixes ;
+        sh:select   """
+            SELECT $this ?person
+            WHERE {
+                $this edm:hasAuthor ?person .
+                FILTER NOT EXISTS {
+                    ?person edm:hasRole ?role .
+                    ?role a edm:Author ;
+                          edm:hasContext $this .
+                }
+            }
+        """ ;
+    ] .
+
+
+# ── Check 4: Every nas:Citation must mention exactly one edm:Work ─────────────
+
+bibrefSchema:CitationShape
+    a sh:NodeShape ;
+    sh:targetClass nas:Citation ;
+    sh:name        "In-text citation" ;
+
+    sh:property [
+        sh:path        edm:mentions ;
+        sh:name        "Work link" ;
+        sh:description "Every in-text citation must link to exactly one edm:Work via edm:mentions." ;
+        sh:minCount    1 ;
+        sh:maxCount    1 ;
+        sh:class       edm:Work ;
+        sh:severity    sh:Violation ;
+    ] .
+
+
+# ── Check 5: A Citation's work must also be mentioned by a ReferenceItem ──────
+# Ensures every in-text citation has a corresponding entry in the reference list.
+
+bibrefSchema:CitationWorkMatchShape
+    a sh:NodeShape ;
+    sh:targetClass nas:Citation ;
+    sh:name        "Citation–reference work consistency" ;
+
+    sh:sparql [
+        sh:message  "The edm:Work <{?work}> mentioned by this nas:Citation has no corresponding nas:ReferenceItem that mentions the same work." ;
+        sh:severity sh:Violation ;
+        sh:prefixes bibrefSchema:SparqlPrefixes ;
+        sh:select   """
+            SELECT $this ?work
+            WHERE {
+                $this edm:mentions ?work .
+                FILTER NOT EXISTS {
+                    ?ref a nas:ReferenceItem ;
+                         edm:mentions ?work .
+                }
+            }
+        """ ;
+    ] .
+
+
+# ── Check 6: Every rv:Reference must have citation text, a list index, ──────
+#             and a context pointer back to the citing edm:Work
+
+bibrefSchema:RvReferenceShape
+    a sh:NodeShape ;
+    sh:targetClass rv:Reference ;
+    sh:name        "Bibliographic citation blob" ;
+
+    sh:property [
+        sh:path        rv:bibliographicCitation ;
+        sh:name        "Citation text" ;
+        sh:description "Every rv:Reference must carry an rv:bibliographicCitation literal (rdf:HTML)." ;
+        sh:minCount    1 ;
+        sh:severity    sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path        rv:index ;
+        sh:name        "Reference index" ;
+        sh:description "Every rv:Reference must carry an xsd:int rv:index giving its position in the reference list." ;
+        sh:minCount    1 ;
+        sh:datatype    xsd:int ;
+        sh:severity    sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path        edm:hasContext ;
+        sh:name        "Citing work" ;
+        sh:description "Every rv:Reference role must point to exactly one edm:Work (the article that contains this reference) via edm:hasContext." ;
+        sh:minCount    1 ;
+        sh:maxCount    1 ;
+        sh:class       edm:Work ;
+        sh:severity    sh:Violation ;
+    ] .
+
+
+# ── Check 7: edm:Author role — numeric index and context pointer ──────────────
+# An edm:Author role node (the target of edm:Person/edm:hasRole) must carry
+# exactly one rv:index expressed as a number, and exactly one edm:hasContext
+# pointing to the edm:Work for which the authorship holds.
+
+bibrefSchema:AuthorRoleShape
+    a sh:NodeShape ;
+    sh:targetClass edm:Author ;
+    sh:name        "Author role" ;
+
+    sh:property [
+        sh:path        rv:index ;
+        sh:name        "Author index" ;
+        sh:description "An edm:Author role must carry exactly one xsd:int rv:index (position in the author list)." ;
+        sh:minCount    1 ;
+        sh:maxCount    1 ;
+        sh:datatype    xsd:int ;
+        sh:severity    sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path        edm:hasContext ;
+        sh:name        "Author context" ;
+        sh:description "An edm:Author role must point to exactly one edm:Work via edm:hasContext." ;
+        sh:minCount    1 ;
+        sh:maxCount    1 ;
+        sh:class       edm:Work ;
+        sh:severity    sh:Violation ;
+    ] .
+
+
+# ── Check 8: edm:Person must carry at least one identifying name ──────────────
+# Accepted forms:
+#   (a) edm:name → edm:Name  (structured name entity)
+#   (b) edm:familyName       (direct literal property)
+#   (c) edm:givenName        (direct literal property)
+
+bibrefSchema:PersonShape
+    a sh:NodeShape ;
+    sh:targetClass edm:Person ;
+    sh:name        "Person" ;
+    sh:message     "Every edm:Person must carry at least one of: edm:name (pointing to an edm:Name entity), edm:familyName, or edm:givenName." ;
+    sh:severity    sh:Violation ;
+    sh:or (
+        [ sh:property [ sh:path edm:name       ; sh:minCount 1 ; sh:class edm:Name ] ]
+        [ sh:property [ sh:path edm:familyName ; sh:minCount 1                     ] ]
+        [ sh:property [ sh:path edm:givenName  ; sh:minCount 1                     ] ]
+    ) .
+
+
+# ── Check 8b: edm:Name — structured name entity ───────────────────────────────
+# When the edm:name → edm:Name pattern is used, the edm:Name node must carry
+# at least one of its three datatype properties.
+
+bibrefSchema:NameShape
+    a sh:NodeShape ;
+    sh:targetClass edm:Name ;
+    sh:name        "Name entity" ;
+    sh:message     "An edm:Name node must carry at least one of: edm:familyName, edm:givenName, edm:initials." ;
+    sh:severity    sh:Violation ;
+    sh:or (
+        [ sh:property [ sh:path edm:familyName ; sh:minCount 1 ; sh:nodeKind sh:Literal ] ]
+        [ sh:property [ sh:path edm:givenName  ; sh:minCount 1 ; sh:nodeKind sh:Literal ] ]
+        [ sh:property [ sh:path edm:initials   ; sh:minCount 1 ; sh:nodeKind sh:Literal ] ]
+    ) .
+
+
+# ── Check 9: edm:Organization must carry a name ───────────────────────────────
+
+bibrefSchema:OrganizationShape
+    a sh:NodeShape ;
+    sh:targetClass edm:Organization ;
+    sh:name        "Organization" ;
+
+    sh:property [
+        sh:path        edm:name ;
+        sh:name        "Organization name" ;
+        sh:description "Every edm:Organization must carry at least one edm:name." ;
+        sh:minCount    1 ;
+        sh:nodeKind    sh:Literal ;
+        sh:severity    sh:Violation ;
+    ] .
